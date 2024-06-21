@@ -2,52 +2,36 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 <!--h1 without bottom border-->
-<div id="user-content-toc">
-  <ul align="center">
-    <summary><h1 style="display: inline-block">Hi 👋, I'm J</h1></summary>
-  </ul>
-</div>
+<h1 align="center">Hi 👋, I'm J</h1>
 
 <!--- snake -->
 <div align="center">
-  <img src="https://github.com/1999AZZAR/1999AZZAR/blob/readme/resources/img/grid-snake.svg" alt="snake" /></a>
+  <img src="https://github.com/1999AZZAR/1999AZZAR/blob/readme/resources/img/grid-snake.svg" alt="snake" />
 </div>
 
 <!--h2 without bottom border-->
-<div id="user-content-toc">
-  <ul align="center">
-    <summary><h2 style="display: inline-block">Code is poetry, but so is poetry :)</h2></summary>
-  </ul>
-</div>
+<h2 align="center">Coding and Composing share much in common :)</h2>
 
 <!--Intro start-->
 - 🔭 I’m currently working on **a cross-platform P2P network with a built-in ledger for web3 trust layer implementation**
 - 🌱 I’m currently learning **enhanced skills in various technical and creative domains**
-- ☁️ I've keen interest in cloud computing and AI. So, I'm learning **AWS and local AI inference servers**
-- 📝 I regularly write articles on [Hashnode](https://your-hashnode-profile-url)
+- ☁️ I've keen interest in  AI. So, I'm learning **local AI inference servers**
+- 📝 I regularly write articles on [Geekist](https://www.geekist.co)
 - 💬 Ask me about **JavaScript, TypeScript, Rust, P2P networks, web3, and AI**
-- 📫 Feel free to reach me out **your-email@example.com**
-- 🏠 Don't hesitate to drop me a **👋** on Discord –  [Your Discord Username](https://discordapp.com/users/your-discord-id)
+- 📫 Feel free to reach me out **gurugeek@geekist.co**
 <!--Intro end-->
 
 <!-- My Latest Articles -->
-<div id="user-content-latest-articles">
-  <ul align="center">
-    <summary><h2 style="display: inline-block">📚 My Latest Articles</h2></summary>
-  </ul>
-  <!-- List of articles dynamically populated here -->
-  - 📘 [Understanding Async/Await in JavaScript](https://your-hashnode-profile-url/understanding-async-await-in-javascript)
-  - 📗 [Building Microservices with Node.js](https://your-hashnode-profile-url/building-microservices-with-nodejs)
-</div>
+<h2 align="center">📚 My Latest Articles</h2>
+  
+  <!-- ARTICLES:START -->
+  <!-- ARTICLES:END -->
 
 <!-- My Open Source Contributions -->
-<div id="user-content-open-source">
-  <ul align="center">
-    <summary><h2 style="display: inline-block">👨‍💻 Open Source Contributions</h2></summary>
-  </ul>
+<h2 align="center">👨‍💻 Open Source Contributions</h2>
+
   <!-- CONTRIBUTIONS:START -->
   <!-- CONTRIBUTIONS:END -->
-</div>
 
 <!--- stats & Trophy (start) -->
 <p align="center">
@@ -82,7 +66,7 @@
 <!--tech stack icons-->
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=js,ts,rust,git,aws,cpp,css,discord,docker,postgres,prisma,pug,dynamodb,express,figma,firebase,redis,github,html,java,linux,md,materialui,nginx,mongodb,mysql,nextjs,nodejs,postman,py,react,redux,tailwind,ts,vscode,kubernetes&perline=14" />
+    <img src="https://skillicons.dev/icons?i=js,ts,rust,git,aws,php,perl,.net,css,discord,docker,postgres,prisma,dynamodb,express,figma,graphql, bun.sh,redis,github,html,linux,md,materialui,nginx,mongodb,mysql,nextjs,nodejs,postman,py,react,redux,ts,vscode&perline=14" />
   </a>
 </p>
 
@@ -97,10 +81,9 @@
 <!--icons and links-->
 <p align="center">
   <a href="https://www.linkedin.com/in/jasonnathan/" target="blank"><img align="center" src="https://user-images.githubusercontent.com/88904952/234979284-68c11d7f-1acc-4f0c-ac78-044e1037d7b0.png" alt="linkedin" height="50" width="50" /></a>
-  <a href="https://twitter.com/jasonnathan" target="blank"><img align="center" src="https://user-images.githubusercontent.com/88904952/234980676-61bfb021-ecc8-48f7-88e6-34c1b06c4a58.png" alt="twitter" height="50" width="50" /></a> 
-  <a href="https://www.instagram.com/jasonnathan/" target="blank"><img align="center" src="https://user-images.githubusercontent.com/88904952/234981169-2dd1e58f-4b7e-468c-8213-034ba62156c3.png" alt="instagram" height="50" width="50" /></a>
-  <a href="https://your-hashnode-profile-url" target="blank"><img align="center" src="https://user-images.githubusercontent.com/88904952/234982196-562aea17-5532-4550-8c08-1c7cb994a541.png" alt="hashnode" height="50" width="50" /></a>
-  <a href="https://discordapp.com/users/your-discord-id" target="blank"><img align="center" src="https://user-images.githubusercontent.com/88904952/234982627-019fd336-6248-453c-9b05-97c13fd1d207.png" alt="discord" height="50" width="50" /></a>
+  <a href="https://x.com/jason_nathan" target="blank"><img align="center" src="https://user-images.githubusercontent.com/88904952/234980676-61bfb021-ecc8-48f7-88e6-34c1b06c4a58.png" alt="twitter" height="50" width="50" /></a> 
+  <a href="https://www.instagram.com/nathanjason/" target="blank"><img align="center" src="https://user-images.githubusercontent.com/88904952/234981169-2dd1e58f-4b7e-468c-8213-034ba62156c3.png" alt="instagram" height="50" width="50" /></a>
+  <a href="https://geekist.co" target="blank"><img align="center" src="https://user-images.githubusercontent.com/88904952/234982196-562aea17-5532-4550-8c08-1c7cb994a541.png" alt="hashnode" height="50" width="50" /></a>
 </p>
 
 <!--profile visit count-->
