@@ -20,60 +20,17 @@ jobs:
       - name: Install dependencies
         run: npm install node-fetch
 
-      - name: Verify webhook and update README
+      - name: Update README
         env:
           HASHNODE_SECRET: ${{ secrets.HASHNODE_SECRET }}
           PAYLOAD: ${{ toJson(github.event.client_payload) }}
+          SIGNATURE_HEADER: ${{ github.event.client_payload.headers['x-hub-signature-256'] }}
+        run: node updateArticles.js
+
+      - name: Commit and push changes
         run: |
-          const fs = require('fs');
-          const { validateSignature } = require('./validateSignature');
-          const { getPostDetails } = require('./queryHashnode');
-
-          const payload = JSON.parse(process.env.PAYLOAD);
-          const signatureHeader = process.env.SIGNATURE_HEADER;
-          const secret = process.env.HASHNODE_SECRET;
-          
-          const result = validateSignature({
-            incomingSignatureHeader: signatureHeader,
-            payload,
-            secret,
-            validForSeconds: 30,
-          });
-
-          if (!result.isValid) {
-            console.error(result.reason);
-            process.exit(1);
-          }
-
-          const postId = payload.data.post.id;
-          getPostDetails(postId).then(post => {
-            const postUrl = `https://${post.author.username}.hashnode.dev/${post.slug}`;
-            const newArticle = `- 📘 [${post.title}](${postUrl})`;
-
-            const readmePath = './README.md';
-            let readmeContent = fs.readFileSync(readmePath, 'utf8');
-
-            const articlesStartMarker = '<!-- ARTICLES:START -->';
-            const articlesEndMarker = '<!-- ARTICLES:END -->';
-
-            const startIndex = readmeContent.indexOf(articlesStartMarker) + articlesStartMarker.length;
-            const endIndex = readmeContent.indexOf(articlesEndMarker);
-
-            const beforeArticles = readmeContent.substring(0, startIndex);
-            const afterArticles = readmeContent.substring(endIndex);
-
-            const updatedContent = beforeArticles + `\n${newArticle}\n` + afterArticles;
-
-            fs.writeFileSync(readmePath, updatedContent);
-
-            // Commit and push changes
-            const execSync = require('child_process').execSync;
-            execSync('git config --global user.name "github-actions[bot]"');
-            execSync('git config --global user.email "github-actions[bot]@users.noreply.github.com"');
-            execSync('git add README.md');
-            execSync('git commit -m "Update README with new Hashnode post"');
-            execSync('git push');
-          }).catch(error => {
-            console.error('Error fetching post details:', error.message);
-            process.exit(1);
-          });
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "Update README with new Hashnode post"
+          git push
