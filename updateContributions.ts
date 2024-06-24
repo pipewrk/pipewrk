@@ -1,23 +1,37 @@
 import { readFileSync, writeFileSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { fetchContributions, type Repository } from './fetchContributions';
+import { fetchContributions, type Contribution } from './fetchContributions';
+
+interface GroupedContributions {
+  [key: string]: Contribution[];
+}
 
 async function updateReadme(username: string, token: string): Promise<void> {
   try {
     const contributions = await fetchContributions(username, token);
-    const contributionsSection = contributions.map((repository: Repository) => {
-      const ownerLogin = repository.owner.login;
-      const repoName = repository.name;
-      const repoUrl = repository.url;
-      const pullRequestCount = repository.pullRequests.totalCount;
-      const issueCount = repository.issues.totalCount;
 
-      // Check for significant activity
-      const isSignificant = pullRequestCount > 5 || issueCount > 10;
-      const significantMarker = isSignificant ? '🌟' : ''; // Highlight significant contributions
+    // Group contributions by repository
+    const groupedContributions: GroupedContributions = contributions.reduce((acc, contribution) => {
+      const repoKey = `${contribution.repository.owner.login}/${contribution.repository.name}`;
+      if (!acc[repoKey]) {
+        acc[repoKey] = [];
+      }
+      acc[repoKey].push(contribution);
+      return acc;
+    }, {} as GroupedContributions);
 
-      return `- [${ownerLogin}/${repoName}](${repoUrl}) ${significantMarker} Pull Requests: ${pullRequestCount}, Issues: ${issueCount}`;
+    // Format the contributions section
+    const contributionsSection = Object.entries(groupedContributions).map(([repoKey, repoContributions]) => {
+      const repoUrl = repoContributions[0].repository.url;
+      const significantMarker = repoContributions.some(contribution => 
+        contribution.repository.pullRequests.totalCount > 5 || contribution.repository.issues.totalCount > 10
+      ) ? ' 🌟' : '';
+      const contributionsList = repoContributions.map(contribution => {
+        return `  - [${contribution.title}](${contribution.url})`;
+      }).join('\n');
+
+      return `- [${repoKey}](${repoUrl})${significantMarker}\n${contributionsList}`;
     }).join('\n');
 
     if (!contributionsSection) {
@@ -39,7 +53,7 @@ async function updateReadme(username: string, token: string): Promise<void> {
       readmeContent.substring(endIndex);
   
     writeFileSync(readmePath, readmeContent);
-    console.log('README updated successfully with all contributions and highlighted significant activity.', contributionsSection);
+    console.log('README updated successfully with grouped contributions and highlighted significant activity.');
   } catch (error) {
     console.error('Failed to update README:', error);
   }
