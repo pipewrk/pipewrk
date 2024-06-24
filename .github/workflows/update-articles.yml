@@ -10,6 +10,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GH_PAT }}      
       - uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
@@ -23,7 +25,6 @@ jobs:
 
       - name: Commit and push changes
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_PAT }}
         run: |
           git config --global user.name 'Jason Nathan'
