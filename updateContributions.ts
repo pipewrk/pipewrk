@@ -39,7 +39,7 @@ async function updateReadme(username: string, token: string): Promise<void> {
       readmeContent.substring(endIndex);
   
     writeFileSync(readmePath, readmeContent);
-    console.log('README updated successfully with all contributions and highlighted significant activity.');
+    console.log('README updated successfully with all contributions and highlighted significant activity.', contributionsSection);
   } catch (error) {
     console.error('Failed to update README:', error);
   }
