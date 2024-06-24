@@ -1,6 +1,6 @@
 import { readFileSync, writeFileSync } from 'fs';
 import { join } from 'path';
-import { fetchContributions } from './fetchContributions.js';
+import { fetchContributions } from './fetchContributions.mjs';
 
 async function updateReadme(username, token) {
   const contributions = await fetchContributions(username, token);
