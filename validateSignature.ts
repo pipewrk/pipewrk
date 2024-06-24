@@ -3,30 +3,64 @@ import crypto from 'crypto';
 const MILLISECONDS_PER_SECOND = 1_000;
 const SIGNATURE_VERSION = '1';
 
-function parseSignatureHeader(header) {
+interface SignatureHeaderData {
+  timestamp: number;
+  signature: string;
+}
+
+interface SignatureHeaderResult {
+  success: boolean;
+  data: SignatureHeaderData | null;
+}
+
+function parseSignatureHeader(header: string): SignatureHeaderResult {
   const parts = header.split(',');
-  const timestamp = parts.find((part) => part.startsWith('t='))?.split('=')[1];
+  const timestampStr = parts.find((part) => part.startsWith('t='))?.split('=')[1];
   const signature = parts.find((part) => part.startsWith(`v${SIGNATURE_VERSION}=`))?.split('=')[1];
 
-  if (!timestamp || !signature) {
+  if (!timestampStr || !signature) {
     return { success: false, data: null };
   }
 
-  return { success: true, data: { timestamp: parseInt(timestamp, 10), signature } };
+  const timestamp = parseInt(timestampStr, 10);
+  return { success: true, data: { timestamp, signature } };
 }
 
-function createSignature({ timestamp, payload, secret }) {
+interface SignaturePayload {
+  timestamp: number;
+  payload?: any;
+  secret: string;
+}
+
+function createSignature({ timestamp, payload, secret }: SignaturePayload): string {
   const signedPayloadString = `${timestamp}.${payload ? JSON.stringify(payload) : ''}`;
   return crypto.createHmac('sha256', secret).update(signedPayloadString).digest('hex');
 }
 
-export function validateSignature({ incomingSignatureHeader, payload, secret, validForSeconds = 30 }) {
+interface ValidateSignatureInput {
+  incomingSignatureHeader: string;
+  payload: any;
+  secret: string;
+  validForSeconds?: number;
+}
+
+export interface ValidateSignatureResult {
+  isValid: boolean;
+  reason?: string;
+}
+
+export function validateSignature({
+  incomingSignatureHeader,
+  payload,
+  secret,
+  validForSeconds = 30,
+}: ValidateSignatureInput): ValidateSignatureResult {
   if (!incomingSignatureHeader) {
     return { isValid: false, reason: 'Missing signature' };
   }
 
   const { success, data } = parseSignatureHeader(incomingSignatureHeader);
-  if (!success) {
+  if (!success || !data) {
     return { isValid: false, reason: 'Invalid signature header' };
   }
 

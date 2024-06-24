@@ -1,6 +1,23 @@
 import fetch from 'node-fetch';
 
-export async function getPostDetails(postId) {
+interface Author {
+  username: string;
+}
+
+interface Post {
+  title: string;
+  brief: string;
+  slug: string;
+  author: Author;
+}
+
+interface FetchResponse {
+  data: {
+    post: Post;
+  };
+}
+
+export async function getPostDetails(postId: string): Promise<Post> {
   const query = `
     query GetPostDetails($postId: String!) {
       post(id: $postId) {
@@ -24,6 +41,10 @@ export async function getPostDetails(postId) {
     body: JSON.stringify({ query, variables }),
   });
 
-  const result = await response.json();
+  if (!response.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`);
+  }
+
+  const result = await response.json() as FetchResponse;
   return result.data.post;
 }

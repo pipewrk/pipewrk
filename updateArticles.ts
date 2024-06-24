@@ -1,13 +1,28 @@
 import { readFileSync, writeFileSync } from 'fs';
-import { validateSignature } from './validateSignature.mjs';
-import { getPostDetails } from './queryHashnode.mjs';
+import { dirname, join } from 'path';
+import { fileURLToPath } from 'url';
+import { validateSignature, type ValidateSignatureResult } from './validateSignature';
+import { getPostDetails } from './queryHashnode';
 
-async function updateReadme() {
-  const payload = JSON.parse(process.env.PAYLOAD);
-  const signatureHeader = process.env.SIGNATURE_HEADER;
-  const secret = process.env.HASHNODE_SECRET;
+interface Payload {
+  data: {
+    post: {
+      id: string;
+    };
+  };
+}
+
+async function updateReadme(): Promise<void> {
+  if (!process.env.PAYLOAD || !process.env.SIGNATURE_HEADER || !process.env.HASHNODE_SECRET) {
+    console.error("Environment variables are not set properly.");
+    process.exit(1);
+  }
+
+  const payload: Payload = JSON.parse(process.env.PAYLOAD);
+  const signatureHeader: string = process.env.SIGNATURE_HEADER;
+  const secret: string = process.env.HASHNODE_SECRET;
   
-  const result = validateSignature({
+  const result: ValidateSignatureResult = validateSignature({
     incomingSignatureHeader: signatureHeader,
     payload,
     secret,
@@ -25,7 +40,7 @@ async function updateReadme() {
     const postUrl = `https://${post.author.username}.hashnode.dev/${post.slug}`;
     const newArticle = `- 📘 [${post.title}](${postUrl})`;
 
-    const readmePath = './README.md';
+    const readmePath = join(dirname(fileURLToPath(import.meta.url)), 'README.md');
     let readmeContent = readFileSync(readmePath, 'utf8');
 
     const articlesStartMarker = '<!-- ARTICLES:START -->';
@@ -41,7 +56,7 @@ async function updateReadme() {
 
     writeFileSync(readmePath, updatedContent);
   } catch (error) {
-    console.error('Error fetching post details:', error.message);
+    console.error('Error fetching post details:', error);
     process.exit(1);
   }
 }
