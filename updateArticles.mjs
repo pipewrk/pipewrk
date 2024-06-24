@@ -1,6 +1,6 @@
 import { readFileSync, writeFileSync } from 'fs';
-import { validateSignature } from './validateSignature.js';
-import { getPostDetails } from './queryHashnode.js';
+import { validateSignature } from './validateSignature.mjs';
+import { getPostDetails } from './queryHashnode.mjs';
 
 async function updateReadme() {
   const payload = JSON.parse(process.env.PAYLOAD);
