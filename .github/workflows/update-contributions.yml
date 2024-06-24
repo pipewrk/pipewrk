@@ -24,4 +24,4 @@ jobs:
       - name: Update README
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: node updateContributions.js
+        run: node updateContributions.mjs
