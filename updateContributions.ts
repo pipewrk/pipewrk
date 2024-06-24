@@ -6,19 +6,22 @@ import { fetchContributions, type Repository } from './fetchContributions';
 async function updateReadme(username: string, token: string): Promise<void> {
   try {
     const contributions = await fetchContributions(username, token);
-    // Only process and display repositories that have non-zero pull requests or issues
-    const contributionsSection = contributions
-      .filter(repo => repo.pullRequests.totalCount > 0 || repo.issues.totalCount > 0)
-      .map((repository: Repository) => {
-        const ownerLogin = repository.owner.login;
-        const repoName = repository.name;
-        const repoUrl = repository.url;
+    const contributionsSection = contributions.map((repository: Repository) => {
+      const ownerLogin = repository.owner.login;
+      const repoName = repository.name;
+      const repoUrl = repository.url;
+      const pullRequestCount = repository.pullRequests.totalCount;
+      const issueCount = repository.issues.totalCount;
 
-        return `- [${ownerLogin}/${repoName}](${repoUrl}) ![Contributors](https://img.shields.io/github/contributors/${ownerLogin}/${repoName}) ![Pull Requests](https://img.shields.io/github/issues-pr-closed-raw/${ownerLogin}/${repoName})`;
-      }).join('\n');
+      // Check for significant activity
+      const isSignificant = pullRequestCount > 5 || issueCount > 10;
+      const significantMarker = isSignificant ? '🌟' : ''; // Highlight significant contributions
+
+      return `- [${ownerLogin}/${repoName}](${repoUrl}) ${significantMarker} Pull Requests: ${pullRequestCount}, Issues: ${issueCount}`;
+    }).join('\n');
 
     if (!contributionsSection) {
-      console.log("No significant contributions found.");
+      console.log("No contributions found.");
       return;
     }
 
@@ -36,10 +39,10 @@ async function updateReadme(username: string, token: string): Promise<void> {
       readmeContent.substring(endIndex);
   
     writeFileSync(readmePath, readmeContent);
-    console.log('README updated successfully.');
+    console.log('README updated successfully with all contributions and highlighted significant activity.');
   } catch (error) {
     console.error('Failed to update README:', error);
   }
 }
 
-updateReadme('jasonnathan', process.env.GITHUB_TOKEN);  // Changed Bun.env to process.env for general usage
+updateReadme('jasonnathan', process.env.GITHUB_TOKEN); // Ensure your environment variable is correctly configured
