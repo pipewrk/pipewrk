@@ -31,20 +31,21 @@
 <h2 align="center">👨‍💻 Open Source Contributions</h2>
 
   <!-- CONTRIBUTIONS:START -->
-- [langchain-ai/langchainjs](https://github.com/langchain-ai/langchainjs) 🌟
-  - [docs[patch]: Fixes the build but not a long term solution](https://github.com/langchain-ai/langchainjs/pull/4361)
-  - [community[minor]: Added `SQLiteRecordManager`](https://github.com/langchain-ai/langchainjs/pull/4321)
-  - [Updated debugging.mdx](https://github.com/langchain-ai/langchainjs/pull/4319)
-  - [Syntax error in human_in_the_loop.mdx after quatro processing](https://github.com/langchain-ai/langchainjs/issues/4360)
-  - [[Feature Request] Done: Implement SQLite RecordManager](https://github.com/langchain-ai/langchainjs/issues/4320)
-  - [Bug in documentation usage of<CodeOutputBlock> instead of <CodeBlock>](https://github.com/langchain-ai/langchainjs/issues/4318)
-- [jeliasson/zsh-logging](https://github.com/jeliasson/zsh-logging)
-  - [Maybe use ANSI escape codes with printf to apply colors only to the terminal?](https://github.com/jeliasson/zsh-logging/pull/1)
-- [seriouslyjs/NpmGitInit](https://github.com/seriouslyjs/NpmGitInit)
-  - [Bug/fixed git urls](https://github.com/seriouslyjs/NpmGitInit/pull/4)
-  - [Feature/better-readme](https://github.com/seriouslyjs/NpmGitInit/pull/3)
-  - [Update branch references in installation script and README](https://github.com/seriouslyjs/NpmGitInit/pull/2)
-  - [feature: Introduce node initialization script, aliases, and documentation](https://github.com/seriouslyjs/NpmGitInit/pull/1)
+### [langchain-ai/langchainjs](https://github.com/langchain-ai/langchainjs) 🌟
+- [docs[patch]: Fixes the build but not a long term solution](https://github.com/langchain-ai/langchainjs/pull/4361)
+- [community[minor]: Added `SQLiteRecordManager`](https://github.com/langchain-ai/langchainjs/pull/4321)
+- [Updated debugging.mdx](https://github.com/langchain-ai/langchainjs/pull/4319)
+- [Syntax error in human_in_the_loop.mdx after quatro processing](https://github.com/langchain-ai/langchainjs/issues/4360)
+- [[Feature Request] Done: Implement SQLite RecordManager](https://github.com/langchain-ai/langchainjs/issues/4320)
+- [Bug in documentation usage of<CodeOutputBlock> instead of <CodeBlock>](https://github.com/langchain-ai/langchainjs/issues/4318)
+### [jeliasson/zsh-logging](https://github.com/jeliasson/zsh-logging)
+- [Maybe use ANSI escape codes with printf to apply colors only to the terminal?](https://github.com/jeliasson/zsh-logging/pull/1)
+### [seriouslyjs/NpmGitInit](https://github.com/seriouslyjs/NpmGitInit)
+- [Bug/fixed git urls](https://github.com/seriouslyjs/NpmGitInit/pull/4)
+- [Feature/better-readme](https://github.com/seriouslyjs/NpmGitInit/pull/3)
+- [Update branch references in installation script and README](https://github.com/seriouslyjs/NpmGitInit/pull/2)
+- [feature: Introduce node initialization script, aliases, and documentation](https://github.com/seriouslyjs/NpmGitInit/pull/1)
+  <!-- CONTRIBUTIONS:END -->
 <!-- CONTRIBUTIONS:END -->
 
 <!--- stats & Trophy (start) -->
