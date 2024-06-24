@@ -45,7 +45,7 @@
 - [Feature/better-readme](https://github.com/seriouslyjs/NpmGitInit/pull/3)
 - [Update branch references in installation script and README](https://github.com/seriouslyjs/NpmGitInit/pull/2)
 - [feature: Introduce node initialization script, aliases, and documentation](https://github.com/seriouslyjs/NpmGitInit/pull/1)
-  <!-- CONTRIBUTIONS:END -->
+<!-- CONTRIBUTIONS:END -->
 <!-- CONTRIBUTIONS:END -->
 
 <!--- stats & Trophy (start) -->
