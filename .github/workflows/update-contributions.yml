@@ -20,12 +20,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: bun updateContributions.ts
-      - name: Commit changes
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add README.md
-          git commit -m "Update README with latest contributions" || echo "No changes to commit"
-          git push
+      - name: Commit and push changes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          git config --global user.name 'Jason Nathan'
+          git config --global user.email 'jjnathanjr@gmail.com'
+          git add README.md
+          git commit -m "Update README with latest contributions" || echo "No changes to commit"
+          git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/${{ github.repository }}.git HEAD:main
