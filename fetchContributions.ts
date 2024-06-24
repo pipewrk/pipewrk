@@ -23,127 +23,134 @@ export interface Repository {
   };
 }
 
+export interface Contribution {
+  title: string;
+  url: string;
+  repository: Repository;
+}
+
+interface PullRequestNode {
+  pullRequest: Contribution;
+}
+
+interface IssueNode {
+  issue: Contribution;
+}
+
+interface PullRequestContributions {
+  totalCount: number;
+  nodes: PullRequestNode[];
+}
+
+interface IssueContributions {
+  totalCount: number;
+  nodes: IssueNode[];
+}
+
+interface ContributionsCollection {
+  pullRequestContributions: PullRequestContributions;
+  issueContributions: IssueContributions;
+}
+
+interface User {
+  contributionsCollection: ContributionsCollection;
+}
+
 const query = `
-query ($username: String!) {
-  user(login: $username) {
-    contributionsCollection {
-      pullRequestContributions(first: 100) {
-        totalCount
-        nodes {
-          pullRequest {
-            repository {
-              name
-              owner {
-                login
-              }
-              url
-              parent {
-                name
-                owner {
-                  login
-                }
+    query ($username: String!) {
+      user(login: $username) {
+        contributionsCollection {
+          pullRequestContributions(first: 100) {
+            totalCount
+            nodes {
+              pullRequest {
+                title
                 url
-              }
-              pullRequests(states: [MERGED, OPEN]) {
-                totalCount
+                repository {
+                  name
+                  owner {
+                    login
+                  }
+                  url
+                  parent {
+                    name
+                    owner {
+                      login
+                    }
+                    url
+                  }
+                  pullRequests(states: [MERGED, OPEN]) {
+                    totalCount
+                  }
+                }
               }
             }
           }
-        }
-      }
-      issueContributions(first: 100) {
-        totalCount
-        nodes {
-          issue {
-            repository {
-              name
-              owner {
-                login
-              }
-              url
-              parent {
-                name
-                owner {
-                  login
-                }
+          issueContributions(first: 100) {
+            totalCount
+            nodes {
+              issue {
+                title
                 url
-              }
-              issues(states: [OPEN, CLOSED]) {
-                totalCount
+                repository {
+                  name
+                  owner {
+                    login
+                  }
+                  url
+                  parent {
+                    name
+                    owner {
+                      login
+                    }
+                    url
+                  }
+                  issues(states: [OPEN, CLOSED]) {
+                    totalCount
+                  }
+                }
               }
             }
           }
         }
       }
     }
-  }
-}
-`;
+  `;
 
-export async function fetchContributions(
-  username: string,
-  token: string
-): Promise<Repository[]> {
+export async function fetchContributions(username: string, token: string): Promise<Contribution[]> {
+  
   const octokitGraphQL = graphql.defaults({
     headers: {
       authorization: `bearer ${token}`,
     },
     request: {
-      fetch,
-    },
+      fetch
+    }
   });
 
   try {
-    const response: GraphQlQueryResponseData = await octokitGraphQL(query, {
-      username,
-    });
+    const response: GraphQlQueryResponseData = await octokitGraphQL(query, { username });
     if (!response || !response.user || !response.user.contributionsCollection) {
-      throw new Error("Invalid response structure received from GitHub API.");
+      throw new Error('Invalid response structure received from GitHub API.');
     }
 
-    let contributions: Repository[] = [];
+    const contributions: Contribution[] = [];
 
     // Process pull request contributions
-    response.user.contributionsCollection.pullRequestContributions.nodes.forEach(
-      (node: { pullRequest: { repository: Repository } }) => {
-        const repository = node.pullRequest.repository;
-        contributions.push({
-          ...repository,
-          pullRequests: { totalCount: repository.pullRequests.totalCount },
-          issues: { totalCount: 0 },
-        });
-      }
-    );
+    for (const node of response.user.contributionsCollection.pullRequestContributions.nodes) {
+      const contribution: Contribution = node.pullRequest;
+      contributions.push(contribution);
+    }
 
     // Process issue contributions
-    response.user.contributionsCollection.issueContributions.nodes.forEach(
-      (node: { issue: { repository: Repository } }) => {
-        const repository = node.issue.repository;
-        const existingRepo = contributions.find(
-          (repo) => repo.url === repository.url
-        );
-        if (existingRepo) {
-          existingRepo.issues.totalCount += repository.issues.totalCount;
-        } else {
-          contributions.push({
-            ...repository,
-            pullRequests: { totalCount: 0 },
-            issues: { totalCount: repository.issues.totalCount },
-          });
-        }
-      }
-    );
+    for (const node of response.user.contributionsCollection.issueContributions.nodes) {
+      const contribution: Contribution = node.issue;
+      contributions.push(contribution);
+    }
 
-    // Remove duplicates based on the repository URL
-    const uniqueContributions = contributions.filter(
-      (repo, index, self) => index === self.findIndex((t) => t.url === repo.url)
-    );
-
-    return uniqueContributions;
+    return contributions;
   } catch (error: any) {
-    console.error(
-      `Failed to fetch contributions for user ${username}: ${error.message}`
-    );
+    console.error(`Failed to fetch contributions for user ${username}: ${error.message}`);
     throw error;
   }
 }
