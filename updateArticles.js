@@ -1,6 +1,6 @@
-const fs = require('fs');
-const { validateSignature } = require('./validateSignature');
-const { getPostDetails } = require('./queryHashnode');
+import { readFileSync, writeFileSync } from 'fs';
+import { validateSignature } from './validateSignature.js';
+import { getPostDetails } from './queryHashnode.js';
 
 async function updateReadme() {
   const payload = JSON.parse(process.env.PAYLOAD);
@@ -26,7 +26,7 @@ async function updateReadme() {
     const newArticle = `- 📘 [${post.title}](${postUrl})`;
 
     const readmePath = './README.md';
-    let readmeContent = fs.readFileSync(readmePath, 'utf8');
+    let readmeContent = readFileSync(readmePath, 'utf8');
 
     const articlesStartMarker = '<!-- ARTICLES:START -->';
     const articlesEndMarker = '<!-- ARTICLES:END -->';
@@ -39,7 +39,7 @@ async function updateReadme() {
 
     const updatedContent = beforeArticles + `\n${newArticle}\n` + afterArticles;
 
-    fs.writeFileSync(readmePath, updatedContent);
+    writeFileSync(readmePath, updatedContent);
   } catch (error) {
     console.error('Error fetching post details:', error.message);
     process.exit(1);
