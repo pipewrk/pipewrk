@@ -1,7 +1,7 @@
 import { readFileSync, writeFileSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { fetchContributions, Contribution } from './fetchContributions';
+import { fetchContributions, type Contribution } from './fetchContributions';
 
 interface GroupedContributions {
   [key: string]: Contribution[];
@@ -29,10 +29,10 @@ async function updateReadme(username: string, token: string): Promise<void> {
         (contribution.repository.issues?.totalCount ?? 0) > 10
       ) ? ' 🌟' : '';
       const contributionsList = repoContributions.map(contribution => {
-        return `  - [${contribution.title}](${contribution.url})`;
+        return `- [${contribution.title}](${contribution.url})`;
       }).join('\n');
 
-      return `- [${repoKey}](${repoUrl})${significantMarker}\n${contributionsList}`;
+      return `### [${repoKey}](${repoUrl})${significantMarker}\n${contributionsList}`;
     }).join('\n');
 
     if (!contributionsSection) {
