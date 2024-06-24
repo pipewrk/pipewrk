@@ -1,4 +1,4 @@
-const crypto = require('crypto');
+import crypto from 'crypto';
 
 const MILLISECONDS_PER_SECOND = 1_000;
 const SIGNATURE_VERSION = '1';
@@ -20,7 +20,7 @@ function createSignature({ timestamp, payload, secret }) {
   return crypto.createHmac('sha256', secret).update(signedPayloadString).digest('hex');
 }
 
-function validateSignature({ incomingSignatureHeader, payload, secret, validForSeconds = 30 }) {
+export function validateSignature({ incomingSignatureHeader, payload, secret, validForSeconds = 30 }) {
   if (!incomingSignatureHeader) {
     return { isValid: false, reason: 'Missing signature' };
   }
@@ -44,5 +44,3 @@ function validateSignature({ incomingSignatureHeader, payload, secret, validForS
 
   return { isValid: true };
 }
-
-module.exports = { validateSignature };
