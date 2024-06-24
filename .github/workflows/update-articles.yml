@@ -25,7 +25,7 @@ jobs:
           HASHNODE_SECRET: ${{ secrets.HASHNODE_SECRET }}
           PAYLOAD: ${{ toJson(github.event.client_payload) }}
           SIGNATURE_HEADER: ${{ github.event.client_payload.headers['x-hub-signature-256'] }}
-        run: node updateArticles.js
+        run: node updateArticles.mjs
 
       - name: Commit and push changes
         run: |
