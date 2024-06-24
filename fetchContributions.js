@@ -1,6 +1,6 @@
-const { graphql } = require('@octokit/graphql');
+import { graphql } from '@octokit/graphql';
 
-async function fetchContributions(username, token) {
+export async function fetchContributions(username, token) {
   const query = `
     query ($username: String!) {
       user(login: $username) {
@@ -34,5 +34,3 @@ async function fetchContributions(username, token) {
 
   return response.user.contributionsCollection.commitContributionsByRepository;
 }
-
-module.exports = { fetchContributions };
