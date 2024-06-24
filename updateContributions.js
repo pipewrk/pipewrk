@@ -1,6 +1,6 @@
-const fs = require('fs');
-const path = require('path');
-const { fetchContributions } = require('./fetchContributions');
+import { readFileSync, writeFileSync } from 'fs';
+import { join } from 'path';
+import { fetchContributions } from './fetchContributions.js';
 
 async function updateReadme(username, token) {
   const contributions = await fetchContributions(username, token);
@@ -10,8 +10,8 @@ async function updateReadme(username, token) {
     })
     .join('\n');
 
-  const readmePath = path.join(__dirname, 'README.md');
-  let readmeContent = fs.readFileSync(readmePath, 'utf8');
+  const readmePath = join(__dirname, 'README.md');
+  let readmeContent = readFileSync(readmePath, 'utf8');
 
   const startMarker = '<!-- CONTRIBUTIONS:START -->';
   const endMarker = '<!-- CONTRIBUTIONS:END -->';
@@ -23,9 +23,7 @@ async function updateReadme(username, token) {
     `\n${contributionsSection}\n` +
     readmeContent.substring(endIndex);
 
-  fs.writeFileSync(readmePath, readmeContent);
+  writeFileSync(readmePath, readmeContent);
 }
 
-const username = 'your-github-username';
-const token = process.env.GITHUB_TOKEN;
-updateReadme(username, token);
+updateReadme('jasonnathan', process.env.GITHUB_TOKEN);
