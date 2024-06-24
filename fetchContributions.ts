@@ -1,7 +1,27 @@
-import { graphql } from '@octokit/graphql';
+import { graphql, type GraphQlQueryResponseData } from '@octokit/graphql';
 import fetch from 'node-fetch';
 
-export async function fetchContributions(username, token) {
+export interface Repository {
+  name: string;
+  owner: {
+    login: string;
+  };
+  url: string;
+  pullRequests: {
+    totalCount: number;
+  };
+  issues: {
+    totalCount: number;
+  };
+}
+
+interface User {
+  contributionsCollection: {
+    commitContributionsByRepository: Repository[];
+  };
+}
+
+export async function fetchContributions(username: string, token: string): Promise<Repository[]> {
   const query = `
     query ($username: String!) {
       user(login: $username) {
@@ -36,19 +56,15 @@ export async function fetchContributions(username, token) {
       }
     });
 
-    const response = await octokitGraphQL(query, {
-      username
-    });
+    const response: GraphQlQueryResponseData = await octokitGraphQL(query, { username });
 
-    // Check if the response includes the expected data
     if (!response || !response.user || !response.user.contributionsCollection) {
       throw new Error('Invalid response structure received from GitHub API.');
     }
 
     return response.user.contributionsCollection.commitContributionsByRepository;
-  } catch (error) {
+  } catch (error: any) {
     console.error(`Failed to fetch contributions for user ${username}: ${error.message}`);
-    // Re-throw the error to be caught by the workflow or further error handling logic
     throw error;
   }
 }

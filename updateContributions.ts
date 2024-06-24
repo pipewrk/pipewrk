@@ -1,11 +1,12 @@
 import { readFileSync, writeFileSync } from 'fs';
 import { join, dirname } from 'path';
-import { fetchContributions } from './fetchContributions.mjs';
+import { fileURLToPath } from 'url';
+import { fetchContributions, type Repository } from './fetchContributions';
 
-async function updateReadme(username, token) {
+async function updateReadme(username: string, token: string): Promise<void> {
   const contributions = await fetchContributions(username, token);
   const contributionsSection = contributions
-    .map(({ repository }) => {
+    .map((repository: Repository)  => {
       return `- [${repository.owner.login}/${repository.name}](${repository.url}) ![Contributors](https://img.shields.io/github/contributors/${repository.owner.login}/${repository.name}) ![Pull Requests](https://img.shields.io/github/issues-pr-closed-raw/${repository.owner.login}/${repository.name})`;
     })
     .join('\n');
@@ -26,4 +27,4 @@ async function updateReadme(username, token) {
   writeFileSync(readmePath, readmeContent);
 }
 
-updateReadme('jasonnathan', process.env.GITHUB_TOKEN);
+updateReadme('jasonnathan', Bun.env.GITHUB_TOKEN);

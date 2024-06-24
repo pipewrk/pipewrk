@@ -1,0 +1,17 @@
+{
+  "name": "jasonnathan",
+  "version": "1.0.0",
+  "description": "GitHub repository for Jason Nathan's personal projects",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasonnathan/jasonnathan.git"
+  },
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

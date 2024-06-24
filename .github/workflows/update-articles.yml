@@ -5,27 +5,21 @@ on:
     types: [hashnode_post_published]
 
 jobs:
-  update-readme:
+  update-articles:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
+      - uses: actions/checkout@v2
+      - uses: oven-sh/setup-bun@v2
         with:
-          node-version: '14'
-
-      - name: Install dependencies
-        run: npm install node-fetch
-
+          bun-version: latest
+      - name: Install Dependencies
+        run: bun install
       - name: Update README
         env:
-          HASHNODE_SECRET: ${{ secrets.HASHNODE_SECRET }}
           PAYLOAD: ${{ toJson(github.event.client_payload) }}
           SIGNATURE_HEADER: ${{ github.event.client_payload.headers['x-hub-signature-256'] }}
-        run: node updateArticles.mjs
+        run: bun updateArticles.ts
 
       - name: Commit and push changes
         run: |

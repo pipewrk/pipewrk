@@ -6,24 +6,17 @@ on:
   workflow_dispatch:
 
 jobs:
-  update-readme:
+  update-contributions:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
+      - uses: actions/checkout@v2
+      - uses: oven-sh/setup-bun@v2
         with:
-          node-version: '14'
-
-      - name: Install dependencies
-        run: |
-          npm install @octokit/graphql
-          npm install node-fetch
+          bun-version: latest
+      - name: Install Dependencies
+        run: bun install
 
       - name: Update README
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: node updateContributions.mjs
+        run: bun updateContributions.ts
