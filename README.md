@@ -31,7 +31,10 @@
 <h2 align="center">👨‍💻 Open Source Contributions</h2>
 
   <!-- CONTRIBUTIONS:START -->
-  <!-- CONTRIBUTIONS:END -->
+- [langchain-ai/langchainjs](https://github.com/langchain-ai/langchainjs) 🌟 Pull Requests: 3280, Issues: 5481
+- [jeliasson/zsh-logging](https://github.com/jeliasson/zsh-logging)  Pull Requests: 4, Issues: 0
+- [seriouslyjs/NpmGitInit](https://github.com/seriouslyjs/NpmGitInit)  Pull Requests: 4, Issues: 0
+<!-- CONTRIBUTIONS:END -->
 
 <!--- stats & Trophy (start) -->
 <p align="center">
