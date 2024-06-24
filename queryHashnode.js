@@ -1,6 +1,6 @@
-const fetch = require('node-fetch');
+import fetch from 'node-fetch';
 
-async function getPostDetails(postId) {
+export async function getPostDetails(postId) {
   const query = `
     query GetPostDetails($postId: String!) {
       post(id: $postId) {
@@ -27,5 +27,3 @@ async function getPostDetails(postId) {
   const result = await response.json();
   return result.data.post;
 }
-
-module.exports = { getPostDetails };
