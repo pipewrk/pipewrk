@@ -10,7 +10,7 @@ async function updateReadme(username, token) {
     })
     .join('\n');
 
-  const readmePath = join(__dirname, 'README.md');
+  const readmePath = join(dirname(fileURLToPath(import.meta.url)), 'README.md');
   let readmeContent = readFileSync(readmePath, 'utf8');
 
   const startMarker = '<!-- CONTRIBUTIONS:START -->';
