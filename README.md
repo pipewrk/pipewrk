@@ -13,11 +13,11 @@
 <h2 align="center">Coding and Composing share much in common :)</h2>
 
 <!--Intro start-->
-- 🔭 I’m currently working on **a cross-platform P2P network with a built-in ledger for web3 trust layer implementation**
+- 🔭 I’m currently working on **a cross-platform P2P network with a built-in ledger for Web3 trust layer implementation**
 - 🌱 I’m currently learning **enhanced skills in various technical and creative domains**
 - ☁️ I've keen interest in  AI. So, I'm learning **local AI inference servers**
 - 📝 I regularly write articles on [Geekist](https://www.geekist.co)
-- 💬 Ask me about **JavaScript, TypeScript, Rust, P2P networks, web3, and AI**
+- 💬 Ask me about **JavaScript, TypeScript, Rust, P2P networks, Web3, and AI**
 - 📫 Feel free to reach me out **jjnathanjr@gmail.com**
 <!--Intro end-->
 
