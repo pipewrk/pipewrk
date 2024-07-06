@@ -31,6 +31,8 @@
 <h2 align="center">👨‍💻 Open Source Contributions</h2>
 
   <!-- CONTRIBUTIONS:START -->
+### [orbitdb/orbitdb](https://github.com/orbitdb/orbitdb) 🌟
+- [Update GETTING_STARTED.md](https://github.com/orbitdb/orbitdb/pull/1186)
 ### [langchain-ai/langchainjs](https://github.com/langchain-ai/langchainjs) 🌟
 - [docs[patch]: Fixes the build but not a long term solution](https://github.com/langchain-ai/langchainjs/pull/4361)
 - [community[minor]: Added `SQLiteRecordManager`](https://github.com/langchain-ai/langchainjs/pull/4321)
