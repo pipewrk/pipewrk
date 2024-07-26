@@ -4,21 +4,34 @@
 <!--h1 without bottom border-->
 <h1 align="center">Hi 👋, I'm J</h1>
 
-<!--- snake -->
-<div align="center">
-  <img src="https://github.com/1999AZZAR/1999AZZAR/blob/readme/resources/img/grid-snake.svg" alt="snake" />
-</div>
 
 <!--h2 without bottom border-->
 <h2 align="center">Coding and Composing share much in common :)</h2>
 
 <!--Intro start-->
-- 🔭 I’m currently working on **a cross-platform P2P network with a built-in ledger for Web3 trust layer implementation**
-- 🌱 I’m currently learning **enhanced skills in various technical and creative domains**
-- ☁️ I've keen interest in  AI. So, I'm learning **local AI inference servers**
-- 📝 I regularly write articles on [Geekist](https://www.geekist.co)
-- 💬 Ask me about **JavaScript, TypeScript, Rust, P2P networks, Web3, and AI**
-- 📫 Feel free to reach me out **jjnathanjr@gmail.com**
+<table>
+  <tr>
+    <td style="vertical-align: top;">
+      <h1>Hi 👋, I'm J</h1>
+      <h2>Coding and Composing share much in common :)</h2>
+      <ul>
+        <li> 🔭 I’m currently working on **a cross-platform P2P network with a built-in ledger for Web3 trust layer implementation**</li>
+        <li> 🌱 I’m currently learning **enhanced skills in various technical and creative domains**</li>
+        <li> ☁️ I've keen interest in AI. So, I'm learning **local AI inference servers**</li>
+        <li> 📝 I regularly write articles on [Geekist](https://www.geekist.co)</li>
+        <li> 💬 Ask me about **JavaScript, TypeScript, Rust, P2P networks, Web3, and AI**</li>
+        <li> 📫 Feel free to reach me out **jason(at)geekist.co**</li>
+      </ul>
+    </td>
+    <td style="vertical-align: top; text-align: right;">
+      <a href="https://cal.com/jason-joseph-nathan/60min">
+        <img src="https://github.com/jasonnathan/jasonnathan/blob/main/cal.com.png?version=1" alt="Cal.com Image" style="max-width: 100px;">
+      </a>
+    </td>
+  </tr>
+</table>
+
+
 <!--Intro end-->
 
 <!-- My Latest Articles -->
