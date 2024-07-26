@@ -11,21 +11,18 @@
 <!--Intro start-->
 <table>
   <tr>
-    <td style="vertical-align: top;">
-      <h1>Hi 👋, I'm J</h1>
-      <h2>Coding and Composing share much in common :)</h2>
+    <td width="65%" style="width: 65%; vertical-align: top;">
       <ul>
-        <li> 🔭 I’m currently working on **a cross-platform P2P network with a built-in ledger for Web3 trust layer implementation**</li>
-        <li> 🌱 I’m currently learning **enhanced skills in various technical and creative domains**</li>
-        <li> ☁️ I've keen interest in AI. So, I'm learning **local AI inference servers**</li>
-        <li> 📝 I regularly write articles on [Geekist](https://www.geekist.co)</li>
-        <li> 💬 Ask me about **JavaScript, TypeScript, Rust, P2P networks, Web3, and AI**</li>
-        <li> 📫 Feel free to reach me out **jason(at)geekist.co**</li>
-      </ul>
+        <li> Building X-Platform P2P network with Web3 integration (L4TL)</li>
+        <li>☁️ Exploring local AI inference servers (AI enthusiast)</li>
+        <li>✍️ Writing articles on <a href="https://www.geekist.co">Geekist</a></li>
+        <li> Talk to me about: JS, TS, Rust, P2P, Web3, AI</li>
+        <li> Reach out: <strong>jason(at)geekist.co</strong></li>
+      </ul>      
     </td>
     <td style="vertical-align: top; text-align: right;">
       <a href="https://cal.com/jason-joseph-nathan/60min">
-        <img src="https://github.com/jasonnathan/jasonnathan/blob/main/cal.com.png?version=1" alt="Cal.com Image" style="max-width: 100px;">
+        <img src="https://github.com/jasonnathan/jasonnathan/blob/main/cropped-cal.png" alt="Cal.com Image" style="object-fit: cover; width: 100%; height: 100%;">
       </a>
     </td>
   </tr>
