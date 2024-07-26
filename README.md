@@ -21,7 +21,7 @@
       </ul>      
     </td>
     <td style="vertical-align: top; text-align: right;">
-      <a href="https://cal.com/jason-joseph-nathan/60min">
+      <a href="https://cal.com/jason-joseph-nathan/60min" target="_blank">
         <img src="https://github.com/jasonnathan/jasonnathan/blob/main/cropped-cal.png" alt="Cal.com Image" style="object-fit: cover; width: 100%; height: 100%;">
       </a>
     </td>
