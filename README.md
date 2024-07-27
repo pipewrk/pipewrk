@@ -6,7 +6,7 @@
 
 
 <!--h2 without bottom border-->
-<h2 align="center">Coding and Composing share much in common :)</h2>
+<h2 align="center" style=" border-bottom: none;">Coding and Composing share much in common :)</h2>
 
 <!--Intro start-->
 <table>
