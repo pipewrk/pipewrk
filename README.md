@@ -52,9 +52,9 @@
 <!-- My Bio -->
 <h2 align="center">About Me</h2>
 <p align="center">
-  Detail-oriented professional with over fifteen years of experience in Web and Mobile Engineering. Passionate about engineering, mentoring, analytics, and product research.<br>
-  Known for an outgoing personality and exceptional communication skills, I connect effortlessly with diverse audiences. Committed to self-training and excelling beyond conventional qualifications, I thrive on exploring innovative ideas and concepts.<br>
-  A captivating presenter and valuable team asset, I lead with charisma and vision, inspiring and nurturing teams to achieve outstanding results.
+Detail-oriented professional with over fifteen years of experience in Web and Mobile Engineering. Passionate about engineering, mentoring, writing, and product research.
+Known for an outgoing personality and exceptional communication skills with the ability to connect effortlessly with diverse audiences. Committed to self-training and excelling beyond conventional qualifications and thrives on exploring innovative ideas and concepts.
+A captivating presenter and valuable team asset that leads with charisma and vision, inspiring and nurturing teams to achieve outstanding results.
 </p>
 
 <!-- My Latest Articles -->
