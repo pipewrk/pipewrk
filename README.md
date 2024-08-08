@@ -80,6 +80,8 @@ A captivating presenter and valuable team asset that leads with charisma and vis
 - [Feature/better-readme](https://github.com/seriouslyjs/NpmGitInit/pull/3)
 - [Update branch references in installation script and README](https://github.com/seriouslyjs/NpmGitInit/pull/2)
 - [feature: Introduce node initialization script, aliases, and documentation](https://github.com/seriouslyjs/NpmGitInit/pull/1)
+### [transformerlab/transformerlab-app](https://github.com/transformerlab/transformerlab-app) 🌟
+- [Running an mlx_server on an imported mlx model fails](https://github.com/transformerlab/transformerlab-app/issues/140)
 <!-- CONTRIBUTIONS:END -->
 <!-- Stats & Trophy (start) -->
 <p align="center">
