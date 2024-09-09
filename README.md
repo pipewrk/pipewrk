@@ -64,6 +64,11 @@ A captivating presenter and valuable team asset that leads with charisma and vis
 <h2 align="center">👨‍💻 Open Source Contributions</h2>
 
   <!-- CONTRIBUTIONS:START -->
+### [weaviate/Verba](https://github.com/weaviate/Verba) 🌟
+- [Created an OpenAPI spec document](https://github.com/weaviate/Verba/pull/276)
+- [Contributing an OpenAPI spec document](https://github.com/weaviate/Verba/issues/275)
+### [jasonnathan/Verba](https://github.com/jasonnathan/Verba)
+- [#275 Created openapi.json](https://github.com/jasonnathan/Verba/pull/1)
 ### [orbitdb/orbitdb](https://github.com/orbitdb/orbitdb) 🌟
 - [Update GETTING_STARTED.md](https://github.com/orbitdb/orbitdb/pull/1186)
 ### [langchain-ai/langchainjs](https://github.com/langchain-ai/langchainjs) 🌟
