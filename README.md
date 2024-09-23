@@ -64,6 +64,9 @@ A captivating presenter and valuable team asset that leads with charisma and vis
 <h2 align="center">👨‍💻 Open Source Contributions</h2>
 
   <!-- CONTRIBUTIONS:START -->
+### [rossrobino/robino](https://github.com/rossrobino/robino) 🌟
+- [Add Support for Custom Language Grammars in processMarkdown (Fixes #11)](https://github.com/rossrobino/robino/pull/12)
+- [Add Support for Custom Language Grammars in processMarkdown](https://github.com/rossrobino/robino/issues/11)
 ### [weaviate/Verba](https://github.com/weaviate/Verba) 🌟
 - [Created an OpenAPI spec document](https://github.com/weaviate/Verba/pull/276)
 - [Contributing an OpenAPI spec document](https://github.com/weaviate/Verba/issues/275)
