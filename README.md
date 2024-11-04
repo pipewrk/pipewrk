@@ -64,6 +64,8 @@ A captivating presenter and valuable team asset that leads with charisma and vis
 <h2 align="center">👨‍💻 Open Source Contributions</h2>
 
   <!-- CONTRIBUTIONS:START -->
+### [run-llama/llama_index](https://github.com/run-llama/llama_index) 🌟
+- [ChatGPT Conversations Reader](https://github.com/run-llama/llama_index/pull/16801)
 ### [rossrobino/robino](https://github.com/rossrobino/robino) 🌟
 - [Add Support for Custom Language Grammars in processMarkdown (Fixes #11)](https://github.com/rossrobino/robino/pull/12)
 - [Add Support for Custom Language Grammars in processMarkdown](https://github.com/rossrobino/robino/issues/11)
