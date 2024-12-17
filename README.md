@@ -85,11 +85,6 @@ A captivating presenter and valuable team asset that leads with charisma and vis
 - [Bug in documentation usage of<CodeOutputBlock> instead of <CodeBlock>](https://github.com/langchain-ai/langchainjs/issues/4318)
 ### [jeliasson/zsh-logging](https://github.com/jeliasson/zsh-logging)
 - [Maybe use ANSI escape codes with printf to apply colors only to the terminal?](https://github.com/jeliasson/zsh-logging/pull/1)
-### [seriouslyjs/NpmGitInit](https://github.com/seriouslyjs/NpmGitInit)
-- [Bug/fixed git urls](https://github.com/seriouslyjs/NpmGitInit/pull/4)
-- [Feature/better-readme](https://github.com/seriouslyjs/NpmGitInit/pull/3)
-- [Update branch references in installation script and README](https://github.com/seriouslyjs/NpmGitInit/pull/2)
-- [feature: Introduce node initialization script, aliases, and documentation](https://github.com/seriouslyjs/NpmGitInit/pull/1)
 ### [transformerlab/transformerlab-app](https://github.com/transformerlab/transformerlab-app) 🌟
 - [Running an mlx_server on an imported mlx model fails](https://github.com/transformerlab/transformerlab-app/issues/140)
 <!-- CONTRIBUTIONS:END -->
