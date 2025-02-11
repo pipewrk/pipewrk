@@ -76,15 +76,6 @@ A captivating presenter and valuable team asset that leads with charisma and vis
 - [#275 Created openapi.json](https://github.com/jasonnathan/Verba/pull/1)
 ### [orbitdb/orbitdb](https://github.com/orbitdb/orbitdb) 🌟
 - [Update GETTING_STARTED.md](https://github.com/orbitdb/orbitdb/pull/1186)
-### [langchain-ai/langchainjs](https://github.com/langchain-ai/langchainjs) 🌟
-- [docs[patch]: Fixes the build but not a long term solution](https://github.com/langchain-ai/langchainjs/pull/4361)
-- [community[minor]: Added `SQLiteRecordManager`](https://github.com/langchain-ai/langchainjs/pull/4321)
-- [Updated debugging.mdx](https://github.com/langchain-ai/langchainjs/pull/4319)
-- [Syntax error in human_in_the_loop.mdx after quatro processing](https://github.com/langchain-ai/langchainjs/issues/4360)
-- [[Feature Request] Done: Implement SQLite RecordManager](https://github.com/langchain-ai/langchainjs/issues/4320)
-- [Bug in documentation usage of<CodeOutputBlock> instead of <CodeBlock>](https://github.com/langchain-ai/langchainjs/issues/4318)
-### [jeliasson/zsh-logging](https://github.com/jeliasson/zsh-logging)
-- [Maybe use ANSI escape codes with printf to apply colors only to the terminal?](https://github.com/jeliasson/zsh-logging/pull/1)
 ### [transformerlab/transformerlab-app](https://github.com/transformerlab/transformerlab-app) 🌟
 - [Running an mlx_server on an imported mlx model fails](https://github.com/transformerlab/transformerlab-app/issues/140)
 <!-- CONTRIBUTIONS:END -->
