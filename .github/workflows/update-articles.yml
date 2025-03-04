@@ -1,34 +1,25 @@
-name: Update GitHub Profile with Hashnode Post
+name: "📚 Blog Updater"
 
 on:
-  repository_dispatch:
-    types: [hashnode_post_published]
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *' # Runs every day at midnight UTC
 
 jobs:
-  update-articles:
+  update_blogs:
+    name: "Update Blogs"
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.GH_PAT }}      
-      - uses: oven-sh/setup-bun@v2
-        with:
-          bun-version: latest
-      - name: Install Dependencies
-        run: bun install
-      - name: Update README
-        env:
-          PAYLOAD: ${{ toJson(github.event.client_payload) }}
-          SIGNATURE_HEADER: ${{ github.event.client_payload.headers['x-hub-signature-256'] }}
-        run: bun updateArticles.ts
+      - name: "📥 Fetch Repository Contents"
+        uses: actions/checkout@main
 
-      - name: Commit and push changes
+      - name: "📚 Hashnode Updater"
+        uses: "varunsridharan/action-hashnode-blog@main"
+        with:
+          USERNAME: 'jasonnathan'  # Your Hashnode Username
+          BLOG_URL: 'https://geekist.co'  # Explicitly set your blog URL
+          COUNT: 5  # Number of latest posts
+          STYLE: "blog-right"  # Change this to another style if needed
+          FILE: "README.md"  # Updates your GitHub profile README
         env:
-          PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_PAT }}
-        run: |
-          git config --global user.name 'Jason Nathan'
-          git config --global user.email 'jjnathanjr@gmail.com'
-          git add README.md
-          git commit -m "Update README with new Hashnode post" || echo "No changes to commit"
-          git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/${{ github.repository }}.git HEAD:main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
