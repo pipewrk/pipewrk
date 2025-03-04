@@ -16,7 +16,7 @@ jobs:
       - name: "📚 Hashnode Updater"
         uses: "varunsridharan/action-hashnode-blog@main"
         with:
-          USERNAME: 'jasonnathan'  # Your Hashnode Username
+          USERNAME: 'jasonjnathan'  # Your Hashnode Username
           BLOG_URL: 'https://geekist.co'  # Explicitly set your blog URL
           COUNT: 5  # Number of latest posts
           STYLE: "blog-right"  # Change this to another style if needed
