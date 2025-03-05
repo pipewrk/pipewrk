@@ -57,6 +57,49 @@ A captivating presenter and valuable team asset that leads with charisma and vis
 <!-- My Latest Articles -->
 <h2 align="center">📚 My Latest Articles</h2>
 <!-- HASHNODE_BLOG:START -->
+<p align="left">
+  <a href="https://geekist.co/sync-your-music-and-visuals-together-to-captivate-your-audience" title="Sync Your Music and Visuals Together to Captivate Your Audience">
+    <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1739011386940/8dcb2554-8104-4ea9-b7c0-e56d3b947f12.webp" alt="Sync Your Music and Visuals Together to Captivate Your Audience" width="250px" align="right" />
+  </a>
+  <a href="https://geekist.co/sync-your-music-and-visuals-together-to-captivate-your-audience" title="Sync Your Music and Visuals Together to Captivate Your Audience">
+    <strong>Sync Your Music and Visuals Together to Captivate Your Audience</strong>
+  </a>
+  <div><strong>9 Feb 2025</strong> | <strong>27 Feb 2025</strong></div>
+  <br/> Sync your visuals & music like a pro! Discover the psychology behind perfect timing and a simple BPM calculator to help you create seamless, engaging vids. 
+</p> <br/> <br/>
+
+<p align="left">
+  <a href="https://geekist.co/how-to-stay-on-beat-and-out-of-bars-musically-speaking" title="How to Stay on Beat and Out of Bars (Musically Speaking)">
+    <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1736515984749/5e66af15-cb68-41ae-8b8d-afe66f2c77a9.webp" alt="How to Stay on Beat and Out of Bars (Musically Speaking)" width="250px" align="right" />
+  </a>
+  <a href="https://geekist.co/how-to-stay-on-beat-and-out-of-bars-musically-speaking" title="How to Stay on Beat and Out of Bars (Musically Speaking)">
+    <strong>How to Stay on Beat and Out of Bars (Musically Speaking)</strong>
+  </a>
+  <div><strong>2 Jan 2025</strong></div>
+  <br/> Discover how bars and time signatures shape music, from waltzes to pop anthems. Learn why they matter for rhythm and emotional impact.
+</p> <br/> <br/>
+
+<p align="left">
+  <a href="https://geekist.co/wordpress-mvc-plugin-reboot-2024" title="WordPress MVC Plugin Reboot 2024">
+    <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1735305601760/7528dac8-691d-4ceb-b9a4-d09bd0a8d436.png" alt="WordPress MVC Plugin Reboot 2024" width="250px" align="right" />
+  </a>
+  <a href="https://geekist.co/wordpress-mvc-plugin-reboot-2024" title="WordPress MVC Plugin Reboot 2024">
+    <strong>WordPress MVC Plugin Reboot 2024</strong>
+  </a>
+  <div><strong>25 Dec 2024</strong> | <strong>3 Jan 2025</strong></div>
+  <br/> Revamping a 2010 WordPress MVC Router for 2024: Discover how a lightweight, custom plugin router remains relevant today with middleware, auth, and more.
+</p> <br/> <br/>
+
+<p align="left">
+  <a href="https://geekist.co/the-art-of-proxying" title="The Art of Proxying">
+    <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1734915366586/83e27721-98ea-4e67-a819-9a8971b03682.png" alt="The Art of Proxying" width="250px" align="right" />
+  </a>
+  <a href="https://geekist.co/the-art-of-proxying" title="The Art of Proxying">
+    <strong>The Art of Proxying</strong>
+  </a>
+  <div><strong>23 Dec 2024</strong></div>
+  <br/> Unlock Nginx's full potential! Explore advanced reverse proxy use cases like WebSockets, gRPC, Layer 7 load balancing, and more.
+</p> <br/> <br/>
 <!-- HASHNODE_BLOG:END -->
 
 <!-- My Open Source Contributions -->
