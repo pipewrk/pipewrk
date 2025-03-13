@@ -42,7 +42,7 @@ jobs:
           # Clone the GitHub Pages repo directly
           git clone --depth=1 https://github.com/jasonnathan/jasonnathan.github.io.git gh-pages
           cd gh-pages          
-          git switch master
+          git switch gh-pages
           
           # Move updated index.html
           cp ../index.html ./
