@@ -2,26 +2,36 @@ name: Update README with Contributions
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Runs daily at midnight
+    - cron: '0 2 * * *' # Runs daily at 2 AM UTC
   workflow_dispatch:
 
 jobs:
   update-contributions:
     runs-on: ubuntu-latest
-    permissions:                # Job-level permissions configuration starts here
-      contents: write       
+    permissions:
+      contents: write
     steps:
-      - uses: actions/checkout@v2
-      - uses: oven-sh/setup-bun@v2
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
+
       - name: Install Dependencies
         run: bun install
 
-      - name: Update README
+      - name: Update GitHub Contributions in README
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: bun updateContributions.ts
+        run: bun updateGH.ts
+
+      - name: Update Stack Overflow Contributions in README
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bun updateSO.ts
+
       - name: Commit and push changes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

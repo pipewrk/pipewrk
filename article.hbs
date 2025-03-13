@@ -1,0 +1,26 @@
+{{#each posts}}
+  <p align="left">
+    <a
+      href="{{url}}"
+      title="{{title}}"
+    >
+      <img
+        src="{{coverImage.url}}"
+        alt="{{title}}"
+        width="150px"
+        align="right"
+      />
+    </a>
+    <a
+      href="{{url}}"
+      title="{{title}}"
+    >
+      <strong>Sync Your Music and Visuals Together to Captivate Your Audience</strong>
+    </a>
+    <div><strong>{{publishedAt}}</strong>
+    <br />
+    {{seo.description}}
+  </p>
+  <br />
+  <br />
+{{/each}}

@@ -1,0 +1,210 @@
+created: 2025-03-13T11:29:20.258776+00:00
+updated: 2025-03-13T11:29:20.258776+00:00
+generated_comments: |-
+  Snapshot generated from folder: ".skeletorrc"
+  No binary files detected.
+stats:
+  files: 17
+  directories: 2
+directories:
+  fetchSO.ts: "const STACK_OVERFLOW_USER_ID = '382536';\nconst API_BASE = `https://api.stackexchange.com/2.3/users/${STACK_OVERFLOW_USER_ID}`;\nconst DEFAULT_PARAMS = `order=desc&site=stackoverflow`;\n\n// API Endpoints\nconst ENDPOINTS = {\n  reputation: `${API_BASE}?${DEFAULT_PARAMS}&sort=reputation`,\n  answers: `${API_BASE}/answers?${DEFAULT_PARAMS}&filter=withbody&sort=activity`,\n  badges: `${API_BASE}/badges?${DEFAULT_PARAMS}&sort=rank`,\n  topTags: `${API_BASE}/top-tags?site=stackoverflow`,\n};\n\n/** \n * 🏆 Reputation Data\n */\nexport interface ReputationResponse {\n  reputation: number;\n  badge_counts: {\n    gold: number;\n    silver: number;\n    bronze: number;\n  };\n}\n\n/** \n * 💬 StackOverflow Answer Data \n */\nexport interface Answer {\n  answer_id: number;\n  question_id: number;\n  score: number;\n  is_accepted: boolean;\n  link: string;\n  last_activity_date: number;\n  creation_date: number;\n}\n\n/** \n * 🏅 Badge Data\n */\nexport interface Badge {\n  name: string;\n  rank: \"gold\" | \"silver\" | \"bronze\";\n  award_count: number;\n  link: string;\n}\n\n/** \n * 🏷 Top Tags Data\n */\nexport interface Tag {\n  tag_name: string;\n  answer_count: number;\n  answer_score: number;\n  question_count: number;\n  question_score: number;\n}\n\n\n/**\n * Fetch data from Stack Overflow API with retries.\n */\nconst fetchStackExchangeData = <T>(url: string) => async (): Promise<T | null> => {\n  try {\n    console.log(`Fetching: ${url}`);\n    const response = await fetch(url);\n\n    if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);\n\n    const data = await response.json() as unknown as { items: T };\n    return data.items || null;\n  } catch (error) {\n    console.error(`Error fetching data from ${url}:`, error);\n    return null;\n  }\n}\n\n// Fetching Different StackOverflow Data\nexport const fetchReputation = fetchStackExchangeData<ReputationResponse>(ENDPOINTS.reputation);\nexport const fetchStackOverflowAnswers = fetchStackExchangeData<Answer[]>(ENDPOINTS.answers);\nexport const fetchStackOverflowBadges = fetchStackExchangeData<Badge[]>(ENDPOINTS.badges);\nexport const fetchTopTags = fetchStackExchangeData<Tag[]>(ENDPOINTS.topTags);\n\n/**\n * Aggregate all SO data.\n */\nexport async function getStackOverflowData() {\n  const [reputation, answers, badges, topTags] = await Promise.all([\n    fetchReputation(),\n    fetchStackOverflowAnswers(),\n    fetchStackOverflowBadges(),\n    fetchTopTags(),\n  ]);\n\n  return { reputation, answers, badges, topTags, impact: \"~2.3m\" };\n}"
+  types.d.ts: |-
+    declare module "bun" {
+      interface Env {
+        GITHUB_TOKEN: string;
+        PAYLOAD: string
+        SIGNATURE_HEADER: string
+      }
+    }
+  article.hbs: |-
+    {{#each posts}}
+      <p align="left">
+        <a
+          href="{{url}}"
+          title="{{title}}"
+        >
+          <img
+            src="{{coverImage.url}}"
+            alt="{{title}}"
+            width="150px"
+            align="right"
+          />
+        </a>
+        <a
+          href="{{url}}"
+          title="{{title}}"
+        >
+          <strong>Sync Your Music and Visuals Together to Captivate Your Audience</strong>
+        </a>
+        <div><strong>{{publishedAt}}</strong>
+        <br />
+        {{seo.description}}
+      </p>
+      <br />
+      <br />
+    {{/each}}
+  utils.ts: "import { readFileSync, writeFileSync } from 'fs';\nimport { join, dirname } from 'path';\nimport { fileURLToPath } from 'url';\n\n/**\n * Updates a section of the README file between the specified markers.\n *\n * @param {string} markerStart - The start marker to look for in the README.\n * @param {string} markerEnd - The end marker to look for in the README.\n * @param {string} content - The content to insert between the markers.\n * @param {boolean} append - Whether to append to the existing content.\n */\nexport function updateReadmeSection(markerStart: string, markerEnd: string, content: string, append: boolean = false): void {\n  const readmePath = join(dirname(fileURLToPath(import.meta.url)), 'README.md');\n  let readmeContent = readFileSync(readmePath, 'utf8');\n\n  const startIndex = readmeContent.indexOf(markerStart) + markerStart.length;\n  const endIndex = readmeContent.indexOf(markerEnd);\n\n  if (append) {\n    const beforeContent = readmeContent.substring(0, startIndex);\n    const afterContent = readmeContent.substring(endIndex);\n    readmeContent = beforeContent + `\\n${content}\\n` + afterContent;\n  } else {\n    readmeContent = \n      readmeContent.substring(0, startIndex) +\n      `\\n${content}\\n` +\n      readmeContent.substring(endIndex);\n  }\n\n  writeFileSync(readmePath, readmeContent);\n  console.log('README updated successfully.');\n}\n"
+  updateSO.ts: "import { getStackOverflowData } from \"./fetchSO\";\nimport { updateReadmeSection } from \"./utils\";\n\nasync function updateReadme(username: string, token: string): Promise<void> {\n  try {\n    const { reputation, answers, badges, topTags, impact } = await getStackOverflowData();\n\n    // ✅ Ensure answers exist & fetch titles using question_id\n    const answersSection = (answers ?? [])\n      .slice(0, 5)\n      .map(({ score, question_id }) => `- **${score} upvotes** → [View Answer](https://stackoverflow.com/a/${question_id})`)\n      .join(\"\\n\") || \"No answers available.\";\n\n    // ✅ Fix property names for tags\n    const topTagsSection = (topTags ?? [])\n      .slice(0, 5)\n      .map(({ tag_name, answer_score, answer_count }) => `- **${tag_name}** → ${answer_count} answers (**${answer_score} score**)`)\n      .join(\"\\n\") || \"No tag data available.\";\n\n    // ✅ Fix badge properties\n    const gold = badges?.filter((b) => b.rank === \"gold\").length ?? 0;\n    const silver = badges?.filter((b) => b.rank === \"silver\").length ?? 0;\n    const bronze = badges?.filter((b) => b.rank === \"bronze\").length ?? 0;\n\n    const badgesSection = `🏅 **Badges:** ${gold} Gold | ${silver} Silver | ${bronze} Bronze`;\n\n    // ✅ Fix Impact Section\n    const impactSection = `👀 **Impact:** ${impact ?? \"Unknown\"} people reached`;\n\n    // ✅ Fix Reputation Handling\n    const reputationScore = reputation?.reputation ?? \"Unknown\";\n\n    // ✅ Final README Content\n    const stackOverflowSection = `\n### Stack Overflow Contributions\nI've helped **~${impact ?? \"Unknown\"} developers** on Stack Overflow, earning **${reputationScore} reputation**.\n\n🏆 **Top Answers**\n${answersSection}\n\n🏷 **Top Tags**\n${topTagsSection}\n\n${badgesSection}  \n${impactSection}  \n\n🔗 **[View Full Profile](https://stackoverflow.com/users/382536/jason-joseph-nathan?tab=profile)**\n`;\n\n    updateReadmeSection(\n      \"<!-- STACKOVERFLOW:START -->\",\n      \"<!-- STACKOVERFLOW:END -->\",\n      stackOverflowSection\n    );\n\n  } catch (error) {\n    console.error(\"Failed to update README:\", error);\n  }\n}\n\nupdateReadme(\"jasonnathan\", Bun.env.GITHUB_TOKEN);\n"
+  README.md: "<h1 align=\"center\">Hi 👋, I'm J</h1>\n\n<!--h2 without bottom border-->\n<h2 align=\"center\" style=\"border-bottom: none;\">Coding and Composing share much in common :)</h2>\n\n<!-- Connect with Me -->\n<h2 align=\"center\">Connect With Me🤝</h2>\n<p align=\"center\">\n  <a href=\"https://www.linkedin.com/in/jasonnathan/\" target=\"blank\">\n    <img src=\"https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white\" alt=\"LinkedIn\" />\n  </a>\n  <a href=\"https://x.com/jason_nathan\" target=\"blank\">\n    <img src=\"https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white\" alt=\"Twitter\" />\n  </a> \n  <a href=\"https://stackoverflow.com/users/382536/jason-j-nathan\" target=\"blank\">\n    <img src=\"https://img.shields.io/badge/Stack%20Overflow-F58025?style=for-the-badge&logo=stack-overflow&logoColor=white\" alt=\"Stack Overflow\" />\n  </a>\n  <a href=\"https://geekist.co\" target=\"blank\">\n    <img src=\"https://img.shields.io/badge/Blog-21759B?style=for-the-badge&logo=blogger&logoColor=white\" alt=\"Blog\" />\n  </a>\n  <a href=\"https://meetme.geekist.co\" target=\"blank\">\n    <img src=\"https://img.shields.io/badge/Calendar-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white\" alt=\"Calendar\" />\n  </a>\n</p>\n\n<!--h2 without bottom border-->\n<h4 align=\"center\">Coding and Composing share much in common :)</h4>\n\n<!-- My Latest Articles -->\n<h2 align=\"center\">📚 My Latest Articles</h2>\n  <!-- ARTICLES:START -->\n  <p align=\"left\">\n    <a\n      href=\"https://www.geekist.co/your-tech-stack-doesnt-matter-as-much-as-you-think\"\n      title=\"Why Your Tech Stack is Overrated (And What Actually Matters)\"\n    >\n      <img\n        src=\"https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/zEqkUMiMxMI/upload/ec2ea0347850d74c5afde9fcdec230d5.jpeg\"\n        alt=\"Why Your Tech Stack is Overrated (And What Actually Matters)\"\n        width=\"150px\"\n        align=\"right\"\n      />\n    </a>\n    <a\n      href=\"https://www.geekist.co/your-tech-stack-doesnt-matter-as-much-as-you-think\"\n      title=\"Why Your Tech Stack is Overrated (And What Actually Matters)\"\n    >\n      <strong>Sync Your Music and Visuals Together to Captivate Your Audience</strong>\n    </a>\n    <div><strong>Invalid Date</strong>\n    <br />\n    The real challenge in 2025 isn’t React Native vs. Native, it’s building software that lasts. Here’s what truly matters for future-proof development.\n  </p>\n  <br />\n  <br />\n  <p align=\"left\">\n    <a\n      href=\"https://www.geekist.co/sync-your-music-and-visuals-together-to-captivate-your-audience\"\n      title=\"Sync Your Music and Visuals Together to Captivate Your Audience\"\n    >\n      <img\n        src=\"https://cdn.hashnode.com/res/hashnode/image/upload/v1739011386940/8dcb2554-8104-4ea9-b7c0-e56d3b947f12.webp\"\n        alt=\"Sync Your Music and Visuals Together to Captivate Your Audience\"\n        width=\"150px\"\n        align=\"right\"\n      />\n    </a>\n    <a\n      href=\"https://www.geekist.co/sync-your-music-and-visuals-together-to-captivate-your-audience\"\n      title=\"Sync Your Music and Visuals Together to Captivate Your Audience\"\n    >\n      <strong>Sync Your Music and Visuals Together to Captivate Your Audience</strong>\n    </a>\n    <div><strong>Invalid Date</strong>\n    <br />\n    A breakdown of how precise timing between music and visuals enhances engagement, with a simple BPM calculator to keep everything in sync.\n  </p>\n  <br />\n  <br />\n  <p align=\"left\">\n    <a\n      href=\"https://www.geekist.co/how-to-stay-on-beat-and-out-of-bars-musically-speaking\"\n      title=\"How to Stay on Beat and Out of Bars (Musically Speaking)\"\n    >\n      <img\n        src=\"https://cdn.hashnode.com/res/hashnode/image/upload/v1736515984749/5e66af15-cb68-41ae-8b8d-afe66f2c77a9.webp\"\n        alt=\"How to Stay on Beat and Out of Bars (Musically Speaking)\"\n        width=\"150px\"\n        align=\"right\"\n      />\n    </a>\n    <a\n      href=\"https://www.geekist.co/how-to-stay-on-beat-and-out-of-bars-musically-speaking\"\n      title=\"How to Stay on Beat and Out of Bars (Musically Speaking)\"\n    >\n      <strong>Sync Your Music and Visuals Together to Captivate Your Audience</strong>\n    </a>\n    <div><strong>Invalid Date</strong>\n    <br />\n    An overview of bars, beats, and time signatures in music, explaining why certain rhythms feel natural and how they structure everything from classical piece\n  </p>\n  <br />\n  <br />\n  <p align=\"left\">\n    <a\n      href=\"https://www.geekist.co/wordpress-mvc-plugin-reboot-2024\"\n      title=\"Wordpress MVC Plugin Reboot 2024\"\n    >\n      <img\n        src=\"https://cdn.hashnode.com/res/hashnode/image/upload/v1735305601760/7528dac8-691d-4ceb-b9a4-d09bd0a8d436.png\"\n        alt=\"Wordpress MVC Plugin Reboot 2024\"\n        width=\"150px\"\n        align=\"right\"\n      />\n    </a>\n    <a\n      href=\"https://www.geekist.co/wordpress-mvc-plugin-reboot-2024\"\n      title=\"Wordpress MVC Plugin Reboot 2024\"\n    >\n      <strong>Sync Your Music and Visuals Together to Captivate Your Audience</strong>\n    </a>\n    <div><strong>Invalid Date</strong>\n    <br />\n    Revisiting a custom WordPress MVC router from 2010, with insights on how it still holds up in 2024 and where modern middleware fits in.\n  </p>\n  <br />\n  <br />\n  <p align=\"left\">\n    <a\n      href=\"https://www.geekist.co/the-tool-that-made-css-magical\"\n      title=\"The Tool that made CSS Magical...\"\n    >\n      <img\n        src=\"https://cdn.hashnode.com/res/hashnode/image/upload/v1735310366695/b4061265-51c6-446f-afb5-3b9687ffe79c.webp\"\n        alt=\"The Tool that made CSS Magical...\"\n        width=\"150px\"\n        align=\"right\"\n      />\n    </a>\n    <a\n      href=\"https://www.geekist.co/the-tool-that-made-css-magical\"\n      title=\"The Tool that made CSS Magical...\"\n    >\n      <strong>Sync Your Music and Visuals Together to Captivate Your Audience</strong>\n    </a>\n    <div><strong>Invalid Date</strong>\n    <br />\n    A look back at Stylizer, a visual CSS editor that once made live styling intuitive, before frameworks took over and it faded into obscurity.\n  </p>\n  <br />\n  <br />\n\n<!-- ARTICLES:END -->\n\n<!-- My Open Source Contributions -->\n<h2 align=\"center\">👨‍💻 Open Source Contributions</h2>\n\n  <!-- CONTRIBUTIONS:START -->\n### [run-llama/llama_index](https://github.com/run-llama/llama_index) 🌟\n- [ChatGPT Conversations Reader](https://github.com/run-llama/llama_index/pull/16801)\n### [rossrobino/robino](https://github.com/rossrobino/robino) 🌟\n- [Add Support for Custom Language Grammars in processMarkdown (Fixes #11)](https://github.com/rossrobino/robino/pull/12)\n- [Add Support for Custom Language Grammars in processMarkdown](https://github.com/rossrobino/robino/issues/11)\n### [weaviate/Verba](https://github.com/weaviate/Verba) 🌟\n- [Created an OpenAPI spec document](https://github.com/weaviate/Verba/pull/276)\n- [Contributing an OpenAPI spec document](https://github.com/weaviate/Verba/issues/275)\n### [jasonnathan/Verba](https://github.com/jasonnathan/Verba) 🌟\n- [#275 Created openapi.json](https://github.com/jasonnathan/Verba/pull/1)\n### [orbitdb/orbitdb](https://github.com/orbitdb/orbitdb) 🌟\n- [Update GETTING_STARTED.md](https://github.com/orbitdb/orbitdb/pull/1186)\n### [transformerlab/transformerlab-app](https://github.com/transformerlab/transformerlab-app) 🌟\n- [Running an mlx_server on an imported mlx model fails](https://github.com/transformerlab/transformerlab-app/issues/140)\n<!-- CONTRIBUTIONS:END -->\n\n<!-- My Open Source Contributions -->\n<h2 align=\"center\">👨‍💻 StockOverflow Contributions</h2>\n\n  <!-- STACKOVERFLOW:START -->\n\n### Stack Overflow Contributions\nI've helped **~~2.3m developers** on Stack Overflow, earning **Unknown reputation**.\n\n🏆 **Top Answers**\n- **1 upvotes** → [View Answer](https://stackoverflow.com/a/41843138)\n- **64 upvotes** → [View Answer](https://stackoverflow.com/a/1069666)\n- **582 upvotes** → [View Answer](https://stackoverflow.com/a/3971841)\n- **9 upvotes** → [View Answer](https://stackoverflow.com/a/170624)\n- **1 upvotes** → [View Answer](https://stackoverflow.com/a/3467643)\n\n🏷 **Top Tags**\n- **javascript** → 13 answers (**675 score**)\n- **jquery** → 9 answers (**608 score**)\n- **resize** → 1 answers (**582 score**)\n- **image** → 1 answers (**582 score**)\n- **sorting** → 1 answers (**64 score**)\n\n🏅 **Badges:** 0 Gold | 6 Silver | 24 Bronze  \n👀 **Impact:** ~2.3m people reached  \n\n🔗 **[View Full Profile](https://stackoverflow.com/users/382536/jason-joseph-nathan?tab=profile)**\n\n<!-- STACKOVERFLOW:END -->\n\n<!--- stats & Trophy (start) -->\n<p align=\"center\">\n  <table align=\"center\">\n    <tr border=\"none\">\n      <td width=\"50%\" align=\"center\">\n        <img align=\"center\" src=\"https://github-readme-stats.vercel.app/api?username=jasonnathan&theme=dark&show_icons=true&count_private=true\" />\n        <br></br>\n        <img title=\"🔥 Get streak stats for your profile at git.io/streak-stats\" alt=\"Mark streak\" src=\"https://github-readme-streak-stats.herokuapp.com/?user=jasonnathan&theme=dark&hide_border=false\" />\n      </td>\n      <td width=\"50%\" align=\"center\">\n        <img align=\"center\" src=\"https://github-readme-stats.anuraghazra1.vercel.app/api/top-langs/?username=jasonnathan&theme=dark&hide_border=false&no-bg=true&no-frame=true&langs_count=10\"/>\n      </td>\n    </tr>\n  </table>\n</p>\n\n<!--- trophy (start) -->\n<div align=\"center\">\n  <a href=\"https://github.com/ryo-ma/github-profile-trophy\" title=\"Go to Source\">\n    <img align=\"center\" width=\"84%\" src=\"https://github-profile-trophy.vercel.app/?username=jasonnathan&theme=radical&row=1&column=7&margin-h=15&margin-w=5&no-bg=true\" alt=\"TROPHY\" />\n  </a>\n</div>\n<!--- trophy (end) -->\n\n<!--horizontal divider(gradiant)-->\n<img src=\"https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif\">\n"
+  updateGH.ts: "import { fetchContributions, type Contribution } from './fetchGH';\nimport { updateReadmeSection } from './utils';\n\ninterface GroupedContributions {\n  [key: string]: Contribution[];\n}\n\nasync function updateReadme(username: string, token: string): Promise<void> {\n  try {\n    const contributions = await fetchContributions(username, token);\n\n    // Group contributions by repository\n    const groupedContributions: GroupedContributions = contributions.reduce((acc, contribution) => {\n      const repoKey = `${contribution.repository.owner.login}/${contribution.repository.name}`;\n      if (!acc[repoKey]) {\n        acc[repoKey] = [];\n      }\n      acc[repoKey].push(contribution);\n      return acc;\n    }, {} as GroupedContributions);\n\n    // Format the contributions section\n    const contributionsSection = Object.entries(groupedContributions).map(([repoKey, repoContributions]) => {\n      const repoUrl = repoContributions[0].repository.url;\n      const significantMarker = repoContributions.some(contribution =>\n        (contribution.repository.pullRequests?.totalCount ?? 0) > 5 ||\n        (contribution.repository.issues?.totalCount ?? 0) > 10\n      ) ? ' 🌟' : '';\n      const contributionsList = repoContributions.map(contribution => {\n        return `- [${contribution.title}](${contribution.url})`;\n      }).join('\\n');\n\n      return `### [${repoKey}](${repoUrl})${significantMarker}\\n${contributionsList}`;\n    }).join('\\n');\n\n    if (!contributionsSection) {\n      console.log(\"No contributions found.\");\n      return;\n    }\n    updateReadmeSection(\n      \"<!-- CONTRIBUTIONS:START -->\",\n      \"<!-- CONTRIBUTIONS:END -->\",\n      contributionsSection\n    );    \n  } catch (error) {\n    console.error('Failed to update README:', error);\n  }\n}\n\nupdateReadme('jasonnathan', Bun.env.GITHUB_TOKEN); // Ensure your environment variable is correctly configured\n"
+  package.json: |
+    {
+      "name": "jasonnathan",
+      "version": "1.0.3",
+      "description": "Jason Nathan's GH profile",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jasonnathan/jasonnathan.git"
+      },
+      "module": "index.ts",
+      "type": "module",
+      "devDependencies": {
+        "@types/bun": "latest"
+      },
+      "peerDependencies": {
+        "typescript": "^5.0.0"
+      },
+      "dependencies": {
+        "@octokit/graphql": "^8.1.1",
+        "handlebars": "^4.7.8"
+      }
+    }
+  .github:
+    workflows:
+      update-contributions.yml: |
+        name: Update README with Contributions
+
+        on:
+          schedule:
+            - cron: '0 0 * * *' # Runs daily at midnight
+          workflow_dispatch:
+
+        jobs:
+          update-contributions:
+            runs-on: ubuntu-latest
+            permissions:
+              contents: write
+            steps:
+              - uses: actions/checkout@v2
+              - uses: oven-sh/setup-bun@v2
+                with:
+                  bun-version: latest
+              - name: Install Dependencies
+                run: bun install
+
+              - name: Update GitHub Contributions in README
+                env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                run: bun updateContributions.ts
+
+              - name: Update Stack Overflow Contributions in README
+                env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                run: bun updateSO.ts
+
+              - name: Commit and push changes
+                env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_PAT }}
+                run: |
+                  git config --global user.name 'Jason Nathan'
+                  git config --global user.email 'jjnathanjr@gmail.com'
+                  git add README.md
+                  git commit -m "Update README with latest contributions" || echo "No changes to commit"
+                  git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/${{ github.repository }}.git HEAD:main
+      deploy.yml: |
+        name: Update Static Site
+
+        on:
+          schedule:
+            - cron: '0 0 * * *'  # Runs daily
+          push:
+            branches:
+              - main
+          workflow_dispatch:
+
+        jobs:
+          update-site:
+            runs-on: ubuntu-latest
+            permissions:
+              contents: write
+            steps:
+              - name: Checkout Repo
+                uses: actions/checkout@v3
+
+              - name: Setup Node.js
+                uses: actions/setup-node@v3
+                with:
+                  node-version: 18
+
+              - name: Install Dependencies
+                run: npm install
+
+              - name: Generate Static Site
+                env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                run: node scripts/generatePage.ts
+
+              - name: Deploy to GitHub Pages
+                uses: JamesIves/github-pages-deploy-action@v4
+                with:
+                  branch: gh-pages
+                  folder: .  # Deploy index.html at the repo root
+      update-articles.yml: "name: Update GitHub Profile with Hashnode Post\n\non:\n  repository_dispatch:\n    types: [hashnode_post_published]\n\njobs:\n  update-articles:\n    runs-on: ubuntu-latest\n    permissions:                # Job-level permissions configuration starts here\n      contents: write\n    steps:\n      - uses: actions/checkout@v2\n        with:\n          token: ${{ secrets.GH_PAT }}      \n      - uses: oven-sh/setup-bun@v2\n        with:\n          bun-version: latest\n      - name: Install Dependencies\n        run: bun install\n      - name: Update README\n        env:\n          PAYLOAD: ${{ toJson(github.event.client_payload) }}\n          SIGNATURE_HEADER: ${{ github.event.client_payload.headers['x-hub-signature-256'] }}\n        run: bun updateArticles.ts\n\n      - name: Commit and push changes\n        env:\n          PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_PAT }}\n        run: |\n          git config --global user.name 'Jason Nathan'\n          git config --global user.email 'jjnathanjr@gmail.com'\n          git add README.md\n          git commit -m \"Update README with new Hashnode post\" || echo \"No changes to commit\"\n          git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/${{ github.repository }}.git HEAD:main"
+  updateHN.ts: |
+    import Handlebars from "handlebars";
+    import { getPostDetails } from "./fetchHN";
+    import { updateReadmeSection } from "./utils";
+
+    async function updateReadme(): Promise<void> {
+      const posts = await getPostDetails("geekist.co");
+      const templateSource = await Bun.file("./article.hbs").text();
+      const template = Handlebars.compile(templateSource);
+
+      if (!posts || posts.length === 0) {
+        process.exit(1);
+      }
+
+      const html = template({ posts });
+      try {
+        updateReadmeSection(
+          "<!-- ARTICLES:START -->",
+          "<!-- ARTICLES:END -->",
+          html
+        );
+      } catch (error) {
+        console.error("Error fetching post details:", error);
+        process.exit(1);
+      }
+    }
+
+    updateReadme();
+  tsconfig.json: |
+    {
+      "compilerOptions": {
+        // Enable latest features
+        "lib": ["ESNext",],
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleDetection": "force",
+        "allowJs": true,
+
+        // Bundler mode
+        "moduleResolution": "bundler",
+        "allowImportingTsExtensions": true,
+        "verbatimModuleSyntax": true,
+        "noEmit": true,
+
+        // Best practices
+        "strict": true,
+        "skipLibCheck": true,
+        "noFallthroughCasesInSwitch": true,
+
+        // Some stricter flags (disabled by default)
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "noPropertyAccessFromIndexSignature": false
+      }
+    }
+  fetchGH.ts: "import { graphql, type GraphQlQueryResponseData } from \"@octokit/graphql\";\nexport interface Owner {\n  login: string;\n}\n\nexport interface ParentRepository {\n  name: string;\n  owner: Owner;\n  url: string;\n}\n\nexport interface Repository {\n  name: string;\n  owner: Owner;\n  url: string;\n  parent?: ParentRepository;\n  pullRequests: {\n    totalCount: number;\n  };\n  issues: {\n    totalCount: number;\n  };\n}\n\nexport interface Contribution {\n  title: string;\n  url: string;\n  repository: Repository;\n}\n\ninterface PullRequestNode {\n  pullRequest: Contribution;\n}\n\ninterface IssueNode {\n  issue: Contribution;\n}\n\ninterface PullRequestContributions {\n  totalCount: number;\n  nodes: PullRequestNode[];\n}\n\ninterface IssueContributions {\n  totalCount: number;\n  nodes: IssueNode[];\n}\n\ninterface ContributionsCollection {\n  pullRequestContributions: PullRequestContributions;\n  issueContributions: IssueContributions;\n}\n\ninterface User {\n  contributionsCollection: ContributionsCollection;\n}\n\nconst query = `\n    query ($username: String!) {\n      user(login: $username) {\n        contributionsCollection {\n          pullRequestContributions(first: 100) {\n            totalCount\n            nodes {\n              pullRequest {\n                title\n                url\n                repository {\n                  name\n                  owner {\n                    login\n                  }\n                  url\n                  parent {\n                    name\n                    owner {\n                      login\n                    }\n                    url\n                  }\n                  pullRequests(states: [MERGED, OPEN]) {\n                    totalCount\n                  }\n                }\n              }\n            }\n          }\n          issueContributions(first: 100) {\n            totalCount\n            nodes {\n              issue {\n                title\n                url\n                repository {\n                  name\n                  owner {\n                    login\n                  }\n                  url\n                  parent {\n                    name\n                    owner {\n                      login\n                    }\n                    url\n                  }\n                  issues(states: [OPEN, CLOSED]) {\n                    totalCount\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  `;\n\nexport async function fetchContributions(username: string, token: string): Promise<Contribution[]> {\n  \n  const octokitGraphQL = graphql.defaults({\n    headers: {\n      authorization: `bearer ${token}`,\n    },\n    request: {\n      fetch\n    }\n  });\n\n  try {\n    const response: GraphQlQueryResponseData = await octokitGraphQL(query, { username });\n    if (!response || !response.user || !response.user.contributionsCollection) {\n      throw new Error('Invalid response structure received from GitHub API.');\n    }\n\n    const contributions: Contribution[] = [];\n\n    // Process pull request contributions\n    for (const node of response.user.contributionsCollection.pullRequestContributions.nodes) {\n      const contribution: Contribution = node.pullRequest;\n      contributions.push(contribution);\n    }\n\n    // Process issue contributions\n    for (const node of response.user.contributionsCollection.issueContributions.nodes) {\n      const contribution: Contribution = node.issue;\n      contributions.push(contribution);\n    }\n\n    return contributions;\n  } catch (error: any) {\n    console.error(`Failed to fetch contributions for user ${username}: ${error.message}`);\n    throw error;\n  }\n}"
+  fetchHN.ts: "interface Post {\n  title: string;\n  subtitle: string;\n  slug: string;\n  url?: string;\n  coverImage: {\n    url: string;\n  },\n  seo: {\n    description: string;\n  };\n  publishedAt: string;\n}\n\ninterface FetchResponse {\n  data: {\n    publication: {\n      posts: {\n        edges: {\n          node: Post;\n        }[];\n      };\n    };\n  };\n}\n\nexport async function getPostDetails(host: string, first = 5): Promise<Post[]> {\n  const query = `query GetPosts($host: String!, $first: Int!) {\n    publication(host: $host) {\n      posts(first: $first) {\n        edges {\n          node {\n            title\n            slug\n            subtitle\n            publishedAt\n            coverImage {\n              url\n            }            \n            seo {\n              description\n            }\n          }\n        }\n      }\n    }\n  }`;\n\n  const variables = { host, first };\n\n  const response = await fetch(\"https://gql.hashnode.com/\", {\n    method: \"POST\",\n    headers: {\n      \"Content-Type\": \"application/json\",\n    },\n    body: JSON.stringify({ query, variables }),\n  });\n\n  if (!response.ok) {\n    throw new Error(`HTTP error! status: ${response.status}`);\n  }\n\n  const {\n    data: {\n      publication: {\n        posts: { edges },\n      },\n    },\n  } = (await response.json()) as FetchResponse;\n\n  return edges\n    ? edges.map(({ node }) => ({\n        ...node,\n        url: `https://www.geekist.co/${node.slug}`,\n        publishedAt: new Date(String(node.publishedAt)).toLocaleDateString(\"en-GB\", {\n          day: \"numeric\",\n          month: \"short\",\n          year: \"numeric\",\n        }),\n      }))\n    : [];\n}\n\ngetPostDetails(\"geekist.co\").then(console.log).catch(console.error);"

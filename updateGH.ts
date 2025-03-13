@@ -1,7 +1,5 @@
-import { readFileSync, writeFileSync } from 'fs';
-import { join, dirname } from 'path';
-import { fileURLToPath } from 'url';
-import { fetchContributions, type Contribution } from './fetchContributions';
+import { fetchContributions, type Contribution } from './fetchGH';
+import { updateReadmeSection } from './utils';
 
 interface GroupedContributions {
   [key: string]: Contribution[];
@@ -39,25 +37,14 @@ async function updateReadme(username: string, token: string): Promise<void> {
       console.log("No contributions found.");
       return;
     }
-
-    const readmePath = join(dirname(fileURLToPath(import.meta.url)), 'README.md');
-    let readmeContent = readFileSync(readmePath, 'utf8');
-  
-    const startMarker = '<!-- CONTRIBUTIONS:START -->';
-    const endMarker = '<!-- CONTRIBUTIONS:END -->';
-    const startIndex = readmeContent.indexOf(startMarker) + startMarker.length;
-    const endIndex = readmeContent.indexOf(endMarker);
-  
-    readmeContent = 
-      readmeContent.substring(0, startIndex) +
-      `\n${contributionsSection}\n` +
-      readmeContent.substring(endIndex);
-  
-    writeFileSync(readmePath, readmeContent);
-    console.log('README updated successfully with grouped contributions and highlighted significant activity.');
+    updateReadmeSection(
+      "<!-- CONTRIBUTIONS:START -->",
+      "<!-- CONTRIBUTIONS:END -->",
+      contributionsSection
+    );    
   } catch (error) {
     console.error('Failed to update README:', error);
   }
 }
 
-updateReadme('jasonnathan', process.env.GITHUB_TOKEN); // Ensure your environment variable is correctly configured
+updateReadme('jasonnathan', Bun.env.GITHUB_TOKEN); // Ensure your environment variable is correctly configured

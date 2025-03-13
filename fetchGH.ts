@@ -1,5 +1,4 @@
 import { graphql, type GraphQlQueryResponseData } from "@octokit/graphql";
-import fetch from "node-fetch";
 export interface Owner {
   login: string;
 }
