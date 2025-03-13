@@ -35,19 +35,26 @@ jobs:
       - name: 📦 Install Dependencies
         run: bun install --silent
 
-      - name: ⚙️ Generate Static Site
-        run: bun generatePage.ts
       - name: 🚀 Push `index.html` to `jasonnathan.github.io`
         env:
           PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_PAT }}
         run: |
-          git clone --depth=1 https://x-access-token:${{ secrets.GH_PAT }}@github.com/jasonnathan/jasonnathan.github.io.git gh-pages
+          # Clone the GitHub Pages repo directly
+          git clone --depth=1 https://github.com/jasonnathan/jasonnathan.github.io.git gh-pages
           cd gh-pages          
           git switch master
           
           # Move updated index.html
           cp ../index.html ./
 
+          # Set Git identity (Fixes "Please tell me who you are" error)
+          git config --global user.name "Jason Nathan"
+          git config --global user.email "jjnathanjr@gmail.com"
+
           git add index.html
           git commit -m "🚀 Update index.html from README" || echo "No changes to commit"
+
+          # Authenticate and push securely
+          git remote set-url origin https://x-access-token:${{ secrets.GH_PAT }}@github.com/jasonnathan/jasonnathan.github.io.git
           git push origin HEAD
+
