@@ -80,5 +80,3 @@ export async function getPostDetails(host: string, first = 5): Promise<Post[]> {
       }))
     : [];
 }
-
-getPostDetails("geekist.co").then(console.log).catch(console.error);

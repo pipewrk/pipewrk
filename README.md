@@ -1,4 +1,20 @@
 <h1 align="center">Hi 👋, I'm J</h1>
+<!-- GitHub Pages Deployment Notice -->
+<p align="center">
+  <small>🖥️ <strong>To view this in your browser, visit</strong></small>
+  <a href="https://jasonnathan.github.io" target="_blank"><strong>jasonnathan.github.io</strong></a>
+</p>
+
+<!-- GitHub Contribution Graph -->
+<h2 align="center">🐍 GitHub Contribution Graph</h2>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jasonnathan/jasonnathan/output/github-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/jasonnathan/jasonnathan/output/github-snake.svg">
+    <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/jasonnathan/jasonnathan/output/github-snake.svg">
+  </picture>
+</p>
+
 <!-- Connect with Me -->
 <h2 align="center">Connect With Me🤝</h2>
 <p align="center">
@@ -152,19 +168,31 @@
 <h2 align="center">👨‍💻 Open Source Contributions</h2>
 
   <!-- CONTRIBUTIONS:START -->
+
 ### [run-llama/llama_index](https://github.com/run-llama/llama_index) 🌟
+
 - [ChatGPT Conversations Reader](https://github.com/run-llama/llama_index/pull/16801)
+
 ### [rossrobino/robino](https://github.com/rossrobino/robino) 🌟
+
 - [Add Support for Custom Language Grammars in processMarkdown (Fixes #11)](https://github.com/rossrobino/robino/pull/12)
 - [Add Support for Custom Language Grammars in processMarkdown](https://github.com/rossrobino/robino/issues/11)
+
 ### [weaviate/Verba](https://github.com/weaviate/Verba) 🌟
+
 - [Created an OpenAPI spec document](https://github.com/weaviate/Verba/pull/276)
 - [Contributing an OpenAPI spec document](https://github.com/weaviate/Verba/issues/275)
+
 ### [jasonnathan/Verba](https://github.com/jasonnathan/Verba) 🌟
+
 - [#275 Created openapi.json](https://github.com/jasonnathan/Verba/pull/1)
+
 ### [orbitdb/orbitdb](https://github.com/orbitdb/orbitdb) 🌟
+
 - [Update GETTING_STARTED.md](https://github.com/orbitdb/orbitdb/pull/1186)
+
 ### [transformerlab/transformerlab-app](https://github.com/transformerlab/transformerlab-app) 🌟
+
 - [Running an mlx_server on an imported mlx model fails](https://github.com/transformerlab/transformerlab-app/issues/140)
 <!-- CONTRIBUTIONS:END -->
 
@@ -174,9 +202,11 @@
   <!-- STACKOVERFLOW:START -->
 
 ### Stack Overflow Contributions
+
 I've helped **~2.3m developers** on Stack Overflow, earning **7601 reputation**.
 
 🏆 **Top Answers**
+
 - **582 upvotes** → [View Answer](https://stackoverflow.com/a/3971841)
 - **64 upvotes** → [View Answer](https://stackoverflow.com/a/1069666)
 - **11 upvotes** → [View Answer](https://stackoverflow.com/a/16600030)
@@ -184,6 +214,7 @@ I've helped **~2.3m developers** on Stack Overflow, earning **7601 reputation**.
 - **5 upvotes** → [View Answer](https://stackoverflow.com/a/18649157)
 
 🏷 **Top Tags**
+
 - **javascript** → 13 answers (**675 score**)
 - **jquery** → 9 answers (**608 score**)
 - **resize** → 1 answers (**582 score**)
@@ -191,7 +222,7 @@ I've helped **~2.3m developers** on Stack Overflow, earning **7601 reputation**.
 - **sorting** → 1 answers (**64 score**)
 
 🏅 **Badges:** 0 Gold | 6 Silver | 24 Bronze  
-👀 **Impact:** ~2.3m people reached  
+👀 **Impact:** ~2.3m people reached
 
 🔗 **[View Full Profile](https://stackoverflow.com/users/382536/jason-joseph-nathan?tab=profile)**
 

@@ -3,8 +3,9 @@ name: Update GitHub Profile with Hashnode Posts
 on:
   schedule:
     - cron: '0 4 * * *'  # Runs daily at 4 AM UTC
-  repository_dispatch:
-    types: [hashnode_post_published]
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
@@ -14,36 +15,36 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Checkout Repo
+      - name: 📥 Checkout Repo
         uses: actions/checkout@v4
 
-      - name: Setup Bun
+      - name: 🔥 Cache Bun Modules
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.bun
+            node_modules
+          key: ${{ runner.os }}-bun-${{ hashFiles('**/bun.lockb') }}
+          restore-keys: |
+            ${{ runner.os }}-bun-
+
+      - name: 🚀 Setup Bun
         uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
 
-      - name: Install Dependencies
-        run: bun install
+      - name: 📦 Install Dependencies
+        run: bun install --silent
 
-      - name: Update README with New Articles
-        env:
-          PAYLOAD: ${{ toJson(github.event.client_payload) }}
-          SIGNATURE_HEADER: ${{ github.event.client_payload.headers['x-hub-signature-256'] }}
+      - name: 📝 Update README with New Articles
         run: bun updateHN.ts
 
-      - name: "📚 Hashnode Updater"
-        uses: "varunsridharan/action-hashnode-blog@main"
-        with:
-          USERNAME: '@jasonjnathan'  # Your Hashnode Username
-          BLOG_URL: 'https://geekist.co'  # Explicitly set your blog URL
-          COUNT: 5  # Number of latest posts
-          STYLE: "blog-right"  # Change this to another style if needed
-          FILE: "README.md"  # Updates your GitHub profile README
+      - name: 🚀 Commit and Push Changes
         env:
           PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_PAT }}
         run: |
           git config --global user.name 'Jason Nathan'
           git config --global user.email 'jjnathanjr@gmail.com'
           git add README.md
-          git commit -m "Update README with new blog post" || echo "No changes to commit"
-          git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/${{ github.repository }}.git HEAD:main
+          git commit -m "📝 Update README with new blog post" || echo "No changes to commit"
+          git push origin HEAD:${{ github.ref_name }}
