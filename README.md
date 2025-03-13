@@ -57,7 +57,7 @@
       href="https://www.geekist.co/your-tech-stack-doesnt-matter-as-much-as-you-think"
       title="Why Your Tech Stack is Overrated (And What Actually Matters)"
     >
-      <strong>Sync Your Music and Visuals Together to Captivate Your Audience</strong>
+      <strong>Why Your Tech Stack is Overrated (And What Actually Matters)</strong>
     </a>
     <div><strong>8 Mar 2025</strong>
     <br />
@@ -105,7 +105,7 @@
       href="https://www.geekist.co/how-to-stay-on-beat-and-out-of-bars-musically-speaking"
       title="How to Stay on Beat and Out of Bars (Musically Speaking)"
     >
-      <strong>Sync Your Music and Visuals Together to Captivate Your Audience</strong>
+      <strong>How to Stay on Beat and Out of Bars (Musically Speaking)</strong>
     </a>
     <div><strong>2 Jan 2025</strong>
     <br />
@@ -129,7 +129,7 @@
       href="https://www.geekist.co/wordpress-mvc-plugin-reboot-2024"
       title="Wordpress MVC Plugin Reboot 2024"
     >
-      <strong>Sync Your Music and Visuals Together to Captivate Your Audience</strong>
+      <strong>Wordpress MVC Plugin Reboot 2024</strong>
     </a>
     <div><strong>25 Dec 2024</strong>
     <br />
@@ -153,7 +153,7 @@
       href="https://www.geekist.co/the-tool-that-made-css-magical"
       title="The Tool that made CSS Magical..."
     >
-      <strong>Sync Your Music and Visuals Together to Captivate Your Audience</strong>
+      <strong>The Tool that made CSS Magical...</strong>
     </a>
     <div><strong>24 Dec 2024</strong>
     <br />
