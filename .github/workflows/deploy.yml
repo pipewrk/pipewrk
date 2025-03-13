@@ -20,7 +20,9 @@ jobs:
       - name: 🔥 Cache Bun Modules
         uses: actions/cache@v3
         with:
-          path: ~/.bun
+          path: |
+            ~/.bun
+            node_modules
           key: ${{ runner.os }}-bun-${{ hashFiles('**/bun.lockb') }}
           restore-keys: |
             ${{ runner.os }}-bun-
@@ -34,23 +36,15 @@ jobs:
         run: bun install --silent
 
       - name: ⚙️ Generate Static Site
-        run: bun run generatePage.ts
-
+        run: bun generatePage.ts
       - name: 🚀 Push `index.html` to `jasonnathan.github.io`
         env:
           PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_PAT }}
         run: |
-          # Clone the GitHub Pages repo directly
           git clone --depth=1 https://x-access-token:${{ secrets.GH_PAT }}@github.com/jasonnathan/jasonnathan.github.io.git gh-pages
-          cd gh-pages
+          cd gh-pages          
+          git switch master
           
-          # GitHub Pages typically serves from 'main' if configured
-          if git rev-parse --verify origin/main > /dev/null 2>&1; then
-            git switch main
-          else
-            git switch --orphan gh-pages
-          fi
-
           # Move updated index.html
           cp ../index.html ./
 
