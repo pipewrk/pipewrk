@@ -107,7 +107,7 @@
     >
       <strong>Sync Your Music and Visuals Together to Captivate Your Audience</strong>
     </a>
-    <div><strong>3 Jan 2025</strong>
+    <div><strong>2 Jan 2025</strong>
     <br />
     An overview of bars, beats, and time signatures in music, explaining why certain rhythms feel natural and how they structure everything from classical piece
   </p>
