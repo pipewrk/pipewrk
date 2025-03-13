@@ -1,7 +1,7 @@
 {
   "name": "jasonnathan",
-  "version": "1.0.0",
-  "description": "GitHub repository for Jason Nathan's personal projects",
+  "version": "1.0.3",
+  "description": "Jason Nathan's GH profile",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jasonnathan/jasonnathan.git"
@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@octokit/graphql": "^8.1.1",
-    "node-fetch": "^3.3.2"
+    "handlebars": "^4.7.8",
+    "marked": "^15.0.7"
   }
 }
