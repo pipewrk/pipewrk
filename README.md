@@ -43,30 +43,6 @@
   <!-- ARTICLES:START -->
   <p align="left">
     <a
-      href="https://www.geekist.co/we-broke-the-web-can-webo-fix-it"
-      title="We Broke the Web. Can WebO+ Fix It?"
-    >
-      <img
-        src="https://cdn.hashnode.com/res/hashnode/image/upload/v1742261470579/72ba3739-cecf-4fe6-8c7e-3490420b3885.png"
-        alt="We Broke the Web. Can WebO+ Fix It?"
-        width="150px"
-        align="right"
-      />
-    </a>
-    <a
-      href="https://www.geekist.co/we-broke-the-web-can-webo-fix-it"
-      title="We Broke the Web. Can WebO+ Fix It?"
-    >
-      <strong>We Broke the Web. Can WebO+ Fix It?</strong>
-    </a>
-    <div><strong>17 Mar 2025</strong>
-    <br />
-    The web has come full circle. After 25 years of over-engineering, WebO+ revives the best of Web1, Web2, and Web3 - minus the complexity.
-  </p>
-  <br />
-  <br />
-  <p align="left">
-    <a
       href="https://www.geekist.co/your-tech-stack-doesnt-matter-as-much-as-you-think"
       title="Why Your Tech Stack is Overrated (And What Actually Matters)"
     >
@@ -158,6 +134,30 @@
     <div><strong>25 Dec 2024</strong>
     <br />
     Revisiting a custom WordPress MVC router from 2010, with insights on how it still holds up in 2024 and where modern middleware fits in.
+  </p>
+  <br />
+  <br />
+  <p align="left">
+    <a
+      href="https://www.geekist.co/the-tool-that-made-css-magical"
+      title="The Tool that made CSS Magical..."
+    >
+      <img
+        src="https://cdn.hashnode.com/res/hashnode/image/upload/v1735310366695/b4061265-51c6-446f-afb5-3b9687ffe79c.webp"
+        alt="The Tool that made CSS Magical..."
+        width="150px"
+        align="right"
+      />
+    </a>
+    <a
+      href="https://www.geekist.co/the-tool-that-made-css-magical"
+      title="The Tool that made CSS Magical..."
+    >
+      <strong>The Tool that made CSS Magical...</strong>
+    </a>
+    <div><strong>24 Dec 2024</strong>
+    <br />
+    A look back at Stylizer, a visual CSS editor that once made live styling intuitive, before frameworks took over and it faded into obscurity.
   </p>
   <br />
   <br />
