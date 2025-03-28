@@ -43,6 +43,30 @@
   <!-- ARTICLES:START -->
   <p align="left">
     <a
+      href="https://www.geekist.co/grospel-of-croffee-the-parable-of-the-maidens-plea"
+      title="Grospel of Croffee: The Parable of the Maiden&#x27;s Plea"
+    >
+      <img
+        src="https://cdn.hashnode.com/res/hashnode/image/upload/v1742557154952/891c29ea-7eae-4c04-9a18-0b391638094a.webp"
+        alt="Grospel of Croffee: The Parable of the Maiden&#x27;s Plea"
+        width="150px"
+        align="right"
+      />
+    </a>
+    <a
+      href="https://www.geekist.co/grospel-of-croffee-the-parable-of-the-maidens-plea"
+      title="Grospel of Croffee: The Parable of the Maiden&#x27;s Plea"
+    >
+      <strong>Grospel of Croffee: The Parable of the Maiden&#x27;s Plea</strong>
+    </a>
+    <div><strong>21 Mar 2025</strong>
+    <br />
+    Oat milk? In keto?! A poetic tale of forbidden flavour, almond betrayal, and the sacred union of cream. The Grospel deepens.
+  </p>
+  <br />
+  <br />
+  <p align="left">
+    <a
       href="https://www.geekist.co/croffee-anyone-or-kroffee-if-youre-so-inclined"
       title="Croffee anyone? Or Kroffee if you’re so inclined."
     >
@@ -134,30 +158,6 @@
     <div><strong>9 Feb 2025</strong>
     <br />
     A breakdown of how precise timing between music and visuals enhances engagement, with a simple BPM calculator to keep everything in sync.
-  </p>
-  <br />
-  <br />
-  <p align="left">
-    <a
-      href="https://www.geekist.co/how-to-stay-on-beat-and-out-of-bars-musically-speaking"
-      title="How to Stay on Beat and Out of Bars (Musically Speaking)"
-    >
-      <img
-        src="https://cdn.hashnode.com/res/hashnode/image/upload/v1736515984749/5e66af15-cb68-41ae-8b8d-afe66f2c77a9.webp"
-        alt="How to Stay on Beat and Out of Bars (Musically Speaking)"
-        width="150px"
-        align="right"
-      />
-    </a>
-    <a
-      href="https://www.geekist.co/how-to-stay-on-beat-and-out-of-bars-musically-speaking"
-      title="How to Stay on Beat and Out of Bars (Musically Speaking)"
-    >
-      <strong>How to Stay on Beat and Out of Bars (Musically Speaking)</strong>
-    </a>
-    <div><strong>2 Jan 2025</strong>
-    <br />
-    An overview of bars, beats, and time signatures in music, explaining why certain rhythms feel natural and how they structure everything from classical piece
   </p>
   <br />
   <br />
