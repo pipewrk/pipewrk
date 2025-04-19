@@ -43,6 +43,55 @@
   <!-- ARTICLES:START -->
   <p align="left">
     <a
+      href="https://www.geekist.co/the-editorial-engine-a-technologists-pilgrimage"
+      title="The Editorial Engine: A Technologist’s Pilgrimage"
+    >
+      <img
+        src="https://cdn.hashnode.com/res/hashnode/image/upload/v1744790024298/c11e1343-3283-464a-8f3c-e086541536e4.png"
+        alt="The Editorial Engine: A Technologist’s Pilgrimage"
+        width="150px"
+        align="right"
+      />
+    </a>
+    <a
+      href="https://www.geekist.co/the-editorial-engine-a-technologists-pilgrimage"
+      title="The Editorial Engine: A Technologist’s Pilgrimage"
+    >
+      <strong>The Editorial Engine: A Technologist’s Pilgrimage</strong>
+    </a>
+    <div><strong>16 Apr 2025</strong>
+    <br />
+    What if the reason you’re not writing isn’t discipline, but design? A technologist reflects on blogging, voice, and where it all begins.
+
+  </p>
+  <br />
+  <br />
+  <p align="left">
+    <a
+      href="https://www.geekist.co/the-architects-who-built-our-digital-foundation"
+      title="The Architects Who Built Our Digital Foundation"
+    >
+      <img
+        src="https://cdn.hashnode.com/res/hashnode/image/upload/v1744775164051/6a2d77b0-4e14-4ce8-9b60-2c469b565ec4.png"
+        alt="The Architects Who Built Our Digital Foundation"
+        width="150px"
+        align="right"
+      />
+    </a>
+    <a
+      href="https://www.geekist.co/the-architects-who-built-our-digital-foundation"
+      title="The Architects Who Built Our Digital Foundation"
+    >
+      <strong>The Architects Who Built Our Digital Foundation</strong>
+    </a>
+    <div><strong>8 Apr 2025</strong>
+    <br />
+    They wrote the code. We live in their world. Meet 5 legends behind AI, C, Unix &amp; Apollo who redefined what&#x27;s possible with software.
+  </p>
+  <br />
+  <br />
+  <p align="left">
+    <a
       href="https://www.geekist.co/grospel-of-croffee-the-parable-of-the-maidens-plea"
       title="Grospel of Croffee: The Parable of the Maiden&#x27;s Plea"
     >
@@ -110,54 +159,6 @@
     <div><strong>17 Mar 2025</strong>
     <br />
     The web has come full circle. After 25 years of over-engineering, WebO+ revives the best of Web1, Web2, and Web3 - minus the complexity.
-  </p>
-  <br />
-  <br />
-  <p align="left">
-    <a
-      href="https://www.geekist.co/your-tech-stack-doesnt-matter-as-much-as-you-think"
-      title="Why Your Tech Stack is Overrated (And What Actually Matters)"
-    >
-      <img
-        src="https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/zEqkUMiMxMI/upload/ec2ea0347850d74c5afde9fcdec230d5.jpeg"
-        alt="Why Your Tech Stack is Overrated (And What Actually Matters)"
-        width="150px"
-        align="right"
-      />
-    </a>
-    <a
-      href="https://www.geekist.co/your-tech-stack-doesnt-matter-as-much-as-you-think"
-      title="Why Your Tech Stack is Overrated (And What Actually Matters)"
-    >
-      <strong>Why Your Tech Stack is Overrated (And What Actually Matters)</strong>
-    </a>
-    <div><strong>8 Mar 2025</strong>
-    <br />
-    The real challenge in 2025 isn’t React Native vs. Native, it’s building software that lasts. Here’s what truly matters for future-proof development.
-  </p>
-  <br />
-  <br />
-  <p align="left">
-    <a
-      href="https://www.geekist.co/sync-your-music-and-visuals-together-to-captivate-your-audience"
-      title="Sync Your Music and Visuals Together to Captivate Your Audience"
-    >
-      <img
-        src="https://cdn.hashnode.com/res/hashnode/image/upload/v1739011386940/8dcb2554-8104-4ea9-b7c0-e56d3b947f12.webp"
-        alt="Sync Your Music and Visuals Together to Captivate Your Audience"
-        width="150px"
-        align="right"
-      />
-    </a>
-    <a
-      href="https://www.geekist.co/sync-your-music-and-visuals-together-to-captivate-your-audience"
-      title="Sync Your Music and Visuals Together to Captivate Your Audience"
-    >
-      <strong>Sync Your Music and Visuals Together to Captivate Your Audience</strong>
-    </a>
-    <div><strong>9 Feb 2025</strong>
-    <br />
-    A breakdown of how precise timing between music and visuals enhances engagement, with a simple BPM calculator to keep everything in sync.
   </p>
   <br />
   <br />
