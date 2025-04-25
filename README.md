@@ -43,6 +43,30 @@
   <!-- ARTICLES:START -->
   <p align="left">
     <a
+      href="https://www.geekist.co/the-invisible-cdn-we-built-for-display-pics"
+      title="The Invisible CDN We Built for Display Pics"
+    >
+      <img
+        src=""
+        alt="The Invisible CDN We Built for Display Pics"
+        width="150px"
+        align="right"
+      />
+    </a>
+    <a
+      href="https://www.geekist.co/the-invisible-cdn-we-built-for-display-pics"
+      title="The Invisible CDN We Built for Display Pics"
+    >
+      <strong>The Invisible CDN We Built for Display Pics</strong>
+    </a>
+    <div><strong>23 Apr 2025</strong>
+    <br />
+    How we used PHP and Nginx to build a dynamic image delivery system with zero exposed URLs, full cache control, and no strain on the app server.
+  </p>
+  <br />
+  <br />
+  <p align="left">
+    <a
       href="https://www.geekist.co/the-editorial-engine-a-technologists-pilgrimage"
       title="The Editorial Engine: A Technologist’s Pilgrimage"
     >
@@ -135,30 +159,6 @@
     <div><strong>20 Mar 2025</strong>
     <br />
     Ditch almond milk! Discover Croffee: Heavy cream in coffee, the ultimate keto hack. A hilarious take on keto coffee alternatives &amp; plant-based myths.
-  </p>
-  <br />
-  <br />
-  <p align="left">
-    <a
-      href="https://www.geekist.co/we-broke-the-web-can-webo-fix-it"
-      title="We Broke the Web. Now Comes the Rollback-olution™"
-    >
-      <img
-        src="https://cdn.hashnode.com/res/hashnode/image/upload/v1742261470579/72ba3739-cecf-4fe6-8c7e-3490420b3885.png"
-        alt="We Broke the Web. Now Comes the Rollback-olution™"
-        width="150px"
-        align="right"
-      />
-    </a>
-    <a
-      href="https://www.geekist.co/we-broke-the-web-can-webo-fix-it"
-      title="We Broke the Web. Now Comes the Rollback-olution™"
-    >
-      <strong>We Broke the Web. Now Comes the Rollback-olution™</strong>
-    </a>
-    <div><strong>17 Mar 2025</strong>
-    <br />
-    The web has come full circle. After 25 years of over-engineering, WebO+ revives the best of Web1, Web2, and Web3 - minus the complexity.
   </p>
   <br />
   <br />
