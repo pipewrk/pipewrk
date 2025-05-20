@@ -43,7 +43,6 @@
 
 <!--h2 without bottom border-->
 <h4 align="center">Coding and Composing share much in common</h4>
-
 <!-- My Latest Articles -->
 <h2 align="center">📚 My Latest Articles</h2>
 <!-- ARTICLES:START -->
@@ -176,6 +175,13 @@
 <p align="center">
   <sub>Tested patterns. Paperback and Kindle available now.</sub>
 </p>
+<br />
+<br />
+
+  <details align="center">
+    <summary>Also ghostwrites for Fortune 500 companies and top-tier developer platforms.</summary>
+    <p><sub>(but you didn’t hear it from me)</sub></p>
+  </details>
 <!-- End Book Promo -->
 <br />
 <br />
