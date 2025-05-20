@@ -18,26 +18,28 @@
 <!-- Connect with Me -->
 <h2 align="center">Connect With Me🤝</h2>
 <p align="center">
-  <a href="https://www.linkedin.com/in/jasonnathan/" target="blank">
+  <a target="_blank" href="https://www.linkedin.com/in/jasonnathan/" target="blank">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="https://x.com/jason_nathan" target="blank">
+  <a target="_blank" href="https://x.com/jason_nathan" target="blank">
     <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" />
   </a> 
-  <a href="https://stackoverflow.com/users/382536/jason-j-nathan" target="blank">
+  <a target="_blank" href="https://stackoverflow.com/users/382536/jason-j-nathan" target="blank">
     <img src="https://img.shields.io/badge/Stack%20Overflow-F58025?style=for-the-badge&logo=stack-overflow&logoColor=white" alt="Stack Overflow" />
   </a>
-  <a href="https://geekist.co" target="blank">
+  <a target="_blank" href="https://geekist.co" target="blank">
     <img src="https://img.shields.io/badge/Blog-21759B?style=for-the-badge&logo=blogger&logoColor=white" alt="Blog" />
   </a>
-  <a href="https://meetme.geekist.co" target="blank">
+  <a target="_blank" href="https://meetme.geekist.co" target="blank">
     <img src="https://img.shields.io/badge/Calendar-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" alt="Calendar" />
   </a>
 </p>
 
 <!-- Credential -->
 <p align="center">
-  <img src="https://img.shields.io/badge/Published%20Author-NGINX%20by%20Example-28a745?style=for-the-badge&logo=bookstack&logoColor=white" alt="Published Author: NGINX by Example" />
+  <a target="_blank" href="https://www.amazon.com/dp/B0F844D63G?utm_source=geekist&utm_medium=link&utm_campaign=nginx_kindle" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Published%20Author-NGINX%20by%20Example-28a745?style=for-the-badge&logo=bookstack&logoColor=white" alt="Published Author: NGINX by Example" />
+  </a>
 </p>
 
 
@@ -159,17 +161,29 @@
   <strong>A field manual for real-world NGINX deployments.</strong>
 </p>
 
+<!-- Buy the Book -->
 <p align="center">
+  <a href="https://geekmaster3.gumroad.com/l/nginx-by-example?utm_source=geekist&utm_medium=link&utm_campaign=nginx_gumroad" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Support%20on%20Gumroad-36a9ae?style=for-the-badge&logo=gumroad&logoColor=white" alt="Buy on Gumroad" />
+  </a>
   <a href="https://www.amazon.com/dp/B0F844D63G?utm_source=geekist&utm_medium=link&utm_campaign=nginx_kindle" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/Buy%20on%20Amazon-FF9900?style=for-the-badge&logo=amazon&logoColor=white" alt="Buy on Amazon" />
+    <img src="https://img.shields.io/badge/Buy%20on%20Amazon-ff9900?style=for-the-badge&logo=amazon&logoColor=white" alt="Buy on Amazon" />
   </a>
-  <a href="https://geekist.co/nginx-by-example/" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/Read%20more%20on%20Geekist-111111?style=for-the-badge&logo=read-the-docs&logoColor=white" alt="Read More" />
-  </a>
-  <a href="https://github.com/theGeekist/nginx-by-example?utm_source=geekist&utm_medium=link&utm_campaign=nginx_github" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/View%20Configs%20on%20GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Source" />
+  <a href="https://leanpub.com/nginxbyexample?utm_source=geekist&utm_medium=link&utm_campaign=nginx_leanpub" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Back%20it%20on%20LeanPub-ffd966?style=for-the-badge&logo=leanpub&logoColor=black" alt="Buy on Leanpub" />
   </a>
 </p>
+
+<!-- Secondary Actions -->
+<p align="center" style="margin-top: 1rem;">
+  <a href="https://geekist.co/nginx-by-example/" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Read%20more%20on%20Geekist-444444?style=for-the-badge&logo=read-the-docs&logoColor=white" alt="Read More" />
+  </a>
+  <a href="https://github.com/theGeekist/nginx-by-example?utm_source=geekist&utm_medium=link&utm_campaign=nginx_github" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/View%20Configs%20on%20GitHub-555555?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Source" />
+  </a>
+</p>
+
 
 <p align="center">
   <sub>Tested patterns. Paperback and Kindle available now.</sub>
