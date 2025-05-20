@@ -116,6 +116,30 @@
   <br />
   <p align="left">
     <a
+      href="https://www.geekist.co/grospel-of-croffee-the-parable-of-the-maidens-plea"
+      title="Grospel of Croffee: The Parable of the Maiden&#x27;s Plea"
+    >
+      <img
+        src="https://cdn.hashnode.com/res/hashnode/image/upload/v1742557154952/891c29ea-7eae-4c04-9a18-0b391638094a.webp"
+        alt="Grospel of Croffee: The Parable of the Maiden&#x27;s Plea"
+        width="150px"
+        align="right"
+      />
+    </a>
+    <a
+      href="https://www.geekist.co/grospel-of-croffee-the-parable-of-the-maidens-plea"
+      title="Grospel of Croffee: The Parable of the Maiden&#x27;s Plea"
+    >
+      <strong>Grospel of Croffee: The Parable of the Maiden&#x27;s Plea</strong>
+    </a>
+    <div><strong>21 Mar 2025</strong>
+    <br />
+    Oat milk? In keto?! A poetic tale of forbidden flavour, almond betrayal, and the sacred union of cream. The Grospel deepens.
+  </p>
+  <br />
+  <br />
+  <p align="left">
+    <a
       href="https://www.geekist.co/croffee-anyone-or-kroffee-if-youre-so-inclined"
       title="Croffee anyone? Or Kroffee if you’re so inclined."
     >
