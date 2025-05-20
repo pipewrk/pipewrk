@@ -45,6 +45,96 @@
 
 <!--h2 without bottom border-->
 <h4 align="center">Coding and Composing share much in common</h4>
+
+<!-- NGINX Book Promo -->
+<h2 align="center">📘 NGINX by Example — Volume 1</h2>
+
+<p align="center">
+  <a href="https://www.amazon.com/dp/B0F844D63G?utm_source=geekist&utm_medium=link&utm_campaign=nginx_kindle" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.geekist.co/wp-content/uploads/1746074660-800x613.png" alt="NGINX by Example book cover showing a green squid illustration on a white background" width="320" />
+  </a>
+</p>
+
+<p align="center">
+  <strong>A field manual for real-world NGINX deployments.</strong>
+</p>
+
+<!-- Buy the Book -->
+<p align="center">
+  <a href="https://geekmaster3.gumroad.com/l/nginx-by-example?utm_source=geekist&utm_medium=link&utm_campaign=nginx_gumroad" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Support%20on%20Gumroad-36a9ae?style=for-the-badge&logo=gumroad&logoColor=white" alt="Buy on Gumroad" />
+  </a>
+  <a href="https://www.amazon.com/dp/B0F844D63G?utm_source=geekist&utm_medium=link&utm_campaign=nginx_kindle" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Buy%20on%20Amazon-ff9900?style=for-the-badge&logo=amazon&logoColor=white" alt="Buy on Amazon" />
+  </a>
+  <a href="https://leanpub.com/nginxbyexample?utm_source=geekist&utm_medium=link&utm_campaign=nginx_leanpub" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Back%20it%20on%20LeanPub-ffd966?style=for-the-badge&logo=leanpub&logoColor=black" alt="Buy on Leanpub" />
+  </a>
+</p>
+
+<!-- Secondary Actions -->
+<p align="center" style="margin-top: 1rem;">
+  <a href="https://geekist.co/nginx-by-example/" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Read%20more%20on%20Geekist-444444?style=for-the-badge&logo=read-the-docs&logoColor=white" alt="Read More" />
+  </a>
+  <a href="https://github.com/theGeekist/nginx-by-example?utm_source=geekist&utm_medium=link&utm_campaign=nginx_github" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/View%20Configs%20on%20GitHub-555555?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Source" />
+  </a>
+</p>
+
+
+<p align="center">
+  <sub>Tested patterns. Paperback and Kindle available now.</sub>
+</p>
+<br />
+<br />
+
+  <details align="center">
+    <summary>Also ghostwrites for Fortune 500 companies and top-tier developer platforms.</summary>
+    <p><sub>(but you didn’t hear it from me)</sub></p>
+  </details>
+<!-- End Book Promo -->
+<br />
+<br />
+
+<!-- Skeletor Project Promo -->
+<h2 align="center">⚙️ Skeletor — Scaffolding Reimagined</h2>
+
+<p align="center">
+  <a href="https://github.com/theGeekist/skeletor" target="_blank">
+    <img src="https://img.shields.io/github/stars/theGeekist/skeletor?style=for-the-badge&logo=github" alt="GitHub Stars" />
+  </a>
+  <a href="https://crates.io/crates/skeletor" target="_blank">
+    <img src="https://img.shields.io/crates/v/skeletor?style=for-the-badge&logo=rust&logoColor=orange" alt="Crates.io" />
+  </a>
+  <a href="https://github.com/theGeekist/skeletor/actions/workflows/CI.yml" target="_blank">
+    <img src="https://img.shields.io/github/actions/workflow/status/jasonnathan/skeletor/CI.yml?label=CI&style=for-the-badge&logo=githubactions&logoColor=white" alt="CI Status" />
+  </a>
+  <a href="https://codecov.io/gh/jasonnathan/skeletor" target="_blank">
+    <img src="https://img.shields.io/codecov/c/github/jasonnathan/skeletor?style=for-the-badge&logo=codecov&logoColor=white" alt="Code Coverage" />
+  </a>
+</p>
+
+<p align="center">
+  <strong>A blazing-fast Rust CLI to scaffold project structures and capture snapshots with YAML config files.</strong>
+</p>
+
+<ul>
+  <li>📦 <code>skeletor apply</code> to generate files from YAML</li>
+  <li>🧠 <code>skeletor snapshot</code> to capture existing directories</li>
+  <li>⚡ Fast, repeatable, and human-readable project bootstraps</li>
+</ul>
+
+<p align="center">
+  <a href="https://github.com/theGeekist/skeletor#quickstart" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Get%20Started-Quickstart-007EC6?style=for-the-badge" alt="Quickstart Docs" />
+  </a>
+</p>
+
+
+<br />
+<br />
+
 <!-- My Latest Articles -->
 <h2 align="center">📚 My Latest Articles</h2>
 <!-- ARTICLES:START -->
@@ -148,94 +238,6 @@
 
 <!-- ARTICLES:END -->
 
-<!-- NGINX Book Promo -->
-<h2 align="center">📘 NGINX by Example — Volume 1</h2>
-
-<p align="center">
-  <a href="https://www.amazon.com/dp/B0F844D63G?utm_source=geekist&utm_medium=link&utm_campaign=nginx_kindle" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.geekist.co/wp-content/uploads/1746074660-800x613.png" alt="NGINX by Example book cover showing a green squid illustration on a white background" width="320" />
-  </a>
-</p>
-
-<p align="center">
-  <strong>A field manual for real-world NGINX deployments.</strong>
-</p>
-
-<!-- Buy the Book -->
-<p align="center">
-  <a href="https://geekmaster3.gumroad.com/l/nginx-by-example?utm_source=geekist&utm_medium=link&utm_campaign=nginx_gumroad" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/Support%20on%20Gumroad-36a9ae?style=for-the-badge&logo=gumroad&logoColor=white" alt="Buy on Gumroad" />
-  </a>
-  <a href="https://www.amazon.com/dp/B0F844D63G?utm_source=geekist&utm_medium=link&utm_campaign=nginx_kindle" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/Buy%20on%20Amazon-ff9900?style=for-the-badge&logo=amazon&logoColor=white" alt="Buy on Amazon" />
-  </a>
-  <a href="https://leanpub.com/nginxbyexample?utm_source=geekist&utm_medium=link&utm_campaign=nginx_leanpub" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/Back%20it%20on%20LeanPub-ffd966?style=for-the-badge&logo=leanpub&logoColor=black" alt="Buy on Leanpub" />
-  </a>
-</p>
-
-<!-- Secondary Actions -->
-<p align="center" style="margin-top: 1rem;">
-  <a href="https://geekist.co/nginx-by-example/" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/Read%20more%20on%20Geekist-444444?style=for-the-badge&logo=read-the-docs&logoColor=white" alt="Read More" />
-  </a>
-  <a href="https://github.com/theGeekist/nginx-by-example?utm_source=geekist&utm_medium=link&utm_campaign=nginx_github" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/View%20Configs%20on%20GitHub-555555?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Source" />
-  </a>
-</p>
-
-
-<p align="center">
-  <sub>Tested patterns. Paperback and Kindle available now.</sub>
-</p>
-<br />
-<br />
-
-  <details align="center">
-    <summary>Also ghostwrites for Fortune 500 companies and top-tier developer platforms.</summary>
-    <p><sub>(but you didn’t hear it from me)</sub></p>
-  </details>
-<!-- End Book Promo -->
-<br />
-<br />
-
-<!-- Skeletor Project Promo -->
-<h2 align="center">⚙️ Skeletor — Scaffolding Reimagined</h2>
-
-<p align="center">
-  <a href="https://github.com/theGeekist/skeletor" target="_blank">
-    <img src="https://img.shields.io/github/stars/theGeekist/skeletor?style=for-the-badge&logo=github" alt="GitHub Stars" />
-  </a>
-  <a href="https://crates.io/crates/skeletor" target="_blank">
-    <img src="https://img.shields.io/crates/v/skeletor?style=for-the-badge&logo=rust&logoColor=orange" alt="Crates.io" />
-  </a>
-  <a href="https://github.com/theGeekist/skeletor/actions/workflows/CI.yml" target="_blank">
-    <img src="https://img.shields.io/github/actions/workflow/status/jasonnathan/skeletor/CI.yml?label=CI&style=for-the-badge&logo=githubactions&logoColor=white" alt="CI Status" />
-  </a>
-  <a href="https://codecov.io/gh/jasonnathan/skeletor" target="_blank">
-    <img src="https://img.shields.io/codecov/c/github/jasonnathan/skeletor?style=for-the-badge&logo=codecov&logoColor=white" alt="Code Coverage" />
-  </a>
-</p>
-
-<p align="center">
-  <strong>A blazing-fast Rust CLI to scaffold project structures and capture snapshots with YAML config files.</strong>
-</p>
-
-<ul>
-  <li>📦 <code>skeletor apply</code> to generate files from YAML</li>
-  <li>🧠 <code>skeletor snapshot</code> to capture existing directories</li>
-  <li>⚡ Fast, repeatable, and human-readable project bootstraps</li>
-</ul>
-
-<p align="center">
-  <a href="https://github.com/theGeekist/skeletor#quickstart" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/Get%20Started-Quickstart-007EC6?style=for-the-badge" alt="Quickstart Docs" />
-  </a>
-</p>
-
-
-<br />
-<br />
 <!-- My Open Source Contributions -->
 <h2 align="center">👨 Open Source Contributions</h2>
 
