@@ -156,8 +156,7 @@
 </p>
 
 <p align="center">
-  <strong>A field manual for real-world NGINX deployments.</strong><br>
-  From SSL, wildcard subdomains, caching, and API gateways — to the edge cases no one else writes about.
+  <strong>A field manual for real-world NGINX deployments.</strong>
 </p>
 
 <p align="center">
