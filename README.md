@@ -42,7 +42,7 @@
 
 
 <!--h2 without bottom border-->
-<h4 align="center">Coding and Composing share much in common :)</h4>
+<h4 align="center">Coding and Composing share much in common</h4>
 
 <!-- My Latest Articles -->
 <h2 align="center">📚 My Latest Articles</h2>
