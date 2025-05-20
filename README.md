@@ -198,6 +198,44 @@
 <!-- End Book Promo -->
 <br />
 <br />
+
+<!-- Skeletor Project Promo -->
+<h2 align="center">⚙️ Skeletor — Scaffolding Reimagined</h2>
+
+<p align="center">
+  <a href="https://github.com/theGeekist/skeletor" target="_blank">
+    <img src="https://img.shields.io/github/stars/theGeekist/skeletor?style=for-the-badge&logo=github" alt="GitHub Stars" />
+  </a>
+  <a href="https://crates.io/crates/skeletor" target="_blank">
+    <img src="https://img.shields.io/crates/v/skeletor?style=for-the-badge&logo=rust&logoColor=orange" alt="Crates.io" />
+  </a>
+  <a href="https://github.com/theGeekist/skeletor/actions/workflows/CI.yml" target="_blank">
+    <img src="https://img.shields.io/github/actions/workflow/status/jasonnathan/skeletor/CI.yml?label=CI&style=for-the-badge&logo=githubactions&logoColor=white" alt="CI Status" />
+  </a>
+  <a href="https://codecov.io/gh/jasonnathan/skeletor" target="_blank">
+    <img src="https://img.shields.io/codecov/c/github/jasonnathan/skeletor?style=for-the-badge&logo=codecov&logoColor=white" alt="Code Coverage" />
+  </a>
+</p>
+
+<p align="center">
+  <strong>A blazing-fast Rust CLI to scaffold project structures and capture snapshots with YAML config files.</strong>
+</p>
+
+<ul>
+  <li>📦 <code>skeletor apply</code> to generate files from YAML</li>
+  <li>🧠 <code>skeletor snapshot</code> to capture existing directories</li>
+  <li>⚡ Fast, repeatable, and human-readable project bootstraps</li>
+</ul>
+
+<p align="center">
+  <a href="https://github.com/theGeekist/skeletor#quickstart" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Get%20Started-Quickstart-007EC6?style=for-the-badge" alt="Quickstart Docs" />
+  </a>
+</p>
+
+
+<br />
+<br />
 <!-- My Open Source Contributions -->
 <h2 align="center">👨 Open Source Contributions</h2>
 
