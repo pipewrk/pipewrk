@@ -35,6 +35,12 @@
   </a>
 </p>
 
+<!-- Credential -->
+<p align="center">
+  <img src="https://img.shields.io/badge/Published%20Author-NGINX%20by%20Example-28a745?style=for-the-badge&logo=bookstack&logoColor=white" alt="Published Author: NGINX by Example" />
+</p>
+
+
 <!--h2 without bottom border-->
 <h4 align="center">Coding and Composing share much in common :)</h4>
 
@@ -141,6 +147,38 @@
 
 <!-- ARTICLES:END -->
 
+<!-- NGINX Book Promo -->
+<h2 align="center">📘 NGINX by Example — Volume 1</h2>
+
+<p align="center">
+  <a href="https://www.amazon.com/dp/B0F844D63G?utm_source=geekist&utm_medium=link&utm_campaign=nginx_kindle" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.geekist.co/wp-content/uploads/1746074660-800x613.png" alt="NGINX by Example book cover showing a green squid illustration on a white background" width="320" />
+  </a>
+</p>
+
+<p align="center">
+  <strong>A field manual for real-world NGINX deployments.</strong><br>
+  From SSL, wildcard subdomains, caching, and API gateways — to the edge cases no one else writes about.
+</p>
+
+<p align="center">
+  <a href="https://www.amazon.com/dp/B0F844D63G?utm_source=geekist&utm_medium=link&utm_campaign=nginx_kindle" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Buy%20on%20Amazon-FF9900?style=for-the-badge&logo=amazon&logoColor=white" alt="Buy on Amazon" />
+  </a>
+  <a href="https://geekist.co/nginx-by-example/" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Read%20more%20on%20Geekist-111111?style=for-the-badge&logo=read-the-docs&logoColor=white" alt="Read More" />
+  </a>
+  <a href="https://github.com/theGeekist/nginx-by-example?utm_source=geekist&utm_medium=link&utm_campaign=nginx_github" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/View%20Configs%20on%20GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Source" />
+  </a>
+</p>
+
+<p align="center">
+  <sub>Tested patterns. Paperback and Kindle available now.</sub>
+</p>
+<!-- End Book Promo -->
+<br />
+<br />
 <!-- My Open Source Contributions -->
 <h2 align="center">👨 Open Source Contributions</h2>
 
