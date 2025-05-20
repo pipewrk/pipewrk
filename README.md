@@ -41,20 +41,44 @@
 <!-- My Latest Articles -->
 <h2 align="center">📚 My Latest Articles</h2>
 <!-- ARTICLES:START -->
+<p align="left">
+    <a
+      href="https://geekist.co/you-can-blog-from-your-local-wordpress-site-on-iphone-heres-how/"
+      title="You Can Blog from Your Local WordPress Site on iPhone. Here’s How."
+    >
+      <img
+        src="https://img.geekist.co/wp-content/uploads/tailscale-v-zerotier-wordpress-showdown-150x150.avif"
+        alt="You Can Blog from Your Local WordPress Site on iPhone. Here’s How."
+        width="150px"
+        align="right"
+      />
+    </a>
+    <a
+      href="https://geekist.co/you-can-blog-from-your-local-wordpress-site-on-iphone-heres-how/"
+      title="You Can Blog from Your Local WordPress Site on iPhone. Here’s How."
+    >
+      <strong>You Can Blog from Your Local WordPress Site on iPhone. Here’s How.</strong>
+    </a>
+    <div><strong>18 May 2025</strong>
+    <br />
+    Access your local WordPress site from your iPhone using ZeroTier or Tailscale. Blog from anywhere securely, privately &amp; with no cloud in sight
+  </p>
+  <br />
+  <br />
   <p align="left">
     <a
-      href="https://www.geekist.co/the-invisible-cdn-we-built-for-display-pics"
+      href="https://geekist.co/the-invisible-cdn-we-built-in-2012-for-dynamic-avatars/"
       title="The Invisible CDN We Built for Display Pics"
     >
       <img
-        src=""
+        src="https://img.geekist.co/wp-content/uploads/pexels-photo-31670555-31670555-150x150.avif"
         alt="The Invisible CDN We Built for Display Pics"
         width="150px"
         align="right"
       />
     </a>
     <a
-      href="https://www.geekist.co/the-invisible-cdn-we-built-for-display-pics"
+      href="https://geekist.co/the-invisible-cdn-we-built-in-2012-for-dynamic-avatars/"
       title="The Invisible CDN We Built for Display Pics"
     >
       <strong>The Invisible CDN We Built for Display Pics</strong>
@@ -67,7 +91,7 @@
   <br />
   <p align="left">
     <a
-      href="https://www.geekist.co/the-editorial-engine-a-technologists-pilgrimage"
+      href="https://geekist.co/the-editorial-engine-a-technologists-pilgrimage"
       title="The Editorial Engine: A Technologist’s Pilgrimage"
     >
       <img
@@ -78,7 +102,7 @@
       />
     </a>
     <a
-      href="https://www.geekist.co/the-editorial-engine-a-technologists-pilgrimage"
+      href="https://geekist.co/the-editorial-engine-a-technologists-pilgrimage"
       title="The Editorial Engine: A Technologist’s Pilgrimage"
     >
       <strong>The Editorial Engine: A Technologist’s Pilgrimage</strong>
@@ -92,7 +116,7 @@
   <br />
   <p align="left">
     <a
-      href="https://www.geekist.co/the-architects-who-built-our-digital-foundation"
+      href="https://geekist.co/the-architects-who-built-our-digital-foundation"
       title="The Architects Who Built Our Digital Foundation"
     >
       <img
@@ -103,7 +127,7 @@
       />
     </a>
     <a
-      href="https://www.geekist.co/the-architects-who-built-our-digital-foundation"
+      href="https://geekist.co/the-architects-who-built-our-digital-foundation"
       title="The Architects Who Built Our Digital Foundation"
     >
       <strong>The Architects Who Built Our Digital Foundation</strong>
@@ -111,54 +135,6 @@
     <div><strong>8 Apr 2025</strong>
     <br />
     They wrote the code. We live in their world. Meet 5 legends behind AI, C, Unix &amp; Apollo who redefined what&#x27;s possible with software.
-  </p>
-  <br />
-  <br />
-  <p align="left">
-    <a
-      href="https://www.geekist.co/grospel-of-croffee-the-parable-of-the-maidens-plea"
-      title="Grospel of Croffee: The Parable of the Maiden&#x27;s Plea"
-    >
-      <img
-        src="https://cdn.hashnode.com/res/hashnode/image/upload/v1742557154952/891c29ea-7eae-4c04-9a18-0b391638094a.webp"
-        alt="Grospel of Croffee: The Parable of the Maiden&#x27;s Plea"
-        width="150px"
-        align="right"
-      />
-    </a>
-    <a
-      href="https://www.geekist.co/grospel-of-croffee-the-parable-of-the-maidens-plea"
-      title="Grospel of Croffee: The Parable of the Maiden&#x27;s Plea"
-    >
-      <strong>Grospel of Croffee: The Parable of the Maiden&#x27;s Plea</strong>
-    </a>
-    <div><strong>21 Mar 2025</strong>
-    <br />
-    Oat milk? In keto?! A poetic tale of forbidden flavour, almond betrayal, and the sacred union of cream. The Grospel deepens.
-  </p>
-  <br />
-  <br />
-  <p align="left">
-    <a
-      href="https://www.geekist.co/croffee-anyone-or-kroffee-if-youre-so-inclined"
-      title="Croffee anyone? Or Kroffee if you’re so inclined."
-    >
-      <img
-        src="https://cdn.hashnode.com/res/hashnode/image/upload/v1742472085547/41bdc8f9-8d94-4437-ad55-0ecedabf0893.jpeg"
-        alt="Croffee anyone? Or Kroffee if you’re so inclined."
-        width="150px"
-        align="right"
-      />
-    </a>
-    <a
-      href="https://www.geekist.co/croffee-anyone-or-kroffee-if-youre-so-inclined"
-      title="Croffee anyone? Or Kroffee if you’re so inclined."
-    >
-      <strong>Croffee anyone? Or Kroffee if you’re so inclined.</strong>
-    </a>
-    <div><strong>20 Mar 2025</strong>
-    <br />
-    Ditch almond milk! Discover Croffee: Heavy cream in coffee, the ultimate keto hack. A hilarious take on keto coffee alternatives &amp; plant-based myths.
   </p>
   <br />
   <br />
