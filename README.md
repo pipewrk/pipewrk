@@ -242,6 +242,8 @@
 <h2 align="center">👨 Open Source Contributions</h2>
 
   <!-- CONTRIBUTIONS:START -->
+### [terrehbyte/awesome-devblogs](https://github.com/terrehbyte/awesome-devblogs)
+- [Added geekist.co](https://github.com/terrehbyte/awesome-devblogs/pull/2)
 ### [run-llama/llama_index](https://github.com/run-llama/llama_index) 🌟
 - [ChatGPT Conversations Reader](https://github.com/run-llama/llama_index/pull/16801)
 ### [rossrobino/robino](https://github.com/rossrobino/robino) 🌟
