@@ -74,10 +74,10 @@
 
 <!-- Secondary Actions -->
 <p align="center" style="margin-top: 1rem;">
-  <a href="https://geekist.co/nginx-by-example/" target="_blank" rel="noopener noreferrer">
+  <a href="https://github.com/theGeekist/nginx-by-example/?utm_source=geekist&utm_medium=link&utm_campaign=nginx_github" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Read%20more%20on%20Geekist-444444?style=for-the-badge&logo=read-the-docs&logoColor=white" alt="Read More" />
   </a>
-  <a href="https://github.com/theGeekist/nginx-by-example?utm_source=geekist&utm_medium=link&utm_campaign=nginx_github" target="_blank" rel="noopener noreferrer">
+  <a href="https://github.com/theGeekist/nginx-by-example/?utm_source=geekist&utm_medium=link&utm_campaign=nginx_github" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/View%20Configs%20on%20GitHub-555555?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Source" />
   </a>
 </p>
@@ -141,18 +141,18 @@
 <p align="left">
     <a
       href="https://geekist.co/you-can-blog-from-your-local-wordpress-site-on-iphone-heres-how/"
-      title="You Can Blog from Your Local WordPress Site on iPhone. Here’s How."
+      title="You Can Blog from Localhost WordPress Site on iPhone."
     >
       <img
         src="https://img.geekist.co/wp-content/uploads/tailscale-v-zerotier-wordpress-showdown-150x150.avif"
-        alt="You Can Blog from Your Local WordPress Site on iPhone. Here’s How."
+        alt="You Can Blog from Localhost WordPress Site on iPhone."
         width="150px"
         align="right"
       />
     </a>
     <a
       href="https://geekist.co/you-can-blog-from-your-local-wordpress-site-on-iphone-heres-how/"
-      title="You Can Blog from Your Local WordPress Site on iPhone. Here’s How."
+      title="You Can Blog from Localhost WordPress Site on iPhone."
     >
       <strong>You Can Blog from Your Local WordPress Site on iPhone. Here’s How.</strong>
     </a>
@@ -188,7 +188,7 @@
   <br />
   <p align="left">
     <a
-      href="https://geekist.co/the-editorial-engine-a-technologists-pilgrimage"
+      href="https://geekist.co/the-editorial-engine-a-technologists-pilgrimage/"
       title="The Editorial Engine: A Technologist’s Pilgrimage"
     >
       <img
@@ -199,7 +199,7 @@
       />
     </a>
     <a
-      href="https://geekist.co/the-editorial-engine-a-technologists-pilgrimage"
+      href="https://geekist.co/the-editorial-engine-a-technologists-pilgrimage/"
       title="The Editorial Engine: A Technologist’s Pilgrimage"
     >
       <strong>The Editorial Engine: A Technologist’s Pilgrimage</strong>
@@ -213,7 +213,7 @@
   <br />
   <p align="left">
     <a
-      href="https://geekist.co/the-architects-who-built-our-digital-foundation"
+      href="https://geekist.co/the-architects-who-built-our-digital-foundation/"
       title="The Architects Who Built Our Digital Foundation"
     >
       <img
@@ -224,7 +224,7 @@
       />
     </a>
     <a
-      href="https://geekist.co/the-architects-who-built-our-digital-foundation"
+      href="https://geekist.co/the-architects-who-built-our-digital-foundation/"
       title="The Architects Who Built Our Digital Foundation"
     >
       <strong>The Architects Who Built Our Digital Foundation</strong>
