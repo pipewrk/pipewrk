@@ -27,9 +27,12 @@ export async function getPostDetails(
               slug     = url.replace(/^https?:\/\/[^/]+\/|\/$/g, ""),
               html     = item.content ?? "",
               match    = html.match(/<img[^>]+src="([^">]+)"/i),
-              imageUrl = match?.[1] || "";
+              imageUrl = (match?.[1] || "").replace(
+                /^https:\/\/geekist\.co/i,
+                "https://img.geekist.co"
+              );
 
-        let finalUrl = imageUrl;
+          let finalUrl = imageUrl;
 
         // only do heavy lifting if it's AVIF
         if (imageUrl.toLowerCase().endsWith(".avif")) {
