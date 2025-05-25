@@ -13,9 +13,12 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
     steps:
-      - name: 📥 Checkout Repo
+      - name: 📥 Checkout Workspace
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0    # fetch full history for your main repo
 
       - name: 🔥 Cache Bun Modules
         uses: actions/cache@v3
@@ -35,26 +38,31 @@ jobs:
       - name: 📦 Install Dependencies
         run: bun install --silent
 
-      - name: 🚀 Push `index.html` to `jasonnathan.github.io`
+      - name: 🖨 Generate index.html from README
+        run: bun generatePage.ts
+
+      - name: 📥 Checkout Pages Repo
+        uses: actions/checkout@v4
+        with:
+          repository: jasonnathan/jasonnathan.github.io
+          ref: master              # or `main`
+          path: gh-pages
+          token: ${{ secrets.GH_PAT }}
+          fetch-depth: 0           # required for pushes
+
+      - name: 🚀 Deploy index.html to gh-pages
+        working-directory: gh-pages
         env:
-          PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_PAT }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
         run: |
-          # Clone the GitHub Pages repo directly
-          git clone --depth=1 https://github.com/jasonnathan/jasonnathan.github.io.git gh-pages
-          cd gh-pages          
-          git switch master
-          
-          # Move updated index.html
+          # Copy the freshly-built index.html
           cp ../index.html ./
 
-          # Set Git identity (Fixes "Please tell me who you are" error)
-          git config --global user.name "Jason Nathan"
-          git config --global user.email "jjnathanjr@gmail.com"
+          # Configure Git
+          git config user.name  "Jason Nathan"
+          git config user.email "jjnathanjr@gmail.com"
 
+          # Commit & push (fast-forwards only)
           git add index.html
           git commit -m "🚀 Update index.html from README" || echo "No changes to commit"
-
-          # Authenticate and push securely
-          git remote set-url origin https://x-access-token:${{ secrets.GH_PAT }}@github.com/jasonnathan/jasonnathan.github.io.git
           git push origin HEAD
-
