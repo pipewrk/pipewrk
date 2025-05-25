@@ -138,27 +138,27 @@
 <!-- My Latest Articles -->
 <h2 align="center">📚 My Latest Articles</h2>
 <!-- ARTICLES:START -->
-<p align="left">
+  <p align="left">
     <a
       href="https://geekist.co/you-can-blog-from-your-local-wordpress-site-on-iphone-heres-how/"
-      title="You Can Blog from Localhost WordPress Site on iPhone."
+      title="Yes, you can Blog from your Localhost WordPress on iPhone."
     >
       <img
-        src="https://img.geekist.co/wp-content/uploads/tailscale-v-zerotier-wordpress-showdown-150x150.avif"
-        alt="You Can Blog from Localhost WordPress Site on iPhone."
+        src="https://geekist.co/wp-content/uploads/tailscale-v-zerotier-wordpress-showdown-150x150.avif"
+        alt="Yes, you can Blog from your Localhost WordPress on iPhone."
         width="150px"
         align="right"
       />
     </a>
     <a
       href="https://geekist.co/you-can-blog-from-your-local-wordpress-site-on-iphone-heres-how/"
-      title="You Can Blog from Localhost WordPress Site on iPhone."
+      title="Yes, you can Blog from your Localhost WordPress on iPhone."
     >
-      <strong>You Can Blog from Your Local WordPress Site on iPhone. Here’s How.</strong>
+      <strong>Yes, you can Blog from your Localhost WordPress on iPhone.</strong>
     </a>
     <div><strong>18 May 2025</strong>
     <br />
-    Access your local WordPress site from your iPhone using ZeroTier or Tailscale. Blog from anywhere securely, privately &amp; with no cloud in sight
+    Access your local WordPress site from your iPhone using ZeroTier or Tailscale. Blog from anywhere securely, privately &amp;#038; with no cloud in sight
   </p>
   <br />
   <br />
@@ -168,7 +168,7 @@
       title="The Invisible CDN We Built for Display Pics"
     >
       <img
-        src="https://img.geekist.co/wp-content/uploads/pexels-photo-31670555-31670555-150x150.avif"
+        src="https://geekist.co/wp-content/uploads/pexels-photo-31670555-31670555-150x150.avif"
         alt="The Invisible CDN We Built for Display Pics"
         width="150px"
         align="right"
@@ -182,7 +182,7 @@
     </a>
     <div><strong>23 Apr 2025</strong>
     <br />
-    How we used PHP and Nginx to build a dynamic image delivery system with zero exposed URLs, full cache control, and no strain on the app server.
+    We built a dynamic display picture system in 2012 using X-Accel-Redirect and NGINX, serving fresh content with static-like speed, without a full CDN stack.
   </p>
   <br />
   <br />
@@ -192,7 +192,7 @@
       title="The Editorial Engine: A Technologist’s Pilgrimage"
     >
       <img
-        src="https://cdn.hashnode.com/res/hashnode/image/upload/v1744790024298/c11e1343-3283-464a-8f3c-e086541536e4.png"
+        src="https://geekist.co/wp-content/uploads/a-technologist-pilgrimage-150x150.avif"
         alt="The Editorial Engine: A Technologist’s Pilgrimage"
         width="150px"
         align="right"
@@ -207,31 +207,6 @@
     <div><strong>16 Apr 2025</strong>
     <br />
     What if the reason you’re not writing isn’t discipline, but design? A technologist reflects on blogging, voice, and where it all begins.
-
-  </p>
-  <br />
-  <br />
-  <p align="left">
-    <a
-      href="https://geekist.co/the-architects-who-built-our-digital-foundation/"
-      title="The Architects Who Built Our Digital Foundation"
-    >
-      <img
-        src="https://cdn.hashnode.com/res/hashnode/image/upload/v1744775164051/6a2d77b0-4e14-4ce8-9b60-2c469b565ec4.png"
-        alt="The Architects Who Built Our Digital Foundation"
-        width="150px"
-        align="right"
-      />
-    </a>
-    <a
-      href="https://geekist.co/the-architects-who-built-our-digital-foundation/"
-      title="The Architects Who Built Our Digital Foundation"
-    >
-      <strong>The Architects Who Built Our Digital Foundation</strong>
-    </a>
-    <div><strong>8 Apr 2025</strong>
-    <br />
-    They wrote the code. We live in their world. Meet 5 legends behind AI, C, Unix &amp; Apollo who redefined what&#x27;s possible with software.
   </p>
   <br />
   <br />

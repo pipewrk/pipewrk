@@ -1,12 +1,12 @@
-# name: Update GitHub Profile with Hashnode Posts
+name: Update GitHub Profile with Hashnode Posts
 
-# on:
-#   schedule:
-#     - cron: '0 4 * * *'  # Runs daily at 4 AM UTC
-#   push:
-#     branches:
-#       - main
-#   workflow_dispatch:
+on:
+  schedule:
+    - cron: '0 4 * * *'  # Runs daily at 4 AM UTC
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 
 jobs:
   update_blogs:
@@ -37,7 +37,7 @@ jobs:
         run: bun install --silent
 
       - name: 📝 Update README with New Articles
-        run: bun updateHN.ts
+        run: bun updateRSS.ts
 
       - name: 🚀 Commit and Push Changes
         env:
