@@ -59,8 +59,8 @@ jobs:
           cp ../index.html ./
 
           # Configure Git
-          git config user.name  "Jason Nathan"
-          git config user.email "jjnathanjr@gmail.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           # Commit & push (fast-forwards only)
           git add index.html
