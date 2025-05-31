@@ -244,17 +244,17 @@
 I've helped **~2.3m developers** on Stack Overflow, earning **7556 reputation points**.
 
 🏆 **Top Answers**
-- **582 upvotes** → [View Answer](https://stackoverflow.com/a/3971841)
+- **581 upvotes** → [View Answer](https://stackoverflow.com/a/3971841)
 - **63 upvotes** → [View Answer](https://stackoverflow.com/a/1069666)
 - **11 upvotes** → [View Answer](https://stackoverflow.com/a/16600030)
 - **9 upvotes** → [View Answer](https://stackoverflow.com/a/170624)
 - **5 upvotes** → [View Answer](https://stackoverflow.com/a/18649157)
 
 🏷 **Top Tags**
-- **javascript** → 13 answers (**674 score**)
-- **jquery** → 9 answers (**608 score**)
-- **resize** → 1 answers (**582 score**)
-- **image** → 1 answers (**582 score**)
+- **javascript** → 13 answers (**673 score**)
+- **jquery** → 9 answers (**607 score**)
+- **resize** → 1 answers (**581 score**)
+- **image** → 1 answers (**581 score**)
 - **sorting** → 1 answers (**63 score**)
 
 🏅 **Badges:** 0 Gold | 6 Silver | 24 Bronze  
