@@ -229,8 +229,6 @@
 - [Contributing an OpenAPI spec document](https://github.com/weaviate/Verba/issues/275)
 ### [jasonnathan/Verba](https://github.com/jasonnathan/Verba) 🌟
 - [#275 Created openapi.json](https://github.com/jasonnathan/Verba/pull/1)
-### [orbitdb/orbitdb](https://github.com/orbitdb/orbitdb) 🌟
-- [Update GETTING_STARTED.md](https://github.com/orbitdb/orbitdb/pull/1186)
 ### [transformerlab/transformerlab-app](https://github.com/transformerlab/transformerlab-app) 🌟
 - [Running an mlx_server on an imported mlx model fails](https://github.com/transformerlab/transformerlab-app/issues/140)
 <!-- CONTRIBUTIONS:END -->
