@@ -217,6 +217,8 @@
 <h2 align="center">👨 Open Source Contributions</h2>
 
   <!-- CONTRIBUTIONS:START -->
+### [skaiworldwide-oss/agensgraph](https://github.com/skaiworldwide-oss/agensgraph) 🌟
+- [Update README with corrected SDK and manual links](https://github.com/skaiworldwide-oss/agensgraph/pull/749)
 ### [terrehbyte/awesome-devblogs](https://github.com/terrehbyte/awesome-devblogs)
 - [Added geekist.co](https://github.com/terrehbyte/awesome-devblogs/pull/2)
 ### [run-llama/llama_index](https://github.com/run-llama/llama_index) 🌟
