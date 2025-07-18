@@ -140,6 +140,30 @@
 <!-- ARTICLES:START -->
   <p align="left">
     <a
+      href="https://geekist.co/part-time-agile-will-work-against-you/"
+      title="Part-time Agile Will Work Against You"
+    >
+      <img
+        src="https://img.geekist.co/wp-content/uploads/part-time-agile-150x150.avif"
+        alt="Part-time Agile Will Work Against You"
+        width="150px"
+        align="right"
+      />
+    </a>
+    <a
+      href="https://geekist.co/part-time-agile-will-work-against-you/"
+      title="Part-time Agile Will Work Against You"
+    >
+      <strong>Part-time Agile Will Work Against You</strong>
+    </a>
+    <div><strong>17 Jul 2025</strong>
+    <br />
+    Clean tickets, costly stand-ups, slow velocity. Part-time Agile drains teams and delivery. Discover what skipping rituals really costs.
+  </p>
+  <br />
+  <br />
+  <p align="left">
+    <a
       href="https://geekist.co/5-best-downloaders-for-music-videos-images-no-browser/"
       title="The 5 Best Downloaders for Videos, Music &amp; Images (No Browser Needed)"
     >
