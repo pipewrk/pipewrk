@@ -47,7 +47,7 @@
 <h4 align="center">Coding and Composing share much in common</h4>
 
 <!-- NGINX Book Promo -->
-<h2 align="center">📘 NGINX by Example — Volume 1</h2>
+<h2 align="center">📘 NGINX by Example: Volume 1</h2>
 
 <p align="center">
   <a href="https://www.amazon.com/dp/B0F844D63G?utm_source=geekist&utm_medium=link&utm_campaign=nginx_kindle" target="_blank" rel="noopener noreferrer">
@@ -98,7 +98,7 @@
 <br />
 
 <!-- Skeletor Project Promo -->
-<h2 align="center">⚙️ Skeletor — Scaffolding Reimagined</h2>
+<h2 align="center">Skeletor: Scaffolding Reimagined</h2>
 
 <p align="center">
   <a href="https://github.com/theGeekist/skeletor" target="_blank">
@@ -119,22 +119,64 @@
   <strong>A blazing-fast Rust CLI to scaffold project structures and capture snapshots with YAML config files.</strong>
 </p>
 
-<ul>
-  <li>📦 <code>skeletor apply</code> to generate files from YAML</li>
-  <li>🧠 <code>skeletor snapshot</code> to capture existing directories</li>
-  <li>⚡ Fast, repeatable, and human-readable project bootstraps</li>
-</ul>
-
 <p align="center">
   <a href="https://github.com/theGeekist/skeletor#quickstart" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/Get%20Started-Quickstart-007EC6?style=for-the-badge" alt="Quickstart Docs" />
+    <img src="https://img.shields.io/badge/Get%20Started-Quickstart-4c1?style=for-the-badge" alt="Quickstart Docs" />
   </a>
 </p>
 
 
 <br />
 <br />
+<!-- llm-core Promo Banner -->
+<h2 align="center">llm‑core: Composable LLM Pipelines</h2>
 
+<p align="center">
+  <a href="https://github.com/jasonnathan/llm-core/actions/workflows/coverage.yml" target="_blank" rel="noopener noreferrer">
+    <img
+      alt="Coverage Status"
+      src="https://img.shields.io/github/actions/workflow/status/jasonnathan/llm-core/coverage.yml?label=Coverage&style=for-the-badge&logo=githubactions&logoColor=white"
+    />
+  </a>
+  <a href="https://codecov.io/gh/jasonnathan/llm-core" target="_blank" rel="noopener noreferrer">
+    <img
+      alt="Code Coverage"
+      src="https://img.shields.io/codecov/c/github/jasonnathan/llm-core?style=for-the-badge&logo=codecov&logoColor=white"
+    />
+  </a>
+  <a href="https://www.npmjs.com/package/@jasonnathan/llm-core" target="_blank" rel="noopener noreferrer">
+    <img
+      alt="npm version"
+      src="https://img.shields.io/npm/v/@jasonnathan/llm-core?style=for-the-badge&logo=npm"
+    />
+  </a>
+  <img
+    alt="TypeScript"
+    src="https://img.shields.io/badge/TypeScript-Strict-blue?style=for-the-badge&logo=typescript"
+  />
+  <img
+    alt="Bun"
+    src="https://img.shields.io/badge/Runtime-Bun-%23000000?style=for-the-badge&logo=bun"
+  />
+  <img
+    alt="License: MIT"
+    src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge"
+  />
+</p>
+
+
+<p align="center">
+  <strong>A compact, production‑ready toolkit for building and orchestrating LLM & data pipelines in JavaScript/TypeScript.</strong>
+</p>
+
+<p align="center">
+  <a href="https://github.com/jasonnathan/llm-core#quickstart" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Get%20Started-Quickstart-4c1?style=for-the-badge" alt="Quickstart Docs" />
+  </a>
+</p>
+
+<br />
+<br />
 <!-- My Latest Articles -->
 <h2 align="center">📚 My Latest Articles</h2>
 <!-- ARTICLES:START -->
