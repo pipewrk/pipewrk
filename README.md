@@ -1,12 +1,32 @@
-<h1 align="center">Hi 👋, I'm J</h1>
-<!-- GH-PAGES-NOTICE:START -->
+<!-- Hero -->
+<h1 align="center">👋 Jason Nathan</h1>
 <p align="center">
-  <small>🖥️ <strong>To view this in your browser, visit</strong></small>
-  <a href="https://jasonnathan.github.io" target="_blank"><strong>jasonnathan.github.io</strong></a>
+  <strong>Published Author • NGINX by Example</strong> | <strong>2.3M+ developers helped on Stack Overflow</strong>
 </p>
-<!-- GH-PAGES-NOTICE:END -->
-<!-- GitHub Contribution Graph -->
-<h2 align="center">🐍 GitHub Contribution Graph</h2>
+<p align="center">
+  Empowering teams to ship reliable infra with Rust, TypeScript and AI-driven docs
+</p>
+
+<!-- Social & Contact -->
+<p align="center">
+  <a href="https://www.linkedin.com/in/jasonnathan/" target="_blank">
+    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="https://x.com/jason_nathan" target="_blank">
+    <img alt="Twitter" src="https://img.shields.io/badge/Twitter-1DA1F2?style=flat&logo=twitter&logoColor=white" />
+  </a>
+  <a href="https://stackoverflow.com/users/382536/jason-j-nathan" target="_blank">
+    <img alt="Stack Overflow" src="https://img.shields.io/badge/Stack%20Overflow-F58025?style=flat&logo=stack-overflow&logoColor=white" />
+  </a>
+  <a href="https://geekist.co" target="_blank">
+    <img alt="Blog" src="https://img.shields.io/badge/Blog-21759B?style=flat&logo=blogger&logoColor=white" />
+  </a>
+  <a href="https://meetme.geekist.co" target="_blank">
+    <img alt="Calendar" src="https://img.shields.io/badge/Calendars-0078D4?style=flat&logo=microsoft-outlook&logoColor=white" />
+  </a>
+</p>
+
+<!-- Contribution Graph -->
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jasonnathan/jasonnathan/refs/heads/output/github-contribution-grid-snake-dark.svg">
@@ -14,37 +34,6 @@
     <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/jasonnathan/jasonnathan/refs/heads/output/github-contribution-grid-snake.svg">
   </picture>
 </p>
-
-<!-- Connect with Me -->
-<h2 align="center">Connect With Me🤝</h2>
-<p align="center">
-  <a target="_blank" href="https://www.linkedin.com/in/jasonnathan/" target="blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a target="_blank" href="https://x.com/jason_nathan" target="blank">
-    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" />
-  </a> 
-  <a target="_blank" href="https://stackoverflow.com/users/382536/jason-j-nathan" target="blank">
-    <img src="https://img.shields.io/badge/Stack%20Overflow-F58025?style=for-the-badge&logo=stack-overflow&logoColor=white" alt="Stack Overflow" />
-  </a>
-  <a target="_blank" href="https://geekist.co" target="blank">
-    <img src="https://img.shields.io/badge/Blog-21759B?style=for-the-badge&logo=blogger&logoColor=white" alt="Blog" />
-  </a>
-  <a target="_blank" href="https://meetme.geekist.co" target="blank">
-    <img src="https://img.shields.io/badge/Calendar-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" alt="Calendar" />
-  </a>
-</p>
-
-<!-- Credential -->
-<p align="center">
-  <a target="_blank" href="https://www.amazon.com/dp/B0F844D63G?utm_source=geekist&utm_medium=link&utm_campaign=nginx_kindle" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/Published%20Author-NGINX%20by%20Example-28a745?style=for-the-badge&logo=bookstack&logoColor=white" alt="Published Author: NGINX by Example" />
-  </a>
-</p>
-
-
-<!--h2 without bottom border-->
-<h4 align="center">Coding and Composing share much in common</h4>
 
 <!-- NGINX Book Promo -->
 <h2 align="center">📘 NGINX by Example: Volume 1</h2>
@@ -132,18 +121,6 @@
 <h2 align="center">llm‑core: Composable LLM Pipelines</h2>
 
 <p align="center">
-  <a href="https://github.com/jasonnathan/llm-core/actions/workflows/coverage.yml" target="_blank" rel="noopener noreferrer">
-    <img
-      alt="Coverage Status"
-      src="https://img.shields.io/github/actions/workflow/status/jasonnathan/llm-core/coverage.yml?label=Coverage&style=for-the-badge&logo=githubactions&logoColor=white"
-    />
-  </a>
-  <a href="https://codecov.io/gh/jasonnathan/llm-core" target="_blank" rel="noopener noreferrer">
-    <img
-      alt="Code Coverage"
-      src="https://img.shields.io/codecov/c/github/jasonnathan/llm-core?style=for-the-badge&logo=codecov&logoColor=white"
-    />
-  </a>
   <a href="https://www.npmjs.com/package/@jasonnathan/llm-core" target="_blank" rel="noopener noreferrer">
     <img
       alt="npm version"
@@ -151,17 +128,21 @@
     />
   </a>
   <img
-    alt="TypeScript"
-    src="https://img.shields.io/badge/TypeScript-Strict-blue?style=for-the-badge&logo=typescript"
-  />
-  <img
     alt="Bun"
     src="https://img.shields.io/badge/Runtime-Bun-%23000000?style=for-the-badge&logo=bun"
   />
-  <img
-    alt="License: MIT"
-    src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge"
-  />
+  <a href="https://github.com/jasonnathan/llm-core/actions/workflows/coverage.yml" target="_blank" rel="noopener noreferrer">
+    <img
+      alt="Coverage Status"
+      src="https://img.shields.io/github/actions/workflow/status/jasonnathan/llm-core/coverage.yml?label=CI&style=for-the-badge&logo=githubactions&logoColor=white"
+    />
+  </a>
+  <a href="https://codecov.io/gh/jasonnathan/llm-core" target="_blank" rel="noopener noreferrer">
+    <img
+      alt="Code Coverage"
+      src="https://img.shields.io/codecov/c/github/jasonnathan/llm-core?style=for-the-badge&logo=codecov&logoColor=white"
+    />
+  </a>  
 </p>
 
 
