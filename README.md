@@ -4,7 +4,7 @@
   <strong>Published Author • NGINX by Example</strong> | <strong>2.3M+ developers helped on Stack Overflow</strong>
 </p>
 <p align="center">
-  Empowering teams to ship reliable infra with Rust, TypeScript and AI-driven docs
+  Empowering teams to ship with Rust, TypeScript and AI
 </p>
 
 <!-- Social & Contact -->
