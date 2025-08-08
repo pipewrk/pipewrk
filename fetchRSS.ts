@@ -1,4 +1,3 @@
-// fetchRSS.ts
 import Parser from "rss-parser";
 import sharp from "sharp";
 import { Buffer } from "buffer";
@@ -19,6 +18,9 @@ export async function getPostDetails(
   const parser = new Parser(),
         feed   = await parser.parseURL(feedUrl);
 
+  console.log(`📰 Parsed feed: ${feed.title}`);
+  console.log(`📦 Items found: ${feed.items.length}`);
+
   const posts = await Promise.all(
     (feed.items || [])
       .slice(0, maxItems)
@@ -32,19 +34,35 @@ export async function getPostDetails(
                 "https://img.geekist.co"
               );
 
-          let finalUrl = imageUrl;
+        console.log(`\n📝 Post: "${item.title}"`);
+        console.log(`🔗 Slug: ${slug}`);
+        console.log(`🖼️  Image URL: ${imageUrl}`);
+
+        let finalUrl = imageUrl;
 
         // only do heavy lifting if it's AVIF
         if (imageUrl.toLowerCase().endsWith(".avif")) {
+          console.log("⚙️ AVIF detected, attempting conversion...");
+
           try {
-            const res       = await fetch(imageUrl),
-                  arrBuf    = await res.arrayBuffer(),
-                  inputBuf  = Buffer.from(arrBuf),
-                  pngBuf    = await sharp(inputBuf).png().toBuffer();
-            finalUrl        = `data:image/png;base64,${pngBuf.toString("base64")}`;
-          } catch {
-            // fallback stays as AVIF URL (Camo will choke, but at least your code stays sane)
+            const res = await fetch(imageUrl);
+            if (!res.ok) {
+              console.error(`❌ Fetch failed: ${res.status} ${res.statusText}`);
+              throw new Error(`Failed to fetch AVIF image: ${imageUrl}`);
+            }
+
+            const arrBuf   = await res.arrayBuffer();
+            const inputBuf = Buffer.from(arrBuf);
+            const pngBuf   = await sharp(inputBuf).png().toBuffer();
+
+            finalUrl = `data:image/png;base64,${pngBuf.toString("base64")}`;
+            console.log("✅ Conversion successful (base64 PNG, size:", pngBuf.length, "bytes)");
+          } catch (err) {
+            console.warn(`⚠️  Failed to convert AVIF for: ${imageUrl}`);
+            console.warn(err);
           }
+        } else {
+          console.log("✅ Image is not AVIF — no conversion needed.");
         }
 
         const cleanedHtml = html
@@ -55,6 +73,8 @@ export async function getPostDetails(
         const snippet = (item.contentSnippet || "")
           .replace(/\s*Source$/i, "")
           .trim();
+
+        console.log("📤 Final image URL used:", finalUrl.slice(0, 80) + "...");
 
         return {
           title:       item.title        || "",
@@ -72,6 +92,8 @@ export async function getPostDetails(
         };
       })
   );
+
+  console.log(`\n✅ ${posts.length} post(s) processed with cover images.`);
 
   return posts.filter(p => !!p.coverImage.url);
 }
