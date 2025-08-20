@@ -9,7 +9,7 @@
 
 <!-- Social & Contact -->
 <p align="center">
-  <a href="https://www.linkedin.com/in/jasonnathan/" target="_blank">
+  <a href="https://www.linkedin.com/in/jasonjosephn/" target="_blank">
     <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white" />
   </a>
   <a href="https://x.com/jason_nathan" target="_blank">
@@ -29,9 +29,9 @@
 <!-- Contribution Graph -->
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jasonnathan/jasonnathan/refs/heads/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/jasonnathan/jasonnathan/refs/heads/output/github-contribution-grid-snake.svg">
-    <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/jasonnathan/jasonnathan/refs/heads/output/github-contribution-grid-snake.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pipewrk/pipewrk/refs/heads/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pipewrk/pipewrk/refs/heads/output/github-contribution-grid-snake.svg">
+    <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/pipewrk/pipewrk/refs/heads/output/github-contribution-grid-snake.svg">
   </picture>
 </p>
 
@@ -99,8 +99,8 @@
   <a href="https://github.com/theGeekist/skeletor/actions/workflows/CI.yml" target="_blank">
     <img src="https://img.shields.io/github/actions/workflow/status/jasonnathan/skeletor/CI.yml?label=CI&style=for-the-badge&logo=githubactions&logoColor=white" alt="CI Status" />
   </a>
-  <a href="https://codecov.io/gh/jasonnathan/skeletor" target="_blank">
-    <img src="https://img.shields.io/codecov/c/github/jasonnathan/skeletor?style=for-the-badge&logo=codecov&logoColor=white" alt="Code Coverage" />
+  <a href="https://app.codecov.io/gh/theGeekist/skeletor" target="_blank">
+    <img src="https://img.shields.io/codecov/c/github/theGeekist/skeletor?style=for-the-badge&logo=codecov&logoColor=white" alt="Code Coverage" />
   </a>
 </p>
 
@@ -131,16 +131,16 @@
     alt="Bun"
     src="https://img.shields.io/badge/Runtime-Bun-%23000000?style=for-the-badge&logo=bun"
   />
-  <a href="https://github.com/jasonnathan/llm-core/actions/workflows/coverage.yml" target="_blank" rel="noopener noreferrer">
+  <a href="https://github.com/pipewrk/llm-core/actions/workflows/coverage.yml" target="_blank" rel="noopener noreferrer">
     <img
       alt="Coverage Status"
-      src="https://img.shields.io/github/actions/workflow/status/jasonnathan/llm-core/coverage.yml?label=CI&style=for-the-badge&logo=githubactions&logoColor=white"
+      src="https://img.shields.io/github/actions/workflow/status/pipewrk/llm-core/coverage.yml?label=CI&style=for-the-badge&logo=githubactions&logoColor=white"
     />
   </a>
-  <a href="https://codecov.io/gh/jasonnathan/llm-core" target="_blank" rel="noopener noreferrer">
+  <a href="https://codecov.io/gh/pipewrk/llm-core" target="_blank" rel="noopener noreferrer">
     <img
       alt="Code Coverage"
-      src="https://img.shields.io/codecov/c/github/jasonnathan/llm-core?style=for-the-badge&logo=codecov&logoColor=white"
+      src="https://img.shields.io/codecov/c/github/pipewrk/llm-core?style=for-the-badge&logo=codecov&logoColor=white"
     />
   </a>  
 </p>
@@ -151,7 +151,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/jasonnathan/llm-core#quickstart" target="_blank" rel="noopener noreferrer">
+  <a href="https://github.com/pipewrk/llm-core#quickstart" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Get%20Started-Quickstart-4c1?style=for-the-badge" alt="Quickstart Docs" />
   </a>
 </p>
@@ -290,12 +290,12 @@ I've helped **~2.3m developers** on Stack Overflow, earning **7556 reputation po
   <table align="center">
     <tr border="none">
       <td width="50%" align="center">
-        <img align="center" src="https://github-readme-stats.vercel.app/api?username=jasonnathan&theme=dark&show_icons=true&count_private=true" />
+        <img align="center" src="https://github-readme-stats.vercel.app/api?username=pipewrk&theme=dark&show_icons=true&count_private=true" />
         <br></br>
-        <img title="🔥 Get streak stats for your profile at git.io/streak-stats" alt="Mark streak" src="https://github-readme-streak-stats.herokuapp.com/?user=jasonnathan&theme=dark&hide_border=false" />
+        <img title="🔥 Get streak stats for your profile at git.io/streak-stats" alt="Mark streak" src="https://github-readme-streak-stats.herokuapp.com/?user=pipewrk&theme=dark&hide_border=false" />
       </td>
       <td width="50%" align="center">
-        <img align="center" src="https://github-readme-stats.anuraghazra1.vercel.app/api/top-langs/?username=jasonnathan&theme=dark&hide_border=false&no-bg=true&no-frame=true&langs_count=10"/>
+        <img align="center" src="https://github-readme-stats.anuraghazra1.vercel.app/api/top-langs/?username=pipewrk&theme=dark&hide_border=false&no-bg=true&no-frame=true&langs_count=10"/>
       </td>
     </tr>
   </table>
@@ -304,7 +304,7 @@ I've helped **~2.3m developers** on Stack Overflow, earning **7556 reputation po
 <!-- Trophy (start) -->
 <div align="center">
   <a href="https://github.com/ryo-ma/github-profile-trophy" title="Go to Source">
-    <img align="center" width="84%" src="https://github-profile-trophy.vercel.app/?username=jasonnathan&theme=radical&row=1&column=7&margin-h=15&margin-w=5&no-bg=true" alt="TROPHY" />
+    <img align="center" width="84%" src="https://github-profile-trophy.vercel.app/?username=pipewrk&theme=radical&row=1&column=7&margin-h=15&margin-w=5&no-bg=true" alt="TROPHY" />
   </a>
 </div>
 <!--- trophy (end) -->
