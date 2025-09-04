@@ -44,8 +44,9 @@ jobs:
 
       - name: 🚀 Commit and Push Changes
         run: |
-          git config --global user.name 'Jason Nathan'
-          git config --global user.email 'jjnathanjr@gmail.com'
+          # Configure Git
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md
           git commit -m "🔄 Update README with latest contributions" || echo "No changes to commit"
           git push origin HEAD:${{ github.ref_name }}
