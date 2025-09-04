@@ -43,8 +43,9 @@ jobs:
         env:
           PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_PAT }}
         run: |
-          git config --global user.name 'Jason Nathan'
-          git config --global user.email 'jjnathanjr@gmail.com'
+          # Configure Git
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md
           git commit -m "📝 Update README with new blog post" || echo "No changes to commit"
           git push origin HEAD:${{ github.ref_name }}
