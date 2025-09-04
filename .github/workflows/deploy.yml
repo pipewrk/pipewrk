@@ -44,7 +44,7 @@ jobs:
       - name: 📥 Checkout Pages Repo
         uses: actions/checkout@v4
         with:
-          repository: jasonnathan/jasonnathan.github.io
+          repository: pipewrk/pipewrk.github.io
           ref: master              # or `main`
           path: gh-pages
           token: ${{ secrets.GH_PAT }}
