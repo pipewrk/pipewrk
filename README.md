@@ -265,7 +265,7 @@
 I've helped **~2.3m developers** on Stack Overflow, earning **7556 reputation points**.
 
 🏆 **Top Answers**
-- **581 upvotes** → [View Answer](https://stackoverflow.com/a/3971841)
+- **582 upvotes** → [View Answer](https://stackoverflow.com/a/3971841)
 - **63 upvotes** → [View Answer](https://stackoverflow.com/a/1069666)
 - **11 upvotes** → [View Answer](https://stackoverflow.com/a/16600030)
 - **9 upvotes** → [View Answer](https://stackoverflow.com/a/170624)
