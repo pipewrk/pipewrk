@@ -278,7 +278,7 @@ I've helped **~2.3m developers** on Stack Overflow, earning **7566 reputation po
 🏅 **Badges:** 0 Gold | 6 Silver | 24 Bronze  
 👀 **Impact:** ~2.3m people reached  
 
-🔗 **[View Full Profile](https://stackoverflow.com/users/382536/pipewrk?tab=profile)**
+🔗 **[View Full Profile](https://stackoverflow.com/users/382536/jason-joseph-nathan?tab=profile)**
 
 <!-- STACKOVERFLOW:END -->
 
