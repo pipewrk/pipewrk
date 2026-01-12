@@ -184,6 +184,30 @@
   <br />
   <p align="left">
     <a
+      href="https://geekist.co/part-time-agile-will-work-against-you/"
+      title="Part-time Agile Will Work Against You"
+    >
+      <img
+        src="https://img.geekist.co/wp-content/uploads/part-time-agile.avif"
+        alt="Part-time Agile Will Work Against You"
+        width="150px"
+        align="right"
+      />
+    </a>
+    <a
+      href="https://geekist.co/part-time-agile-will-work-against-you/"
+      title="Part-time Agile Will Work Against You"
+    >
+      <strong>Part-time Agile Will Work Against You</strong>
+    </a>
+    <div><strong>17 Jul 2025</strong>
+    <br />
+    Clean tickets, costly stand-ups, slow velocity. Part-time Agile drains teams and delivery. Discover what skipping rituals really costs.
+  </p>
+  <br />
+  <br />
+  <p align="left">
+    <a
       href="https://geekist.co/the-5-best-downloaders-for-videos-music-images-no-browser-needed/"
       title="The 5 Best Downloaders for Videos, Music &amp;amp; Images (No Browser Needed)"
     >
@@ -208,49 +232,25 @@
   <br />
   <p align="left">
     <a
-      href="https://geekist.co/building-a-zoomable-ui-with-meteor-js-greensock/"
-      title="Building a Zoomable UI with Meteor.js &amp;amp; Greensock"
+      href="https://geekist.co/you-can-blog-from-your-local-wordpress-site-on-iphone-heres-how/"
+      title="Yes, you can Blog from your Localhost WordPress on iPhone."
     >
       <img
-        src="https://img.geekist.co/wp-content/uploads/2016/12/jasonnathan_article-1.avif"
-        alt="Building a Zoomable UI with Meteor.js &amp;amp; Greensock"
+        src="https://img.geekist.co/wp-content/uploads/tailscale-v-zerotier-wordpress-showdown.avif"
+        alt="Yes, you can Blog from your Localhost WordPress on iPhone."
         width="150px"
         align="right"
       />
     </a>
     <a
-      href="https://geekist.co/building-a-zoomable-ui-with-meteor-js-greensock/"
-      title="Building a Zoomable UI with Meteor.js &amp;amp; Greensock"
+      href="https://geekist.co/you-can-blog-from-your-local-wordpress-site-on-iphone-heres-how/"
+      title="Yes, you can Blog from your Localhost WordPress on iPhone."
     >
-      <strong>Building a Zoomable UI with Meteor.js &amp;amp; Greensock</strong>
+      <strong>Yes, you can Blog from your Localhost WordPress on iPhone.</strong>
     </a>
-    <div><strong>4 Jan 2015</strong>
+    <div><strong>18 May 2025</strong>
     <br />
-    An exploration of Zoomable User Interfaces (ZUIs) with Meteor.js and Greensock &amp;amp; a unique responsive UI design technique&amp;hellip;
-  </p>
-  <br />
-  <br />
-  <p align="left">
-    <a
-      href="https://geekist.co/dynamic-capabilities-for-adaptable-systems/"
-      title="Dynamic Capabilities for Adaptable Systems"
-    >
-      <img
-        src="https://img.geekist.co/wp-content/uploads/dynamic-capabilities-for-adaptable-systems.avif"
-        alt="Dynamic Capabilities for Adaptable Systems"
-        width="150px"
-        align="right"
-      />
-    </a>
-    <a
-      href="https://geekist.co/dynamic-capabilities-for-adaptable-systems/"
-      title="Dynamic Capabilities for Adaptable Systems"
-    >
-      <strong>Dynamic Capabilities for Adaptable Systems</strong>
-    </a>
-    <div><strong>4 Oct 2024</strong>
-    <br />
-    Build better software with dynamic capabilities. Learn how to create adaptable and maintainable systems.
+    Access your local WordPress site from your iPhone using ZeroTier or Tailscale. Blog from anywhere securely, privately &amp;amp; with no cloud in sight&amp;hellip;
   </p>
   <br />
   <br />
