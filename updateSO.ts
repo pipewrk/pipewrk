@@ -30,16 +30,17 @@ async function updateReadme(username: string, token: string): Promise<void> {
         .join("\n") || "No tag data available.";
 
     // ✅ Fix badge properties
-    const gold = badges?.filter((b) => b.rank === "gold").length ?? 0;
-    const silver = badges?.filter((b) => b.rank === "silver").length ?? 0;
-    const bronze = badges?.filter((b) => b.rank === "bronze").length ?? 0;
+    // ✅ Fix badge properties using authoritative counts from user profile
+    const counts = reputation?.[0]?.badge_counts;
+    const gold = counts?.gold ?? 0;
+    const silver = counts?.silver ?? 0;
+    const bronze = counts?.bronze ?? 0;
 
     const badgesSection = `🏅 **Badges:** ${gold} Gold | ${silver} Silver | ${bronze} Bronze`;
 
     // ✅ Fix Impact Section
-    const impactSection = `👀 **Impact:** ${
-      impact ?? "Unknown"
-    } people reached`;
+    const impactSection = `👀 **Impact:** ${impact ?? "Unknown"
+      } people reached`;
 
     // ✅ Fix Reputation Handling
     const reputationScore = reputation?.[0].reputation ?? "Unknown";
@@ -47,9 +48,8 @@ async function updateReadme(username: string, token: string): Promise<void> {
     // ✅ Final README Content
     const stackOverflowSection = `
 ### Stack Overflow Contributions
-I've helped **${
-      impact ?? "Unknown"
-    } developers** on Stack Overflow, earning **${reputationScore} reputation points**.
+I've helped **${impact ?? "Unknown"
+      } developers** on Stack Overflow, earning **${reputationScore} reputation points**.
 
 🏆 **Top Answers**
 ${answersSection}
