@@ -321,36 +321,45 @@ I've helped **~2.3m developers** on Stack Overflow, earning **7566 reputation po
 - **image** → 1 answers (**583 score**)
 - **sorting** → 1 answers (**63 score**)
 
-🏅 **Badges:** 0 Gold | 6 Silver | 24 Bronze  
+🏅 **Badges:** 2 Gold | 29 Silver | 38 Bronze  
 👀 **Impact:** ~2.3m people reached  
 
 🔗 **[View Full Profile](https://stackoverflow.com/users/382536/jason-joseph-nathan?tab=profile)**
 
 <!-- STACKOVERFLOW:END -->
 
-<!--- stats & Trophy (start) -->
+<!--- Toolbox (start) -->
+<h2 align="center">🛠 My Toolbox</h2>
+
 <p align="center">
-  <table align="center">
-    <tr border="none">
-      <td width="50%" align="center">
-        <img align="center" src="https://github-readme-stats.vercel.app/api?username=pipewrk&theme=dark&show_icons=true&count_private=true" />
-        <br></br>
-        <img title="🔥 Get streak stats for your profile at git.io/streak-stats" alt="Mark streak" src="https://github-readme-streak-stats.herokuapp.com/?user=pipewrk&theme=dark&hide_border=false" />
-      </td>
-      <td width="50%" align="center">
-        <img align="center" src="https://github-readme-stats.anuraghazra1.vercel.app/api/top-langs/?username=pipewrk&theme=dark&hide_border=false&no-bg=true&no-frame=true&langs_count=10"/>
-      </td>
-    </tr>
-  </table>
+  <!-- Languages & Runtimes -->
+  <img src="https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/-Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust" />
+  <img src="https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/-Bun-000000?style=for-the-badge&logo=bun&logoColor=white" alt="Bun" />
+  <img src="https://img.shields.io/badge/-Node.js-5FA04E?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
 </p>
 
-<!-- Trophy (start) -->
-<div align="center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy" title="Go to Source">
-    <img align="center" width="84%" src="https://github-profile-trophy.vercel.app/?username=pipewrk&theme=radical&row=1&column=7&margin-h=15&margin-w=5&no-bg=true" alt="TROPHY" />
-  </a>
-</div>
-<!--- trophy (end) -->
+<p align="center">
+  <!-- AI & Data -->
+  <img src="https://img.shields.io/badge/-OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI" />
+  <img src="https://img.shields.io/badge/-LangChain-1C3C3C?style=for-the-badge&logo=chainlink&logoColor=white" alt="LangChain" />
+  <img src="https://img.shields.io/badge/-LlamaIndex-190C12?style=for-the-badge&logo=auth0&logoColor=white" alt="LlamaIndex" />
+  <img src="https://img.shields.io/badge/-Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white" alt="Ollama" />
+  <img src="https://img.shields.io/badge/-PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/-MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
+  <img src="https://img.shields.io/badge/-Neo4j-008CC1?style=for-the-badge&logo=neo4j&logoColor=white" alt="Neo4j" />
+</p>
+
+<p align="center">
+  <!-- Web & Infra -->
+  <img src="https://img.shields.io/badge/-React_Native-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React Native" />
+  <img src="https://img.shields.io/badge/-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/-AWS-232F3E?style=for-the-badge&logo=amazon&logoColor=white" alt="AWS" />
+  <img src="https://img.shields.io/badge/-Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
+  <img src="https://img.shields.io/badge/-Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white" alt="Nginx" />
+</p>
+<!--- Toolbox (end) -->
 
 <!--horizontal divider(gradiant)-->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
