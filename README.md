@@ -101,12 +101,10 @@
   </a>
 </p>
 
-<p align="center">
-  <strong>A blazing-fast Rust CLI to scaffold project structures and capture snapshots with YAML config files.</strong>
-</p>
+  <strong>A blazing-fast Rust CLI that generates project structures in milliseconds and snapshots existing folders into reusable YAML templates.</strong>
 
 <p align="center">
-  <a href="https://github.com/theGeekist/skeletor#quickstart" target="_blank" rel="noopener noreferrer">
+  <a href="https://github.com/theGeekist/skeletor" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Get%20Started-Quickstart-4c1?style=for-the-badge" alt="Quickstart Docs" />
   </a>
 </p>
@@ -118,37 +116,35 @@
 <h2 align="center">llm‑core: Composable LLM Pipelines</h2>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@jasonnathan/llm-core" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.npmjs.com/package/@geekist/llm-core" target="_blank" rel="noopener noreferrer">
     <img
       alt="npm version"
-      src="https://img.shields.io/npm/v/@jasonnathan/llm-core?style=for-the-badge&logo=npm"
+      src="https://img.shields.io/npm/v/@geekist/llm-core?style=for-the-badge&logo=npm"
     />
   </a>
   <img
     alt="Bun"
     src="https://img.shields.io/badge/Runtime-Bun-%23000000?style=for-the-badge&logo=bun"
   />
-  <a href="https://github.com/pipewrk/llm-core/actions/workflows/coverage.yml" target="_blank" rel="noopener noreferrer">
+  <a href="https://github.com/theGeekist/llm-core/actions/workflows/coverage.yml" target="_blank" rel="noopener noreferrer">
     <img
       alt="Coverage Status"
-      src="https://img.shields.io/github/actions/workflow/status/pipewrk/llm-core/coverage.yml?label=CI&style=for-the-badge&logo=githubactions&logoColor=white"
+      src="https://img.shields.io/github/actions/workflow/status/theGeekist/llm-core/coverage.yml?label=CI&style=for-the-badge&logo=githubactions&logoColor=white"
     />
   </a>
-  <a href="https://codecov.io/gh/pipewrk/llm-core" target="_blank" rel="noopener noreferrer">
+  <a href="https://codecov.io/gh/theGeekist/llm-core" target="_blank" rel="noopener noreferrer">
     <img
       alt="Code Coverage"
-      src="https://img.shields.io/codecov/c/github/pipewrk/llm-core?style=for-the-badge&logo=codecov&logoColor=white"
+      src="https://img.shields.io/codecov/c/github/theGeekist/llm-core?style=for-the-badge&logo=codecov&logoColor=white"
     />
   </a>  
 </p>
 
 
-<p align="center">
-  <strong>A compact, production‑ready toolkit for building and orchestrating LLM & data pipelines in JavaScript/TypeScript.</strong>
-</p>
+  <strong>A deterministic, runtime-agnostic core for building composable AI workflows, chat interactions, and provider-independent adapters.</strong>
 
 <p align="center">
-  <a href="https://github.com/pipewrk/llm-core#quickstart" target="_blank" rel="noopener noreferrer">
+  <a href="https://llm-core.geekist.co" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Get%20Started-Quickstart-4c1?style=for-the-badge" alt="Quickstart Docs" />
   </a>
 </p>
