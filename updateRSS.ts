@@ -3,11 +3,12 @@ import { getPostDetails, type Post } from './fetchRSS';
 import { updateReadmeSection } from './utils';
 
 async function updateReadme(): Promise<void> {
-  const posts: Post[] = await getPostDetails('https://geekist.co/rss.xml', 5);
+  // Use sitemap instead of RSS feed url (default in fetchRSS)
+  const posts: Post[] = await getPostDetails('https://geekist.co/post-sitemap.xml', 5);
 
   if (posts.length === 0) {
-    console.log('NOOP: No posts found in RSS feed. Leaving README unchanged.');
-    return; // ✅ do not fail CI on "no posts"
+    console.log('NOOP: No posts found. Leaving README unchanged.');
+    return;
   }
 
   const templateSource = await Bun.file('./article.hbs').text();
@@ -23,13 +24,3 @@ updateReadme()
     console.error('Fatal error in updateReadme:', err);
     process.exit(1);
   });
-
-// Optional: extra visibility if some promise rejects after main resolves
-process.on('unhandledRejection', (r) => {
-  console.error('UNHANDLED_REJECTION', r);
-  process.exit(1);
-});
-process.on('uncaughtException', (e) => {
-  console.error('UNCAUGHT_EXCEPTION', e);
-  process.exit(1);
-});
