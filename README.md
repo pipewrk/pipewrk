@@ -122,14 +122,16 @@
       src="https://img.shields.io/npm/v/@geekist/llm-core?style=for-the-badge&logo=npm"
     />
   </a>
-  <img
-    alt="Bun"
-    src="https://img.shields.io/badge/Runtime-Bun-%23000000?style=for-the-badge&logo=bun"
-  />
-  <a href="https://github.com/theGeekist/llm-core/actions/workflows/coverage.yml" target="_blank" rel="noopener noreferrer">
+  <a href="https://sonarcloud.io/summary/new_code?id=theGeekist_llm-core" target="_blank" rel="noopener noreferrer">
+    <img
+      alt="Code Quality"
+      src="https://sonarcloud.io/api/project_badges/measure?project=theGeekist_llm-core&metric=alert_status"
+    />
+  </a>
+  <a href="https://github.com/theGeekist/llm-core/actions/workflows/ci.yml" target="_blank" rel="noopener noreferrer">
     <img
       alt="Coverage Status"
-      src="https://img.shields.io/github/actions/workflow/status/theGeekist/llm-core/coverage.yml?label=CI&style=for-the-badge&logo=githubactions&logoColor=white"
+      src="https://img.shields.io/github/actions/workflow/status/theGeekist/llm-core/ci.yml?label=CI&style=for-the-badge&logo=githubactions&logoColor=white"
     />
   </a>
   <a href="https://codecov.io/gh/theGeekist/llm-core" target="_blank" rel="noopener noreferrer">
