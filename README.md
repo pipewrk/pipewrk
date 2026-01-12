@@ -37,7 +37,7 @@
 
 <p align="center">
   <a href="https://www.amazon.com/dp/B0F844D63G?utm_source=geekist&utm_medium=link&utm_campaign=nginx_kindle" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.geekist.co/wp-content/uploads/1746074660-800x613.png" alt="NGINX by Example book cover showing a green squid illustration on a white background" width="320" />
+    <img src="https://img.geekist.co/wp-content/uploads/1746074660-800x613.avif" alt="NGINX by Example book cover showing a green squid illustration on a white background" width="320" />
   </a>
 </p>
 
