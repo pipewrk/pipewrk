@@ -10,6 +10,30 @@ export interface Post {
   publishedAt: string;
 }
 
+// Helper to decode HTML entities
+function decodeHtmlEntities(text: string): string {
+  if (!text) return "";
+  const entities: { [key: string]: string } = {
+    '&amp;': '&',
+    '&lt;': '<',
+    '&gt;': '>',
+    '&quot;': '"',
+    '&apos;': "'",
+    '&nbsp;': ' ',
+    '&trade;': '™',
+    '&rsquo;': '’',
+    '&lsquo;': '‘',
+    '&rdquo;': '”',
+    '&ldquo;': '“',
+    '&hellip;': '…',
+    '&ndash;': '–',
+    '&mdash;': '—',
+    '&copy;': '©',
+    '&reg;': '®'
+  };
+  return text.replace(/&[a-z]+;/g, match => entities[match] || match);
+}
+
 // Helper to extract meta content
 function getMeta(html: string, property: string): string {
   const regex = new RegExp(`<meta[^>]+(?:property|name)=["']?${property}["']?[^>]+content=["']?([^"'>]+)["']?`, 'i');
@@ -17,9 +41,9 @@ function getMeta(html: string, property: string): string {
   if (!match) {
     const altRegex = new RegExp(`<meta[^>]+content=["']?([^"'>]+)["']?[^>]+(?:property|name)=["']?${property}["']?`, 'i');
     const altMatch = html.match(altRegex);
-    return altMatch ? altMatch[1] : "";
+    return decodeHtmlEntities(altMatch ? altMatch[1] : "");
   }
-  return match ? match[1] : "";
+  return decodeHtmlEntities(match ? match[1] : "");
 }
 
 export async function getPostDetails(
@@ -68,6 +92,10 @@ export async function getPostDetails(
             getMeta(html, "twitter:description") ||
             getMeta(html, "description") ||
             item.contentSnippet || "";
+
+          // Decode title and description again just in case (e.g. RSS contentSnippet)
+          title = decodeHtmlEntities(title);
+          description = decodeHtmlEntities(description);
 
           imageUrl = getMeta(html, "og:image") ||
             getMeta(html, "twitter:image");
