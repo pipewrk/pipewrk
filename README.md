@@ -160,73 +160,121 @@
 <!-- ARTICLES:START -->
   <p align="left">
     <a
-      href="https://local.geekist.co/part-time-agile-will-work-against-you/"
-      title="Part-time Agile Will Work Against You"
+      href="https://geekist.co/the-hidden-machine-inside-modern-tooling/"
+      title="The Hidden Machine Inside Modern Tooling"
     >
       <img
-        src="https://local.geekist.co/wp-content/uploads/part-time-agile-150x150.avif"
-        alt="Part-time Agile Will Work Against You"
+        src="https://img.geekist.co/wp-content/uploads/prep-sauce-meat-cook-steak-scaled.avif"
+        alt="The Hidden Machine Inside Modern Tooling"
         width="150px"
         align="right"
       />
     </a>
     <a
-      href="https://local.geekist.co/part-time-agile-will-work-against-you/"
-      title="Part-time Agile Will Work Against You"
+      href="https://geekist.co/the-hidden-machine-inside-modern-tooling/"
+      title="The Hidden Machine Inside Modern Tooling"
     >
-      <strong>Part-time Agile Will Work Against You</strong>
+      <strong>The Hidden Machine Inside Modern Tooling</strong>
     </a>
-    <div><strong>17 Jul 2025</strong>
+    <div><strong>27 Nov 2025</strong>
     <br />
-    Clean tickets, costly stand-ups, slow velocity. Part-time Agile drains teams and delivery. Discover what skipping rituals really costs.
+    A Geekist Exploration of What Powers the Tools That Power Us Ever wondered how modern tooling just works&amp;trade;? In this post, we&amp;rsquo;ll explore the engine rooms behind the frameworks we lean on every day&amp;hellip;
   </p>
   <br />
   <br />
   <p align="left">
     <a
-      href="https://local.geekist.co/5-best-downloaders-for-music-videos-images-no-browser/"
-      title="The 5 Best Downloaders for Videos, Music &amp; Images (No Browser Needed)"
+      href="https://geekist.co/the-5-best-downloaders-for-videos-music-images-no-browser-needed/"
+      title="The 5 Best Downloaders for Videos, Music &amp;amp; Images (No Browser Needed)"
     >
       <img
-        src="https://local.geekist.co/wp-content/uploads/THE-5-BEST-MEDIA-DOWNLOADERS-150x150.avif"
-        alt="The 5 Best Downloaders for Videos, Music &amp; Images (No Browser Needed)"
+        src="https://img.geekist.co/wp-content/uploads/THE-5-BEST-MEDIA-DOWNLOADERS-scaled.avif"
+        alt="The 5 Best Downloaders for Videos, Music &amp;amp; Images (No Browser Needed)"
         width="150px"
         align="right"
       />
     </a>
     <a
-      href="https://local.geekist.co/5-best-downloaders-for-music-videos-images-no-browser/"
-      title="The 5 Best Downloaders for Videos, Music &amp; Images (No Browser Needed)"
+      href="https://geekist.co/the-5-best-downloaders-for-videos-music-images-no-browser-needed/"
+      title="The 5 Best Downloaders for Videos, Music &amp;amp; Images (No Browser Needed)"
     >
-      <strong>The 5 Best Downloaders for Videos, Music &amp; Images (No Browser Needed)</strong>
+      <strong>The 5 Best Downloaders for Videos, Music &amp;amp; Images (No Browser Needed)</strong>
     </a>
     <div><strong>15 Jul 2025</strong>
     <br />
-    Remember downloading at 4KB/sec? These five modern tools are faster and don’t need a browser. Perfect for terminal nerds and nostalgia junkies alike.
+    Remember downloading at 4KB/sec? These five modern tools are faster and don&amp;rsquo;t need a browser. Perfect for terminal nerds and nostalgia junkies alike.
   </p>
   <br />
   <br />
   <p align="left">
     <a
-      href="https://local.geekist.co/you-can-blog-from-your-local-wordpress-site-on-iphone-heres-how/"
-      title="Yes, you can Blog from your Localhost WordPress on iPhone."
+      href="https://geekist.co/building-a-zoomable-ui-with-meteor-js-greensock/"
+      title="Building a Zoomable UI with Meteor.js &amp;amp; Greensock"
     >
       <img
-        src="https://local.geekist.co/wp-content/uploads/tailscale-v-zerotier-wordpress-showdown-150x150.avif"
-        alt="Yes, you can Blog from your Localhost WordPress on iPhone."
+        src="https://img.geekist.co/wp-content/uploads/2016/12/jasonnathan_article-1.avif"
+        alt="Building a Zoomable UI with Meteor.js &amp;amp; Greensock"
         width="150px"
         align="right"
       />
     </a>
     <a
-      href="https://local.geekist.co/you-can-blog-from-your-local-wordpress-site-on-iphone-heres-how/"
-      title="Yes, you can Blog from your Localhost WordPress on iPhone."
+      href="https://geekist.co/building-a-zoomable-ui-with-meteor-js-greensock/"
+      title="Building a Zoomable UI with Meteor.js &amp;amp; Greensock"
     >
-      <strong>Yes, you can Blog from your Localhost WordPress on iPhone.</strong>
+      <strong>Building a Zoomable UI with Meteor.js &amp;amp; Greensock</strong>
     </a>
-    <div><strong>18 May 2025</strong>
+    <div><strong>4 Jan 2015</strong>
     <br />
-    Access your local WordPress site from your iPhone using ZeroTier or Tailscale. Blog from anywhere securely, privately &amp;#038; with no cloud in sight
+    An exploration of Zoomable User Interfaces (ZUIs) with Meteor.js and Greensock &amp;amp; a unique responsive UI design technique&amp;hellip;
+  </p>
+  <br />
+  <br />
+  <p align="left">
+    <a
+      href="https://geekist.co/dynamic-capabilities-for-adaptable-systems/"
+      title="Dynamic Capabilities for Adaptable Systems"
+    >
+      <img
+        src="https://img.geekist.co/wp-content/uploads/dynamic-capabilities-for-adaptable-systems.avif"
+        alt="Dynamic Capabilities for Adaptable Systems"
+        width="150px"
+        align="right"
+      />
+    </a>
+    <a
+      href="https://geekist.co/dynamic-capabilities-for-adaptable-systems/"
+      title="Dynamic Capabilities for Adaptable Systems"
+    >
+      <strong>Dynamic Capabilities for Adaptable Systems</strong>
+    </a>
+    <div><strong>4 Oct 2024</strong>
+    <br />
+    Build better software with dynamic capabilities. Learn how to create adaptable and maintainable systems.
+  </p>
+  <br />
+  <br />
+  <p align="left">
+    <a
+      href="https://geekist.co/the-invisible-cdn-we-built-in-2012-for-dynamic-avatars/"
+      title="The Invisible CDN We Built for Display Pics"
+    >
+      <img
+        src="https://img.geekist.co/wp-content/uploads/pexels-photo-31670555-31670555.avif"
+        alt="The Invisible CDN We Built for Display Pics"
+        width="150px"
+        align="right"
+      />
+    </a>
+    <a
+      href="https://geekist.co/the-invisible-cdn-we-built-in-2012-for-dynamic-avatars/"
+      title="The Invisible CDN We Built for Display Pics"
+    >
+      <strong>The Invisible CDN We Built for Display Pics</strong>
+    </a>
+    <div><strong>23 Apr 2025</strong>
+    <br />
+    We built a dynamic display picture system in 2012 using X-Accel-Redirect and NGINX, serving fresh content with static-like speed, without a full CDN stack.
   </p>
   <br />
   <br />
