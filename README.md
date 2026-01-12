@@ -178,7 +178,7 @@
     </a>
     <div><strong>27 Nov 2025</strong>
     <br />
-    A Geekist Exploration of What Powers the Tools That Power Us Ever wondered how modern tooling just works&amp;trade;? In this post, we&amp;rsquo;ll explore the engine rooms behind the frameworks we lean on every day&amp;hellip;
+    A Geekist Exploration of What Powers the Tools That Power Us Ever wondered how modern tooling just works™? In this post, we’ll explore the engine rooms behind the frameworks we lean on every day…
   </p>
   <br />
   <br />
@@ -209,24 +209,24 @@
   <p align="left">
     <a
       href="https://geekist.co/the-5-best-downloaders-for-videos-music-images-no-browser-needed/"
-      title="The 5 Best Downloaders for Videos, Music &amp;amp; Images (No Browser Needed)"
+      title="The 5 Best Downloaders for Videos, Music &amp; Images (No Browser Needed)"
     >
       <img
         src="https://img.geekist.co/wp-content/uploads/THE-5-BEST-MEDIA-DOWNLOADERS-scaled.avif"
-        alt="The 5 Best Downloaders for Videos, Music &amp;amp; Images (No Browser Needed)"
+        alt="The 5 Best Downloaders for Videos, Music &amp; Images (No Browser Needed)"
         width="150px"
         align="right"
       />
     </a>
     <a
       href="https://geekist.co/the-5-best-downloaders-for-videos-music-images-no-browser-needed/"
-      title="The 5 Best Downloaders for Videos, Music &amp;amp; Images (No Browser Needed)"
+      title="The 5 Best Downloaders for Videos, Music &amp; Images (No Browser Needed)"
     >
-      <strong>The 5 Best Downloaders for Videos, Music &amp;amp; Images (No Browser Needed)</strong>
+      <strong>The 5 Best Downloaders for Videos, Music &amp; Images (No Browser Needed)</strong>
     </a>
     <div><strong>15 Jul 2025</strong>
     <br />
-    Remember downloading at 4KB/sec? These five modern tools are faster and don&amp;rsquo;t need a browser. Perfect for terminal nerds and nostalgia junkies alike.
+    Remember downloading at 4KB/sec? These five modern tools are faster and don’t need a browser. Perfect for terminal nerds and nostalgia junkies alike.
   </p>
   <br />
   <br />
@@ -250,7 +250,7 @@
     </a>
     <div><strong>18 May 2025</strong>
     <br />
-    Access your local WordPress site from your iPhone using ZeroTier or Tailscale. Blog from anywhere securely, privately &amp;amp; with no cloud in sight&amp;hellip;
+    Access your local WordPress site from your iPhone using ZeroTier or Tailscale. Blog from anywhere securely, privately &amp; with no cloud in sight…
   </p>
   <br />
   <br />
