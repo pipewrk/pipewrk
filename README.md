@@ -125,7 +125,7 @@
   <a href="https://sonarcloud.io/summary/new_code?id=theGeekist_llm-core" target="_blank" rel="noopener noreferrer">
     <img
       alt="Code Quality"
-      src="https://sonarcloud.io/api/project_badges/measure?project=theGeekist_llm-core&metric=alert_status"
+      src="https://img.shields.io/sonar/quality_gate/theGeekist_llm-core?server=https%3A%2F%2Fsonarcloud.io&style=for-the-badge&logo=sonarcloud&logoColor=white"
     />
   </a>
   <a href="https://github.com/theGeekist/llm-core/actions/workflows/ci.yml" target="_blank" rel="noopener noreferrer">
