@@ -3,8 +3,8 @@ import { getPostDetails, type Post } from './fetchRSS';
 import { updateReadmeSection } from './utils';
 
 async function updateReadme(): Promise<void> {
-  // Use sitemap instead of RSS feed url (default in fetchRSS)
-  const posts: Post[] = await getPostDetails('https://geekist.co/post-sitemap.xml', 5);
+  // Use RSS feed
+  const posts: Post[] = await getPostDetails('https://geekist.co/rss.xml', 5);
 
   if (posts.length === 0) {
     console.log('NOOP: No posts found. Leaving README unchanged.');
