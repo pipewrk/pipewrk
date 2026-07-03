@@ -321,7 +321,7 @@ I've helped **~2.3m developers** on Stack Overflow, earning **7566 reputation po
 - **image** → 1 answers (**583 score**)
 - **sorting** → 1 answers (**63 score**)
 
-🏅 **Badges:** 2 Gold | 29 Silver | 38 Bronze  
+🏅 **Badges:** 2 Gold | 30 Silver | 38 Bronze  
 👀 **Impact:** ~2.3m people reached  
 
 🔗 **[View Full Profile](https://stackoverflow.com/users/382536/jason-joseph-nathan?tab=profile)**
