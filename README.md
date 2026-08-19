@@ -182,6 +182,30 @@
   <br />
   <p align="left">
     <a
+      href="https://geekist.co/as-if/"
+      title="As If."
+    >
+      <img
+        src="https://img.geekist.co/wp-content/uploads/2025/03/cropped-cropped-geekist.co-square_upscaled.webp"
+        alt="As If."
+        width="150px"
+        align="right"
+      />
+    </a>
+    <a
+      href="https://geekist.co/as-if/"
+      title="As If."
+    >
+      <strong>As If.</strong>
+    </a>
+    <div><strong>25 Jul 2025</strong>
+    <br />
+    A piece that asked to exist. Build a sentence that cannot escape itself. What could be, if it could exist, as if it were, as existential as it is proverbial; yes faith, yes religion, as verbiage as it…
+  </p>
+  <br />
+  <br />
+  <p align="left">
+    <a
       href="https://geekist.co/part-time-agile-will-work-against-you/"
       title="Part-time Agile Will Work Against You"
     >
@@ -210,7 +234,7 @@
       title="The 5 Best Downloaders for Videos, Music &amp; Images (No Browser Needed)"
     >
       <img
-        src="https://img.geekist.co/wp-content/uploads/THE-5-BEST-MEDIA-DOWNLOADERS-scaled.avif"
+        src="https://img.geekist.co/wp-content/uploads/THE-5-BEST-MEDIA-DOWNLOADERS-2048x1308.avif"
         alt="The 5 Best Downloaders for Videos, Music &amp; Images (No Browser Needed)"
         width="150px"
         align="right"
@@ -230,49 +254,25 @@
   <br />
   <p align="left">
     <a
-      href="https://geekist.co/you-can-blog-from-your-local-wordpress-site-on-iphone-heres-how/"
-      title="Yes, you can Blog from your Localhost WordPress on iPhone."
+      href="https://geekist.co/of-writing-or-something-like-it/"
+      title="Of Writing, Or Something Like It"
     >
       <img
-        src="https://img.geekist.co/wp-content/uploads/tailscale-v-zerotier-wordpress-showdown.avif"
-        alt="Yes, you can Blog from your Localhost WordPress on iPhone."
+        src="https://img.geekist.co/wp-content/uploads/2025/03/cropped-cropped-geekist.co-square_upscaled.webp"
+        alt="Of Writing, Or Something Like It"
         width="150px"
         align="right"
       />
     </a>
     <a
-      href="https://geekist.co/you-can-blog-from-your-local-wordpress-site-on-iphone-heres-how/"
-      title="Yes, you can Blog from your Localhost WordPress on iPhone."
+      href="https://geekist.co/of-writing-or-something-like-it/"
+      title="Of Writing, Or Something Like It"
     >
-      <strong>Yes, you can Blog from your Localhost WordPress on iPhone.</strong>
+      <strong>Of Writing, Or Something Like It</strong>
     </a>
-    <div><strong>18 May 2025</strong>
+    <div><strong>22 May 2025</strong>
     <br />
-    Access your local WordPress site from your iPhone using ZeroTier or Tailscale. Blog from anywhere securely, privately &amp; with no cloud in sight…
-  </p>
-  <br />
-  <br />
-  <p align="left">
-    <a
-      href="https://geekist.co/the-invisible-cdn-we-built-in-2012-for-dynamic-avatars/"
-      title="The Invisible CDN We Built for Display Pics"
-    >
-      <img
-        src="https://img.geekist.co/wp-content/uploads/pexels-photo-31670555-31670555.avif"
-        alt="The Invisible CDN We Built for Display Pics"
-        width="150px"
-        align="right"
-      />
-    </a>
-    <a
-      href="https://geekist.co/the-invisible-cdn-we-built-in-2012-for-dynamic-avatars/"
-      title="The Invisible CDN We Built for Display Pics"
-    >
-      <strong>The Invisible CDN We Built for Display Pics</strong>
-    </a>
-    <div><strong>23 Apr 2025</strong>
-    <br />
-    We built a dynamic display picture system in 2012 using X-Accel-Redirect and NGINX, serving fresh content with static-like speed, without a full CDN stack.
+    Another task, Another ask: write with control, at first. Let it slip. Let the thought unravel, then into something ghostlike that still lingers long after it should have ended. I would never start a…
   </p>
   <br />
   <br />
