@@ -158,6 +158,30 @@
 <!-- ARTICLES:START -->
   <p align="left">
     <a
+      href="https://geekist.co/whats-today-called/"
+      title="What’s today called?"
+    >
+      <img
+        src="https://img.geekist.co/wp-content/uploads/2025/03/cropped-cropped-geekist.co-square_upscaled.webp"
+        alt="What’s today called?"
+        width="150px"
+        align="right"
+      />
+    </a>
+    <a
+      href="https://geekist.co/whats-today-called/"
+      title="What’s today called?"
+    >
+      <strong>What’s today called?</strong>
+    </a>
+    <div><strong>18 Feb 2026</strong>
+    <br />
+    A dedication and plea to the begotten, It is Thursday. Is it not? A remembrance of a god. He might disagree, the limelight brought him nought. Should’ve charged a fee, but… a god couldn’t be bought.
+  </p>
+  <br />
+  <br />
+  <p align="left">
+    <a
       href="https://geekist.co/the-hidden-machine-inside-modern-tooling/"
       title="The Hidden Machine Inside Modern Tooling"
     >
@@ -249,30 +273,6 @@
     <div><strong>15 Jul 2025</strong>
     <br />
     Remember downloading at 4KB/sec? These five modern tools are faster and don’t need a browser. Perfect for terminal nerds and nostalgia junkies alike.
-  </p>
-  <br />
-  <br />
-  <p align="left">
-    <a
-      href="https://geekist.co/of-writing-or-something-like-it/"
-      title="Of Writing, Or Something Like It"
-    >
-      <img
-        src="https://img.geekist.co/wp-content/uploads/2025/03/cropped-cropped-geekist.co-square_upscaled.webp"
-        alt="Of Writing, Or Something Like It"
-        width="150px"
-        align="right"
-      />
-    </a>
-    <a
-      href="https://geekist.co/of-writing-or-something-like-it/"
-      title="Of Writing, Or Something Like It"
-    >
-      <strong>Of Writing, Or Something Like It</strong>
-    </a>
-    <div><strong>22 May 2025</strong>
-    <br />
-    Another task, Another ask: write with control, at first. Let it slip. Let the thought unravel, then into something ghostlike that still lingers long after it should have ended. I would never start a…
   </p>
   <br />
   <br />
