@@ -200,7 +200,7 @@
     </a>
     <div><strong>27 Nov 2025</strong>
     <br />
-    A Geekist Exploration of What Powers the Tools That Power Us Ever wondered how modern tooling just works™? In this post, we’ll explore the engine rooms behind the frameworks we lean on every day…
+    A Geekist Exploration of What Powers the Tools That Power Us Ever wondered how modern tooling just works™? In this post, we’ll explore the engine rooms behind…
   </p>
   <br />
   <br />
@@ -224,7 +224,7 @@
     </a>
     <div><strong>25 Jul 2025</strong>
     <br />
-    A piece that asked to exist. Build a sentence that cannot escape itself. What could be, if it could exist, as if it were, as existential as it is proverbial; yes faith, yes religion, as verbiage as it…
+    A piece that asked to exist. What could be, if it could exist, as if it were, as existential as it is proverbial; yes faith, yes religion, as verbiage as it is…
   </p>
   <br />
   <br />
