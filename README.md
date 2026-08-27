@@ -305,7 +305,7 @@
   <!-- STACKOVERFLOW:START -->
 
 ### Stack Overflow Contributions
-I've helped **~2.3m developers** on Stack Overflow, earning **Unknown reputation points**.
+I've helped **~2.3m developers** on Stack Overflow, earning **7566 reputation points**.
 
 🏆 **Top Answers**
 - **583 upvotes** → [View Answer](https://stackoverflow.com/a/3971841)
@@ -321,7 +321,7 @@ I've helped **~2.3m developers** on Stack Overflow, earning **Unknown reputation
 - **image** → 1 answers (**583 score**)
 - **sorting** → 1 answers (**63 score**)
 
-🏅 **Badges:** 0 Gold | 0 Silver | 0 Bronze  
+🏅 **Badges:** 2 Gold | 30 Silver | 38 Bronze  
 👀 **Impact:** ~2.3m people reached  
 
 🔗 **[View Full Profile](https://stackoverflow.com/users/382536/jason-joseph-nathan?tab=profile)**
