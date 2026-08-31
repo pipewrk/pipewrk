@@ -47,13 +47,11 @@ jobs:
           repository: pipewrk/pipewrk.github.io
           ref: master              # or `main`
           path: gh-pages
-          token: ${{ secrets.GH_PAT }}
+          ssh-key: ${{ secrets.PAGES_DEPLOY_KEY }}
           fetch-depth: 0           # required for pushes
 
       - name: 🚀 Deploy index.html to gh-pages
         working-directory: gh-pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
         run: |
           # Copy the freshly-built index.html
           cp ../index.html ./
