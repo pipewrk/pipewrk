@@ -40,8 +40,6 @@ jobs:
         run: bun updateRSS.ts
 
       - name: 🚀 Commit and Push Changes
-        env:
-          PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_PAT }}
         run: |
           # Configure Git
           git config user.name "github-actions[bot]"
