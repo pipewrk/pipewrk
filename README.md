@@ -246,7 +246,7 @@
     >
       <strong>Part-time Agile Will Work Against You</strong>
     </a>
-    <div><strong>17 Jul 2025</strong>
+    <div><strong>16 Jul 2025</strong>
     <br />
     Clean tickets, costly stand-ups, slow velocity. Part-time Agile drains teams and delivery. Discover what skipping rituals really costs.
   </p>
