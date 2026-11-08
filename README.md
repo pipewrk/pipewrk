@@ -158,6 +158,30 @@
 <!-- ARTICLES:START -->
   <p align="left">
     <a
+      href="https://geekist.co/promises-vs-streams-dams-rivers-and-immigration-checkpoints/"
+      title="Promises vs Streams: Dams, Rivers and Immigration Checkpoints"
+    >
+      <img
+        src="https://img.geekist.co/wp-content/uploads/2026/11/promises-vs-streams-dams-rivers-and-checkpoints.webp"
+        alt="Promises vs Streams: Dams, Rivers and Immigration Checkpoints"
+        width="150px"
+        align="right"
+      />
+    </a>
+    <a
+      href="https://geekist.co/promises-vs-streams-dams-rivers-and-immigration-checkpoints/"
+      title="Promises vs Streams: Dams, Rivers and Immigration Checkpoints"
+    >
+      <strong>Promises vs Streams: Dams, Rivers and Immigration Checkpoints</strong>
+    </a>
+    <div><strong>7 Nov 2026</strong>
+    <br />
+    How a simple Node.js image-streaming experiment led to a deeper understanding of data flow, backpressure and the cost of unnecessary completion boundaries.
+  </p>
+  <br />
+  <br />
+  <p align="left">
+    <a
       href="https://geekist.co/whats-today-called/"
       title="What’s today called?"
     >
@@ -249,30 +273,6 @@
     <div><strong>16 Jul 2025</strong>
     <br />
     Clean tickets, costly stand-ups, slow velocity. Part-time Agile drains teams and delivery. Discover what skipping rituals really costs.
-  </p>
-  <br />
-  <br />
-  <p align="left">
-    <a
-      href="https://geekist.co/the-5-best-downloaders-for-videos-music-images-no-browser-needed/"
-      title="The 5 Best Downloaders for Videos, Music &amp; Images (No Browser Needed)"
-    >
-      <img
-        src="https://img.geekist.co/wp-content/uploads/THE-5-BEST-MEDIA-DOWNLOADERS-2048x1308.avif"
-        alt="The 5 Best Downloaders for Videos, Music &amp; Images (No Browser Needed)"
-        width="150px"
-        align="right"
-      />
-    </a>
-    <a
-      href="https://geekist.co/the-5-best-downloaders-for-videos-music-images-no-browser-needed/"
-      title="The 5 Best Downloaders for Videos, Music &amp; Images (No Browser Needed)"
-    >
-      <strong>The 5 Best Downloaders for Videos, Music &amp; Images (No Browser Needed)</strong>
-    </a>
-    <div><strong>15 Jul 2025</strong>
-    <br />
-    Remember downloading at 4KB/sec? These five modern tools are faster and don’t need a browser. Perfect for terminal nerds and nostalgia junkies alike.
   </p>
   <br />
   <br />
