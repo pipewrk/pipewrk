@@ -182,6 +182,30 @@
   <br />
   <p align="left">
     <a
+      href="https://geekist.co/garmin-treadmill-running-accuracy-chatgpt-mcp/"
+      title="My Garmin Disagreed With My Treadmill"
+    >
+      <img
+        src="https://img.geekist.co/wp-content/uploads/2026/11/garmin_vs_treadmill_ai_run_correction.png"
+        alt="My Garmin Disagreed With My Treadmill"
+        width="150px"
+        align="right"
+      />
+    </a>
+    <a
+      href="https://geekist.co/garmin-treadmill-running-accuracy-chatgpt-mcp/"
+      title="My Garmin Disagreed With My Treadmill"
+    >
+      <strong>My Garmin Disagreed With My Treadmill</strong>
+    </a>
+    <div><strong>5 Nov 2026</strong>
+    <br />
+    A runner’s search for an accurate workout led to Garmin MCP, an independent integration for exploring Garmin Connect data with ChatGPT.
+  </p>
+  <br />
+  <br />
+  <p align="left">
+    <a
       href="https://geekist.co/whats-today-called/"
       title="What’s today called?"
     >
@@ -249,30 +273,6 @@
     <div><strong>25 Jul 2025</strong>
     <br />
     A piece that asked to exist. What could be, if it could exist, as if it were, as existential as it is proverbial; yes faith, yes religion, as verbiage as it is…
-  </p>
-  <br />
-  <br />
-  <p align="left">
-    <a
-      href="https://geekist.co/part-time-agile-will-work-against-you/"
-      title="Part-time Agile Will Work Against You"
-    >
-      <img
-        src="https://img.geekist.co/wp-content/uploads/part-time-agile.avif"
-        alt="Part-time Agile Will Work Against You"
-        width="150px"
-        align="right"
-      />
-    </a>
-    <a
-      href="https://geekist.co/part-time-agile-will-work-against-you/"
-      title="Part-time Agile Will Work Against You"
-    >
-      <strong>Part-time Agile Will Work Against You</strong>
-    </a>
-    <div><strong>16 Jul 2025</strong>
-    <br />
-    Clean tickets, costly stand-ups, slow velocity. Part-time Agile drains teams and delivery. Discover what skipping rituals really costs.
   </p>
   <br />
   <br />
