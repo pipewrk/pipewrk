@@ -159,20 +159,20 @@
   <p align="left">
     <a
       href="https://geekist.co/promises-vs-streams-dams-rivers-and-immigration-checkpoints/"
-      title="Promises vs Streams: Dams, Rivers and Immigration Checkpoints"
+      title="Promises vs Streams: Dams and Rivers"
     >
       <img
         src="https://img.geekist.co/wp-content/uploads/2026/11/promises-vs-streams-dams-rivers-and-checkpoints.webp"
-        alt="Promises vs Streams: Dams, Rivers and Immigration Checkpoints"
+        alt="Promises vs Streams: Dams and Rivers"
         width="150px"
         align="right"
       />
     </a>
     <a
       href="https://geekist.co/promises-vs-streams-dams-rivers-and-immigration-checkpoints/"
-      title="Promises vs Streams: Dams, Rivers and Immigration Checkpoints"
+      title="Promises vs Streams: Dams and Rivers"
     >
-      <strong>Promises vs Streams: Dams, Rivers and Immigration Checkpoints</strong>
+      <strong>Promises vs Streams: Dams and Rivers</strong>
     </a>
     <div><strong>7 Nov 2026</strong>
     <br />
@@ -200,7 +200,7 @@
     </a>
     <div><strong>5 Nov 2026</strong>
     <br />
-    A runner’s search for an accurate workout led to Garmin MCP, an independent integration for exploring Garmin Connect data with ChatGPT.
+    A runner’s search for an accurate workout led to Garmin by geekist.co, an independent integration for exploring Garmin Connect data with ChatGPT.
   </p>
   <br />
   <br />
