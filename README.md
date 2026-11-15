@@ -186,7 +186,7 @@
       title="My Garmin Disagreed With My Treadmill"
     >
       <img
-        src="https://img.geekist.co/wp-content/uploads/2026/11/garmin_vs_treadmill_ai_run_correction.png"
+        src="https://img.geekist.co/wp-content/uploads/2026/11/garmin_vs_treadmill_ai_run_correction.avif"
         alt="My Garmin Disagreed With My Treadmill"
         width="150px"
         align="right"
