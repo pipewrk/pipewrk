@@ -158,6 +158,30 @@
 <!-- ARTICLES:START -->
   <p align="left">
     <a
+      href="https://geekist.co/the-precise-premise-of-a-promise/"
+      title="The Precise Premise of a Promise"
+    >
+      <img
+        src="https://img.geekist.co/wp-content/uploads/2025/03/cropped-cropped-geekist.co-square_upscaled.webp"
+        alt="The Precise Premise of a Promise"
+        width="150px"
+        align="right"
+      />
+    </a>
+    <a
+      href="https://geekist.co/the-precise-premise-of-a-promise/"
+      title="The Precise Premise of a Promise"
+    >
+      <strong>The Precise Premise of a Promise</strong>
+    </a>
+    <div><strong>15 Nov 2026</strong>
+    <br />
+    A sigh, then an exercise that batters faith: Write of something never promised, as if promises were never made.
+  </p>
+  <br />
+  <br />
+  <p align="left">
+    <a
       href="https://geekist.co/promises-vs-streams-dams-rivers-and-immigration-checkpoints/"
       title="Promises vs Streams: Dams and Rivers"
     >
@@ -249,30 +273,6 @@
     <div><strong>27 Nov 2025</strong>
     <br />
     A Geekist Exploration of What Powers the Tools That Power Us Ever wondered how modern tooling just works™? In this post, we’ll explore the engine rooms behind…
-  </p>
-  <br />
-  <br />
-  <p align="left">
-    <a
-      href="https://geekist.co/as-if/"
-      title="As If."
-    >
-      <img
-        src="https://img.geekist.co/wp-content/uploads/2025/03/cropped-cropped-geekist.co-square_upscaled.webp"
-        alt="As If."
-        width="150px"
-        align="right"
-      />
-    </a>
-    <a
-      href="https://geekist.co/as-if/"
-      title="As If."
-    >
-      <strong>As If.</strong>
-    </a>
-    <div><strong>25 Jul 2025</strong>
-    <br />
-    A piece that asked to exist. What could be, if it could exist, as if it were, as existential as it is proverbial; yes faith, yes religion, as verbiage as it is…
   </p>
   <br />
   <br />
