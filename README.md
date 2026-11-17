@@ -158,6 +158,30 @@
 <!-- ARTICLES:START -->
   <p align="left">
     <a
+      href="https://geekist.co/how-to-roast-potatoes-in-an-air-fryer-a-gargantuan-task/"
+      title="How to Roast Potatoes in an Air Fryer. A Gargantuan Task."
+    >
+      <img
+        src="https://img.geekist.co/wp-content/uploads/2026/11/air-fryer-roast-potatoes-golden-crispy.webp"
+        alt="How to Roast Potatoes in an Air Fryer. A Gargantuan Task."
+        width="150px"
+        align="right"
+      />
+    </a>
+    <a
+      href="https://geekist.co/how-to-roast-potatoes-in-an-air-fryer-a-gargantuan-task/"
+      title="How to Roast Potatoes in an Air Fryer. A Gargantuan Task."
+    >
+      <strong>How to Roast Potatoes in an Air Fryer. A Gargantuan Task.</strong>
+    </a>
+    <div><strong>16 Nov 2026</strong>
+    <br />
+    How to roast crispy, golden air-fryer potatoes with fluffy centres, a serving multiplier, adjustable spices and one gloriously sarcastic domestic encounter.
+  </p>
+  <br />
+  <br />
+  <p align="left">
+    <a
       href="https://geekist.co/the-precise-premise-of-a-promise/"
       title="The Precise Premise of a Promise"
     >
@@ -186,7 +210,7 @@
       title="Promises vs Streams: Dams and Rivers"
     >
       <img
-        src="https://img.geekist.co/wp-content/uploads/2026/11/promises-vs-streams-dams-rivers-and-checkpoints.webp"
+        src="https://img.geekist.co/wp-content/uploads/2026/11/promises-vs-streams-dams-rivers-and-checkpoints.avif"
         alt="Promises vs Streams: Dams and Rivers"
         width="150px"
         align="right"
@@ -249,30 +273,6 @@
     <div><strong>18 Feb 2026</strong>
     <br />
     A dedication and plea to the begotten, It is Thursday. Is it not? A remembrance of a god. He might disagree, the limelight brought him nought. Should’ve charged a fee, but… a god couldn’t be bought.
-  </p>
-  <br />
-  <br />
-  <p align="left">
-    <a
-      href="https://geekist.co/the-hidden-machine-inside-modern-tooling/"
-      title="The Hidden Machine Inside Modern Tooling"
-    >
-      <img
-        src="https://img.geekist.co/wp-content/uploads/prep-sauce-meat-cook-steak-scaled.avif"
-        alt="The Hidden Machine Inside Modern Tooling"
-        width="150px"
-        align="right"
-      />
-    </a>
-    <a
-      href="https://geekist.co/the-hidden-machine-inside-modern-tooling/"
-      title="The Hidden Machine Inside Modern Tooling"
-    >
-      <strong>The Hidden Machine Inside Modern Tooling</strong>
-    </a>
-    <div><strong>27 Nov 2025</strong>
-    <br />
-    A Geekist Exploration of What Powers the Tools That Power Us Ever wondered how modern tooling just works™? In this post, we’ll explore the engine rooms behind…
   </p>
   <br />
   <br />
